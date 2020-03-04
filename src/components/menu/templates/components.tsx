@@ -13,7 +13,7 @@ const items = {
     'menu-components-dad-pag': '/components/d-a-d'
   },
   'menu-components-dfrom': {
-    'menu-components-dfrom-pag': '/components/d-from'
+    'menu-components-dfrom-pag': '/components/d-d'
   },
   'menu-components-gesture-password': {
     'menu-components-gp-pag': '/components/gesture-password'

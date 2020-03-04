@@ -4,7 +4,7 @@
   "start_url": "/",
   "display": "standalone",
   "icons": [{
-    "src": "/assets/img/meta/alita.svg",
+    "src": "/assets/img/alita.svg",
     "sizes": "512x512",
     "type": "image/svg+xml"
   }],
