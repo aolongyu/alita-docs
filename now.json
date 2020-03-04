@@ -6,16 +6,8 @@
       "src": "build.sh",
       "use": "@now/static-build",
       "config": {
-        "distDir": "www"
+        "distDir": "www/docs/"
       }
-    },
-    {
-      "src": "server.js",
-      "use": "@now/node-server"
     }
   ],
-  "routes":[{
-    "src":"/(.*)",
-    "dest":"server.js"
-  }]
 }
