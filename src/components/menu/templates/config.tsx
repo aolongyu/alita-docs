@@ -4,7 +4,7 @@ export default () => <docs-nav items={items}/>;
 
 const items = {
   'menu-config': {
-    'menu-config-config': '/docs/config/config',
-    'menu-config-runtime': '/docs/config/runtime',
+    'menu-config-config': '/config/config',
+    'menu-config-runtime': '/config/runtime',
   },
 };

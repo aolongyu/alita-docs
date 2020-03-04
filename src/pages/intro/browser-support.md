@@ -1,8 +1,8 @@
 ---
 previousText: '创建你的第一个应用'
-previousUrl: '/docs/intro/first-app'
+previousUrl: '/intro/first-app'
 nextText: '版本控制'
-nextUrl: '/docs/intro/versioning'
+nextUrl: '/intro/versioning'
 ---
 
 # 浏览器支持

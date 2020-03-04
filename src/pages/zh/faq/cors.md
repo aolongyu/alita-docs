@@ -1,8 +1,8 @@
 ---
 previousText: 'Native Errors'
-previousUrl: '/docs/faq/native'
+previousUrl: '/faq/native'
 nextText: 'Security'
-nextUrl: '/docs/faq/security'
+nextUrl: '/faq/security'
 contributors:
   - FdezRomero
 ---
@@ -17,7 +17,7 @@ In order to know if an external origin supports CORS, the server has to send som
 
 An **origin** is the combination of the **protocol**, **domain**, and **port** from which your Ionic app or the external resource is served. For example, apps running in Capacitor have `capacitor://localhost` (iOS) or `http://localhost` (Android) as their origin.
 
-When the origin where your app is served (e.g. `http://localhost:8100` with `alitaserve`) and the origin of the resource being requested (e.g. `https://api.example.com`) don't match, the browser's <a href="https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy" target="_blank" rel="noopener">Same Origin Policy</a> takes effect and CORS is required for the request to be made.
+When the origin where your app is served (e.g. `http://localhost:8100` with `alitaserve`) and the origin of the resource being requested (e.g. `https://api.example.com`) don't match, the browser's <a href="https://developer.mozilla.org/en-US/Web/Security/Same-origin_policy" target="_blank" rel="noopener">Same Origin Policy</a> takes effect and CORS is required for the request to be made.
 
 CORS errors are common in web apps when a cross-origin request is made but the server doesn't return the required headers in the response (is not CORS-enabled):
 
@@ -246,7 +246,7 @@ If you are trying to connect to a 3rd-party API, first check in its documentatio
 
 #### 1. Native-only apps (iOS/Android)
 
-Use the <a href="/docs/native/http/" target="_blank" rel="noopener">HTTP plugin from Ionic Native</a> to make the requests natively from outside the webview. Please note that this plugin doesn't work in the browser, so the development and testing of the app must always be done in a device or simulator going forward.
+Use the <a href="/native/http/" target="_blank" rel="noopener">HTTP plugin from Ionic Native</a> to make the requests natively from outside the webview. Please note that this plugin doesn't work in the browser, so the development and testing of the app must always be done in a device or simulator going forward.
 
 ##### Usage in Ionic Angular 4
 
@@ -302,4 +302,4 @@ If you are developing a PWA or testing in the browser, using the `--disable-web-
 ##### Sources
 
 - <a href="https://fdezromero.com/cors-errors-in-ionic-apps" target="_blank" rel="noopener">CORS Errors in Ionic Apps</a>
-- <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS" target="_blank" rel="noopener">MDN</a>
+- <a href="https://developer.mozilla.org/en-US/Web/HTTP/CORS" target="_blank" rel="noopener">MDN</a>

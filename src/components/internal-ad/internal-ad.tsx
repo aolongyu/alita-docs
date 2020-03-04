@@ -39,9 +39,9 @@ export class InternalAd {
          target="_blank"
         >
         <picture>
-          <source media="(min-width: 37.5em)" src="/docs/assets/ad/umi3banner.jpeg"/>
+          <source media="(min-width: 37.5em)" src="/assets/ad/umi3banner.jpeg"/>
           {/* <source src={this.ad.ad_image['1x'].url}/> */}
-          <img src="/docs/assets/ad/umi3banner.jpeg"
+          <img src="/assets/ad/umi3banner.jpeg"
                alt='发布UMI3,插件化的企业级前端应用框架'
               //  height={1042}
                width={240} />

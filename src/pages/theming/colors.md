@@ -2,9 +2,9 @@
 initialTab: 'preview'
 inlineHtmlPreviews: true
 previousText: 'CSS Variables'
-previousUrl: '/docs/theming/css-variables'
+previousUrl: '/theming/css-variables'
 nextText: 'Themes'
-nextUrl: '/docs/theming/themes'
+nextUrl: '/theming/themes'
 ---
 
 # Colors
@@ -28,7 +28,7 @@ A color can be applied to an Ionic component in order to change the default colo
 
 ## Layered Colors
 
-Each color consists of the following properties: a `base`, `contrast`, `shade`, and `tint`. The `base` and `contrast` colors also require a `rgb` property which is the same color, just in <a href="https://developer.mozilla.org/en-US/docs/Glossary/RGB" target="_blank">rgb format</a>. See [The Alpha Problem](./advanced#the-alpha-problem) for an explanation of why the `rgb` property is also needed. Select from the dropdown below to see all of the default colors Ionic provides and their variations.
+Each color consists of the following properties: a `base`, `contrast`, `shade`, and `tint`. The `base` and `contrast` colors also require a `rgb` property which is the same color, just in <a href="https://developer.mozilla.org/en-US/Glossary/RGB" target="_blank">rgb format</a>. See [The Alpha Problem](./advanced#the-alpha-problem) for an explanation of why the `rgb` property is also needed. Select from the dropdown below to see all of the default colors Ionic provides and their variations.
 
 <layered-colors-select mode="md" no-prerender></layered-colors-select>
 
@@ -44,15 +44,15 @@ To change the default values of a color, all of the listed variations for that c
   --ion-color-secondary-shade: #005a00;
   --ion-color-secondary-tint: #1a751a;
 }
-</code></pre> 
+</code></pre>
 
 When `secondary` is applied to a button, not only is the base color <code-color mode="md" value="#006600">&lt;/code-color> used, but the contrast color &lt;code-color mode="md" value="#ffffff">&lt;/code-color> is used for the text, along with shade &lt;code-color mode="md" value="#005a00">&lt;/code-color> and tint &lt;code-color mode="md" value="#1a751a">&lt;/code-color> colors for the different states of the button.&lt;/p>
 
 &lt;blockquote>
-  &lt;p>Not sure how to get the variation colors from the base color? Try out our &lt;a href="/docs/theming/color-generator">Color Generator&lt;/a> that calculates all of the variations and provides code to copy/paste into an app!&lt;/p>
+  &lt;p>Not sure how to get the variation colors from the base color? Try out our &lt;a href="/theming/color-generator">Color Generator&lt;/a> that calculates all of the variations and provides code to copy/paste into an app!&lt;/p>
 &lt;/blockquote>
 
-&lt;p>See the &lt;a href="/docs/theming/css-variables">CSS Variables documentation&lt;/a> for more information on CSS variables.&lt;/p>
+&lt;p>See the &lt;a href="/theming/css-variables">CSS Variables documentation&lt;/a> for more information on CSS variables.&lt;/p>
 
 &lt;h2>Adding Colors&lt;/h2>
 
@@ -99,7 +99,7 @@ div {
 }
 ```
 
-See the [CSS Variables documentation](/docs/theming/css-variables) for more information on setting and using CSS variables.
+See the [CSS Variables documentation](/theming/css-variables) for more information on setting and using CSS variables.
 
 ## New Color Creator
 

@@ -1,8 +1,8 @@
 ---
 previousText: 'Your First Ionic App'
-previousUrl: '/docs/developer-resources/guides/first-app-v3/intro'
+previousUrl: '/developer-resources/guides/first-app-v3/intro'
 nextText: 'Creating a Photo Gallery'
-nextUrl: '/docs/developer-resources/guides/first-app-v3/creating-photo-gallery-device-storage'
+nextUrl: '/developer-resources/guides/first-app-v3/creating-photo-gallery-device-storage'
 ---
 
 # Android, iOS, and the Camera - Oh My!
@@ -11,8 +11,8 @@ Previously, we got an Ionic app up and running locally in a web browser. Now, le
 
 The Ionic DevApp is a free app that makes it easy to run your Ionic app directly on your iOS or Android device. Download it here, then open on your device:
 
-<a href="https://itunes.apple.com/us/app/ionic-devapp/id1233447133?ls=1&mt=8"><img src="/docs/assets/img/guides/first-app-v3/appstore.png"></a>
-<a href="https://play.google.com/store/apps/details?id=io.ionic.devapp&hl=en"><img src="/docs/assets/img/guides/first-app-v3/playstore.png"></a>
+<a href="https://itunes.apple.com/us/app/ionic-devapp/id1233447133?ls=1&mt=8"><img src="/assets/img/guides/first-app-v3/appstore.png"></a>
+<a href="https://play.google.com/store/apps/details?id=io.ionic.devapp&hl=en"><img src="/assets/img/guides/first-app-v3/playstore.png"></a>
 
 Afterwards, open a terminal and navigate to your Ionic project. Execute the following:
 
@@ -20,7 +20,7 @@ Afterwards, open a terminal and navigate to your Ionic project. Execute the foll
 $ alitaserve -c
 ```
 
-In DevApp, you should now see the app appear. If it doesn't, or you have any issues throughout creating this app, [see here](https://ionicframework.com/docs/pro/devapp/).
+In DevApp, you should now see the app appear. If it doesn't, or you have any issues throughout creating this app, [see here](https://ionicframework.com/pro/devapp/).
 
 Much better! Now we can add the camera functionality. By the way, you can find reference code for this in [the “part 1” folder](https://github.com/ionic-team/photo-gallery-tutorial-ionic3/tree/master/part1) on GitHub.
 

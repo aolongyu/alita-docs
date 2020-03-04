@@ -1,8 +1,8 @@
 ---
 previousText: '运行预览'
-previousUrl: '/docs/building/running'
+previousUrl: '/building/running'
 nextText: '在 Android 上运行'
-nextUrl: '/docs/building/android'
+nextUrl: '/building/android'
 skipIntros: true
 ---
 
@@ -52,7 +52,7 @@ alita build
 
 在Xcode中，在编译器左上角，选择目标模拟器或设备，然后单击“播放”按钮。
 
-![Xcode Play Button Area](/docs/assets/img/running/ios-xcode-play-button-area.png)
+![Xcode Play Button Area](/assets/img/running/ios-xcode-play-button-area.png)
 
 ### 查看原生日志
 
@@ -60,7 +60,7 @@ alita build
 
 > 如果你的 Xcode **Console** 是隐藏的，可以设置 **View** &raquo; **Debug Area** &raquo; **Activate Console** 显示。
 
-![Xcode Console](/docs/assets/img/running/ios-xcode-console.png)
+![Xcode Console](/assets/img/running/ios-xcode-console.png)
 
 ## 实时开发调试
 

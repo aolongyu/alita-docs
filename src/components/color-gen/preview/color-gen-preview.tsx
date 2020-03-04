@@ -38,7 +38,7 @@ export class ColorGenPreview {
   }
 
   render() {
-    const url = `/docs/theming/color-gen/demo/index.html?ionic:mode=${this.demoMode}`;
+    const url = `/theming/color-gen/demo/index.html?ionic:mode=${this.demoMode}`;
 
     return [
       <div>

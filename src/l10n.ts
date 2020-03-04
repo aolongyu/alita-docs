@@ -11,7 +11,7 @@ export class DocsLocalization {
   private readonly bundle: { [id: string]: string };
 
   constructor() {
-    const prefix = /^\/docs\/([a-z]{2}\b)?/;
+    const prefix = /^([a-z]{2}\b)?/;
     const regexRes = prefix.exec(window.location.pathname);
     const language = regexRes ? regexRes[1] : null;
     this.locale = language && MESSAGES_ALL.hasOwnProperty(language) ? language : 'zh';

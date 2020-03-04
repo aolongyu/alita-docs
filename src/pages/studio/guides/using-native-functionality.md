@@ -15,6 +15,6 @@ In order to debug Native Functionality, it is best to utilize the native tooling
 4. You now have access to native debugging logs inside of XCode or Android Studio.
 5. You can also use Safari (iOS) or Chrome (Android) in order to inspect the web content of your application.
 
-For more detailed instructions, please see the [Building for iOS](/docs/building/ios) or [Building for Android](/docs/building/android) documentation.
+For more detailed instructions, please see the [Building for iOS](/building/ios) or [Building for Android](/building/android) documentation.
 
-If you'd like to follow along with a beginners tutorial that includes utilizing the Camera Cordova plugin, please see our [Build your First App guide](/docs/angular/your-first-app). While this guide isn't specific to Studio, you can still follow along using Studio.
+If you'd like to follow along with a beginners tutorial that includes utilizing the Camera Cordova plugin, please see our [Build your First App guide](/angular/your-first-app). While this guide isn't specific to Studio, you can still follow along using Studio.

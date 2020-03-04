@@ -35,7 +35,7 @@ Alita 的设计初衷就是面向场景化的方案，所以我们的配置方�
 
 配置项目类型，只支持 `pc`,`h5`,`cordova` 三者之一。
 一般开发移动端页面，先配置 `appType:'h5'` 进行开发调试，当需要使用 Cordova 打包，或者需要调试一些原生能力时，将配置改成 `appType:'cordova'`。
-详细的如何运行，请查阅[运行预览](/docs/building/running)
+详细的如何运行，请查阅[运行预览](/building/running)
 
 ### mobileLayout
 

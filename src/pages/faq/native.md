@@ -1,8 +1,8 @@
 ---
 previousText: 'Runtime Errors'
-previousUrl: '/docs/faq/runtime'
+previousUrl: '/faq/runtime'
 nextText: 'CORS Errors'
-nextUrl: '/docs/faq/cors'
+nextUrl: '/faq/cors'
 contributors:
   - FdezRomero
   - brandyscarney
@@ -18,11 +18,11 @@ Code Signing Error: Failed to create provisioning profile. The app ID "com.csfor
 
 Running an app on an iOS device requires a provisioning profile. If a provisioning profile has not been created yet follow these directions:
 
-1. **Set the [Package ID](/docs/faq/glossary#package-id).**
+1. **Set the [Package ID](/faq/glossary#package-id).**
 
     For Capacitor, open the `capacitor.config.json` file and modify the `appId` property.
 
-    For Cordova, open the `config.xml` file and modify the `id` attribute of the root element, `<widget>`. See [the Cordova documentation](https://cordova.apache.org/docs/en/latest/config_ref/#widget) for more information.
+    For Cordova, open the `config.xml` file and modify the `id` attribute of the root element, `<widget>`. See [the Cordova documentation](https://cordova.apache.org/en/latest/config_ref/#widget) for more information.
 
 2. **Open the project in **Xcode**.**
 
@@ -37,11 +37,11 @@ Running an app on an iOS device requires a provisioning profile. If a provisioni
 
 3. **In **Project navigator**, select the project root to open the project editor. Under the **Identity** section, verify that the Package ID that was set matches the Bundle Identifier.**
 
-    ![Xcode Identity Setup](/docs/assets/img/running/ios-xcode-identity-setup.png)
+    ![Xcode Identity Setup](/assets/img/running/ios-xcode-identity-setup.png)
 
 4. **In the same project editor, under the **Signing** section, ensure **Automatically manage signing** is enabled.** Then, select a Development Team. Given a Development Team, Xcode will attempt to automatically prepare provisioning and signing.
 
-    ![Xcode Signing Setup](/docs/assets/img/running/ios-xcode-signing-setup.png)
+    ![Xcode Signing Setup](/assets/img/running/ios-xcode-signing-setup.png)
 
 ## Xcode build error 65
 
@@ -49,7 +49,7 @@ Running an app on an iOS device requires a provisioning profile. If a provisioni
 Error: Error code 65 for command: xcodebuild with args: -xcconfig,/Users/ionitron/projects/my-project/platforms/ios/cordova/build-debug.xcconfig,-workspace,SC project.xcworkspace,-scheme,SC project,-configuration,Debug,-sdk,iphonesimulator,-destination,platform=iOS Simulator,name=iPhone X,build,CONFIGURATION_BUILD_DIR=/Users/ionitron/projects/my-project/platforms/ios/build/emulator,SHARED_PRECOMPS_DIR=/Users/ionitron/projects/my-project/platforms/ios/build/sharedpch
 ```
 
-This error is an error code from Xcode that can be caused by provisioning issues or outdated cordova dependencies. To fix this error first make sure a provisioning profile has been generated using the above instructions and then try to [run the app from Xcode](/docs/building/ios#running-with-xcode).
+This error is an error code from Xcode that can be caused by provisioning issues or outdated cordova dependencies. To fix this error first make sure a provisioning profile has been generated using the above instructions and then try to [run the app from Xcode](/building/ios#running-with-xcode).
 
 If this does not fix the error then run the following commands:
 

@@ -1,15 +1,15 @@
 ---
 previousText: 'Deploying Mobile'
-previousUrl: '/docs/react/your-first-app/6-deploying-mobile'
+previousUrl: '/react/your-first-app/6-deploying-mobile'
 nextText: 'Lifecycle'
-nextUrl: '/docs/react/lifecycle'
+nextUrl: '/react/lifecycle'
 ---
 
 # Rapid App Development with Live Reload
 
 So far, we’ve seen how easy it is to develop a cross-platform app that works everywhere. The development experience is pretty quick, but what if I told you there was a way to go faster?
 
-We can use the Ionic CLI’s [Live Reload functionality](https://ionicframework.com/docs/cli/livereload) to boost our productivity when building Ionic apps. When active, Live Reload will reload the browser and/or WebView when changes in the app are detected.
+We can use the Ionic CLI’s [Live Reload functionality](https://ionicframework.com/cli/livereload) to boost our productivity when building Ionic apps. When active, Live Reload will reload the browser and/or WebView when changes in the app are detected.
 
 ## Live Reload
 
@@ -56,7 +56,7 @@ When a user clicks on an image, we will show the action sheet by changing the st
         src={photo.base64 ?? photo.webviewPath} />
 ```
 
-Next, add an [IonActionSheet](https://ionicframework.com/docs/api/action-sheet) dialog with the option to either delete the selected photo or cancel (close) the dialog. We will set the isOpen property based on if photoToDelete has a value or not.
+Next, add an [IonActionSheet](https://ionicframework.com/api/action-sheet) dialog with the option to either delete the selected photo or cancel (close) the dialog. We will set the isOpen property based on if photoToDelete has a value or not.
 
 In the JSX, put the following component before the closing `</IonContent>` tag.
 
@@ -122,6 +122,6 @@ Save this file, then tap on a photo again and choose the “Delete” option. Th
 
 Congratulations! You created a complete cross-platform Photo Gallery app that runs on the web, iOS, and Android.
 
-There are many paths to follow from here. Try adding another [Ionic UI component](https://ionicframework.com/docs/components) to the app, or more [native functionality](https://capacitor.ionicframework.com/docs/apis). The sky’s the limit.
+There are many paths to follow from here. Try adding another [Ionic UI component](https://ionicframework.com/components) to the app, or more [native functionality](https://capacitor.ionicframework.com/apis). The sky’s the limit.
 
 Happy app building! 💙

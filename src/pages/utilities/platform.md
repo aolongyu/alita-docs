@@ -1,6 +1,6 @@
 ---
 previousText: 'Config'
-previousUrl: '/docs/utilities/config'
+previousUrl: '/utilities/config'
 nextText: ''
 nextUrl: ''
 contributors:

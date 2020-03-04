@@ -1,6 +1,6 @@
 ---
 previousText: 'Security'
-previousUrl: '/docs/faq/security'
+previousUrl: '/faq/security'
 contributors:
   - rtpHarry
   - FdezRomero
@@ -114,7 +114,7 @@ By default, when an app is viewed in the browser, Ionic will apply the `md` mode
 
 > However, this will not change how the browser sees which platform is currently being used. Platform is determined by device detection and inspecting the user-agent. So to change the platform, the user-agent must be changed. To do this, open up Chrome DevTools with <kbd>Ctrl+Shift+I</kbd>(<kbd>Cmd+Option+I</kbd> on Mac), and then toggle device mode on with <kbd>Ctrl+Shift+M</kbd>(<kbd>Cmd+Option+M</kbd> on Mac).
 
-![app with a different mode](/docs/assets/img/faq/tips/change-device-platform.png)
+![app with a different mode](/assets/img/faq/tips/change-device-platform.png)
 
 Selecting devices from the device dropdown will change the user-agent, as well as the dimensions of the viewport.
 
@@ -124,7 +124,7 @@ The iOS simulator enables testing and debugging of an app before it reaches an a
 
 Before it can be used, [Xcode](https://developer.apple.com/xcode/download/), Apple's IDE, must be installed.
 
-The [Ionic CLI](/docs/cli) can then be used to run the app in the current directory on the simulator:
+The [Ionic CLI](/cli) can then be used to run the app in the current directory on the simulator:
 
 ```shell
 $ alitacordova emulate ios -lc

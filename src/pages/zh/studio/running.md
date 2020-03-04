@@ -13,7 +13,7 @@ Serving, running, and deploying each have pros and cons.
 
 ## Serving Apps
 
-When an app is served, Ionic Studio starts a Dev Server with [Live Reload](/docs/faq/glossary#livereload) and displays the app in a separate browser window, called a *Serve Window*.
+When an app is served, Ionic Studio starts a Dev Server with [Live Reload](/faq/glossary#livereload) and displays the app in a separate browser window, called a *Serve Window*.
 
 To serve an app, click the Play button in the upper right-hand corner of Ionic Studio. Then choose *Serve* from the dropdown.
 
@@ -24,7 +24,7 @@ This will compile the app and then watch for changes in source files. When chang
 After compilation, the app is opened inside a Serve Window.
 
 <figure class="device">
-  <img alt="Serve Window" src="/docs/assets/img/studio/ss-serve-window.png" />
+  <img alt="Serve Window" src="/assets/img/studio/ss-serve-window.png" />
 </figure>
 
 The Serve Window toolbar offers features such as changing the device viewport, switching between portrait and landscape orientation, reloading the webview, and opening the DevTools for debugging.
@@ -40,26 +40,26 @@ Clicking the debug button will open a proper instance of the Chrome DevTools for
 For information on how to use the Chrome DevTools, see the [Chrome DevTools documentation](https://developers.google.com/web/tools/chrome-devtools/).
 
 <figure>
-  <img alt="Chrome DevTools" src="/docs/assets/img/studio/ss-devtools.png" />
+  <img alt="Chrome DevTools" src="/assets/img/studio/ss-devtools.png" />
 </figure>
 
 ## Running Apps
 
 <blockquote>
-Since running an app will install it on an actual native device, some additional setup is required. See the <a href="/docs/studio/native">Native iOS & Android</a> documentation for setup guides.
+Since running an app will install it on an actual native device, some additional setup is required. See the <a href="/studio/native">Native iOS & Android</a> documentation for setup guides.
 </blockquote>
 
 To run an app, click the Play button in the upper right-hand corner of Ionic Studio. Then choose *Run* from the dropdown.
 
 <figure>
-  <img alt="Run Modal" src="/docs/assets/img/studio/ss-run-modal.png" />
+  <img alt="Run Modal" src="/assets/img/studio/ss-run-modal.png" />
 </figure>
 
 Choose a platform and a target device, which can be an emulator or hardware device plugged in to your computer.
 
 With the Live Reload option, Ionic Studio will use the same Dev Server as in *Serve*, which enables quick development while working with actual devices.
 
-To debug running apps, see the docs for debugging [iOS Apps](/docs/building/ios#debugging-ios-apps) and [Android Apps](/docs/building/android#debugging-android-apps).
+To debug running apps, see the docs for debugging [iOS Apps](/building/ios#debugging-ios-apps) and [Android Apps](/building/android#debugging-android-apps).
 
 ## Installing Apps
 

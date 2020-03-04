@@ -3,7 +3,7 @@ title: Ionic React
 renderTitle: false
 tableOfContents: false
 meta:
-  image: /docs/assets/img/meta/open-graph.png
+  image: /assets/img/meta/open-graph.png
   description: Ionic是一个针对网页开发者的应用平台。 使用一套共享的代码基础和开放的网络标准来构建非常棒的移动端、网页端和电脑端应用
 ---
 
@@ -20,7 +20,7 @@ meta:
   </div>
 
   <div class="pull-right">
-  <img src="/docs/assets/img/frameworks/react-logo.png" />
+  <img src="/assets/img/frameworks/react-logo.png" />
   </div>
 </div>
 
@@ -39,12 +39,12 @@ It's everything you need to ship award-winning apps for any platform, with React
 
 Choose from over 100 beautiful, mobile-ready UI components, animations, and gestures, lightweight and customized to fit your brand.
 
-[Explore UI components](/docs/components)
+[Explore UI components](/components)
 
 </div>
 
 <div class="pull-right">
-  <img src="/docs/assets/icons/feature-guide-components-icon.png" />
+  <img src="/assets/icons/feature-guide-components-icon.png" />
 </div>
 
 </div>
@@ -55,13 +55,13 @@ Choose from over 100 beautiful, mobile-ready UI components, animations, and gest
 
 ## Familiar tooling
 
-Ionic React projects are just like React projects, leveraging [react-dom](https://reactjs.org/docs/react-dom.html) and with setup normally found in a [Create React App (CRA)](https://github.com/facebook/create-react-app) app. For [routing and navigation](/docs/react/navigation), React Router is used under the hood.
+Ionic React projects are just like React projects, leveraging [react-dom](https://reactjs.org/react-dom.html) and with setup normally found in a [Create React App (CRA)](https://github.com/facebook/create-react-app) app. For [routing and navigation](/react/navigation), React Router is used under the hood.
 Compatible with React version 16.8 and above.
 
 </div>
 
 <div class="pull-right">
-  <img src="/docs/assets/img/frameworks/react-cli.png" class="cli" />
+  <img src="/assets/img/frameworks/react-cli.png" class="cli" />
 </div>
 
 </div>
@@ -77,7 +77,7 @@ Deploy your Ionic React projects to native iOS, Android, Electron, and the web a
 </div>
 
 <div class="pull-right">
-  <img src="/docs/assets/img/native-platforms/group-shot.png" />
+  <img src="/assets/img/native-platforms/group-shot.png" />
 </div>
 
 </div>
@@ -93,7 +93,7 @@ At the end of the day, it's just React. Ionic React uses open web standards and 
   </div>
 
   <div class="pull-right">
-    <img src="/docs/assets/img/frameworks/react.svg" />
+    <img src="/assets/img/frameworks/react.svg" />
   </div>
 
 </div>
@@ -107,16 +107,16 @@ At the end of the day, it's just React. Ionic React uses open web standards and 
 
 ## 资源
 
-<docs-cards> <docs-card header="Getting Started" href="/docs/react/your-first-app" icon="/docs/assets/icons/feature-component-actionsheet-icon.png"> <p>Learn the fundamentals you need to know to start building amazing apps with Ionic Framework.</p>
+<docs-cards> <docs-card header="Getting Started" href="/react/your-first-app" icon="/assets/icons/feature-component-actionsheet-icon.png"> <p>Learn the fundamentals you need to know to start building amazing apps with Ionic Framework.</p>
   </docs-card>
 
-  <docs-card header="Add Ionic to Existing React App" href="https://dev.to/ionic/adding-ionic-react-to-an-existing-react-project-4kib" icon="/docs/assets/icons/logo-react-icon.png"> <p>使用单独组件或完整的应用程序体验。</p>
+  <docs-card header="Add Ionic to Existing React App" href="https://dev.to/ionic/adding-ionic-react-to-an-existing-react-project-4kib" icon="/assets/icons/logo-react-icon.png"> <p>使用单独组件或完整的应用程序体验。</p>
   </docs-card>
 
-  <docs-card header="Navigation" href="/docs/react/navigation" icon="/docs/assets/icons/feature-component-navigation-icon.png"> <p>在Ionic 和 React 路由器学习您应用内导航</p>
+  <docs-card header="Navigation" href="/react/navigation" icon="/assets/icons/feature-component-navigation-icon.png"> <p>在Ionic 和 React 路由器学习您应用内导航</p>
   </docs-card>
 
-  <docs-card header="Lifecycle" href="/docs/react/lifecycle" icon="/docs/assets/icons/feature-guide-components-icon.png"> <p>在类组件和钩子中学习如何使用Ionic生命周期事件</p>
+  <docs-card header="Lifecycle" href="/react/lifecycle" icon="/assets/icons/feature-guide-components-icon.png"> <p>在类组件和钩子中学习如何使用Ionic生命周期事件</p>
   </docs-card>
 
 

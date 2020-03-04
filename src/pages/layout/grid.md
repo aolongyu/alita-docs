@@ -2,9 +2,9 @@
 initialTab: '预览'
 inlineHtmlPreviews: true
 previousText: '构造'
-previousUrl: '/docs/layout/structure'
+previousUrl: '/layout/structure'
 nextText: '全局样式'
-nextUrl: '/docs/layout/global-stylesheets'
+nextUrl: '/layout/global-stylesheets'
 contributors:
   - brandyscarney
 ---
@@ -13,7 +13,7 @@ contributors:
 
 # 响应式网格
 
-网格是一个强大的移动端优先的弹性盒子系统，用于构建自定义布局。 它由三个单位组成：一个 [格子](/docs/api/grid), [行](/docs/api/row) 和 [列(s)](/docs/api/col)。 列将展开以填充它们的行，并将调整大小以适应额外的列。 它基于12列布局，基于屏幕大小不同的断点。 可以使用 CSS 自定义列数。
+网格是一个强大的移动端优先的弹性盒子系统，用于构建自定义布局。 它由三个单位组成：一个 [格子](/api/grid), [行](/api/row) 和 [列(s)](/api/col)。 列将展开以填充它们的行，并将调整大小以适应额外的列。 它基于12列布局，基于屏幕大小不同的断点。 可以使用 CSS 自定义列数。
 
 ## 如何运行
 
@@ -45,7 +45,7 @@ contributors:
 - ` size-{breakpoint}` 属性表示每行默认的12列数。 所以, `size="4"` 可以添加到列中, 以便占用格子的1/3, 或 12 列中的4。
 - 没有大小值的列将自动具有相同的宽度。 例如，对于小断点和小断点来说， `size-sm` 的四个实例都会自动宽度为 25%。
 - 列宽度以百分比设置，因此它们总是相对于其父元素是流动的和变换大小的。
-- Columns have padding between individual columns, however, the padding can be removed from the grid and columns by adding the `ion-no-padding` class to the grid. See the [CSS Utilities](/docs/layout/css-utilities) for more styles that can be applied to the grid.
+- Columns have padding between individual columns, however, the padding can be removed from the grid and columns by adding the `ion-no-padding` class to the grid. See the [CSS Utilities](/layout/css-utilities) for more styles that can be applied to the grid.
 - There are five grid tiers, one for each responsive breakpoint: all breakpoints (extra small), small, medium, large, and extra large.
 - Grid tiers are based on minimum widths, meaning they apply to their tier and all those larger than them (e.g., `size-sm="4"` applies to small, medium, large, and extra large devices).
 - Grids can easily be customized via CSS variables. See [customizing the grid](#customizing-the-grid).
@@ -74,7 +74,7 @@ The grid takes up the entire width of the screen by default. This can be modifie
 
 ## 默认断点
 
-下面的表格中定义了默认断点。 目前无法自定义断点。 欲了解更多关于为什么不能定制的信息，请在媒体查询中查看 [变量](/docs/theming/advanced#variables-in-media-queries)。
+下面的表格中定义了默认断点。 目前无法自定义断点。 欲了解更多关于为什么不能定制的信息，请在媒体查询中查看 [变量](/theming/advanced#variables-in-media-queries)。
 
 | 名称 | 值      | 宽度前缀       | Offset Prefix | Push Prefix | 下拉前缀       | 说明                                   |
 | -- | ------ | ---------- | ------------- | ----------- | ---------- | ------------------------------------ |
@@ -376,7 +376,7 @@ Push and pull can also be added based on screen breakpoints. In the following ex
 
 ### Vertical alignment
 
-All columns can be vertically aligned inside of a row by adding different classes to the row. For a list of available classes, see [css utilities](/docs/layout/css-utilities#flex-container-properties).
+All columns can be vertically aligned inside of a row by adding different classes to the row. For a list of available classes, see [css utilities](/layout/css-utilities#flex-container-properties).
 
 ```html
 <ion-grid>
@@ -460,7 +460,7 @@ All columns can be vertically aligned inside of a row by adding different classe
 </ion-grid>
 ```
 
-Columns can also align themselves differently than other columns by adding the alignment class directly to the column. For a list of available classes, see [css utilities](/docs/layout/css-utilities#flex-item-properties).
+Columns can also align themselves differently than other columns by adding the alignment class directly to the column. For a list of available classes, see [css utilities](/layout/css-utilities#flex-item-properties).
 
 ```html
 <ion-grid>
@@ -494,7 +494,7 @@ Columns can also align themselves differently than other columns by adding the a
 
 ### Horizontal alignment
 
-All columns can be horizontally aligned inside of a row by adding different classes to the row. For a list of available classes, see [css utilities](/docs/layout/css-utilities#flex-container-properties).
+All columns can be horizontally aligned inside of a row by adding different classes to the row. For a list of available classes, see [css utilities](/layout/css-utilities#flex-container-properties).
 
 ```html
 <ion-grid>

@@ -1,8 +1,8 @@
 ---
 previousText: 'Overview'
-previousUrl: '/docs/react/overview'
+previousUrl: '/react/overview'
 nextText: 'Build Your First App'
-nextUrl: '/docs/react/your-first-app'
+nextUrl: '/react/your-first-app'
 ---
 
 # Intro Ionic React Quickstart
@@ -90,7 +90,7 @@ The next import is from `react-router-dom`. We're importing Route, which is how 
 
 Following ReactRouter, we next have our first imports for Ionic. To use a component in React, you must first import it. So for Ionic, this means anytime we want to use a Button or a Card, it must be added to our imports. In the case of our App component, we're only using `IonApp`, `IonRouterOutlet`, and `IonReactRouter`.
 
-`IonReactRouter` is a component that wraps ReactRouter’s BrowserRouter component. It more or less behaves the same as BrowserRouter with a few differences. We have a deeper guide that goes over these differences in our [React Navigation Docs](/docs/react/navigation).
+`IonReactRouter` is a component that wraps ReactRouter’s BrowserRouter component. It more or less behaves the same as BrowserRouter with a few differences. We have a deeper guide that goes over these differences in our [React Navigation Docs](/react/navigation).
 
 The last important import is the `Home` component import. This is a component that we will be able to navigate to in our app. We'll look at the navigation part a bit later.
 
@@ -121,7 +121,7 @@ Now the `App` does not really have a lot to modify here. It's a basic example of
 
 Currently, the `Home` component looks like so:
 
-![React home component](/docs/assets/img/guides/react/first-app/home-route.png)
+![React home component](/assets/img/guides/react/first-app/home-route.png)
 
 ```typescript
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
@@ -142,7 +142,7 @@ const Home: React.FC = () => {
           <a
             target="_blank"
             rel="noopener"
-            href="https://ionicframework.com/docs/"
+            href="https://ionicframework.com/"
           >
             docs
           </a>{' '}
@@ -366,9 +366,9 @@ alitacap open ios
 alitacap open android
 ```
 
-Additional details can be found [here](https://capacitor.ionicframework.com/docs/getting-started/with-ionic).
+Additional details can be found [here](https://capacitor.ionicframework.com/getting-started/with-ionic).
 
-Next, check out [all the APIs](https://capacitor.ionicframework.com/docs/apis) that are available. There’s some great stuff, including the [Camera API](https://capacitor.ionicframework.com/docs/apis/camera). We can implement photo capture functionality in just a few lines of code:
+Next, check out [all the APIs](https://capacitor.ionicframework.com/apis) that are available. There’s some great stuff, including the [Camera API](https://capacitor.ionicframework.com/apis/camera). We can implement photo capture functionality in just a few lines of code:
 
 ```typescript
 import { IonContent, IonHeader, IonPage, IonTitle,
@@ -407,8 +407,8 @@ export default Home;
 
 ## Where to go from here
 
-This guide covered the basics of creating an Ionic React app, adding some basic navigation, and introducing Capacitor as a way of building native apps. To dive deeper into building complete Ionic apps with React and Capacitor, follow our [First App guide](/docs/react/your-first-app).
+This guide covered the basics of creating an Ionic React app, adding some basic navigation, and introducing Capacitor as a way of building native apps. To dive deeper into building complete Ionic apps with React and Capacitor, follow our [First App guide](/react/your-first-app).
 
-For a more detailed look at Ionic’s components, check out the [component API pages](https://ionicframework.com/docs/components). For more details on React, review the [React Docs](https://reactjs.org/). To keep building native features, see the [Capacitor docs](https://capacitor.ionicframework.com/docs/).
+For a more detailed look at Ionic’s components, check out the [component API pages](https://ionicframework.com/components). For more details on React, review the [React Docs](https://reactjs.org/). To keep building native features, see the [Capacitor docs](https://capacitor.ionicframework.com/).
 
 Happy app building! 🎉

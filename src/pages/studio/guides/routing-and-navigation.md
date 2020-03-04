@@ -5,7 +5,7 @@
 
 A key part of developing Ionic apps is setting up routing and ensuring fluid navigation between pages.
 
-The Ionic Framework docs have a [great primer](/docs/angular/navigation) on Angular routing and navigation.
+The Ionic Framework docs have a [great primer](/angular/navigation) on Angular routing and navigation.
 
 ## Quick Tips
 
@@ -16,7 +16,7 @@ The following tips assume you already know the basics about Angular routing.
 When you add a new Page in Ionic Studio, it is automatically added to the routing configuration inside of `app-routing.module.ts`.
 
 <figure>
-  <img alt="Page added to App Routing Module" src="/docs/assets/img/studio/ss-page-routing-module.png" />
+  <img alt="Page added to App Routing Module" src="/assets/img/studio/ss-page-routing-module.png" />
 </figure>
 
 If you'd like to change where this page is "located", you might want to move the Route into a different routing or module file.

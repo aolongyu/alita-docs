@@ -1,6 +1,6 @@
 ---
 nextText: '核心概念'
-nextUrl: '/docs/intro/concepts'
+nextUrl: '/intro/concepts'
 ---
 
 # Alita 框架是什么？
@@ -9,7 +9,7 @@ nextUrl: '/docs/intro/concepts'
 
 由此，Alita应运而生，它的出现基于对开发者提效减负的初衷，是一套基于Umi的移动端框架，是面向场景化的开发提效方案。通过整合业务流程、简化技术开发，使得开发者能够更专注于业务能力的提升。
 
-![step 1](/docs/assets/img/intro/intro01.jpg)
+![step 1](/assets/img/intro/intro01.jpg)
 
 随着这几年前端工程化的发展，更多更复杂的业务被交到前端开发工程师的手上。前端开发已不仅仅是编写样式和逻辑代码。而是要涉及到更多前端代码的可靠性，可维护性，可扩展性还有应用的性能和开发效率等各个方面的思考。
 
@@ -21,13 +21,13 @@ nextUrl: '/docs/intro/concepts'
 * “路由配置”：路由配置如何编写，如何嵌套，多人维护同一份配置文件，代码冲突如何有效规避？
 * “整体布局”：某些页面需要底部导航，某些页面需要顶部导航，该写在哪？
 
-![step 2](/docs/assets/img/intro/intro02.jpg)
+![step 2](/assets/img/intro/intro02.jpg)
 
 随着业界的不断发展和新技术的不断涌现，越来越多的开发者开始注重自身的开发体验。带着这样的终极目标，Alita开始逐步探索低门槛、高性能、易拓展、高效率的开发与维护方案，通过可插拔的特性，提升开发者体验，让开发者更多地专注于项目本身。并且提供大量的快速业务支撑方案，释放开发者在业务上的压力。
 
-![banner](/docs/assets/img/intro/banner01.jpg)
+![banner](/assets/img/intro/banner01.jpg)
 
-![step 3](/docs/assets/img/intro/intro03.jpg)
+![step 3](/assets/img/intro/intro03.jpg)
 
 基于组件化开发思想，众所周知，将页面拆成合适的组件，会使代码更加可读和可维护，也使得组件复用更加的便利。由此，我们将项目分解成多个独立的页面，使得开发项目通常更容易维护，这消除了很多意料之外的页面交互，大大的降低项目的复杂度。
 
@@ -35,7 +35,7 @@ nextUrl: '/docs/intro/concepts'
 
 针对不同的业务场景，通过封装一整套解决方案的方式来支撑，使得开发者用最少的精力和最小的学习成本编写最简的代码来实现最健壮的功能。
 
-![step 4](/docs/assets/img/intro/intro04.jpg)
+![step 4](/assets/img/intro/intro04.jpg)
 
 通过统一技术框架，达到多个项目基础技术栈的同步。
 
@@ -45,7 +45,7 @@ nextUrl: '/docs/intro/concepts'
 
 通过多个项目的共同沉淀，导出前端开发的最佳实践方案。还可以针对特定业务线，整理出更加合适的垂直领域的个性化项目构建体系。
 
-![step 5](/docs/assets/img/intro/intro05.jpg)
+![step 5](/assets/img/intro/intro05.jpg)
 
 对于业务和功能的封装，alita都以“能不能只写一行代码就实现”的角度去设计和思考。针对当前业务上遇到的难题，抛弃“以后可能有的需求”的思想，进行针对性封装，在实践中遇难题解决难题，对组件进行扩展升级。同时alita具备导出升级方案，在实际项目中使用一行代码解决业务需求的组件。
 

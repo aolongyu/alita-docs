@@ -21,7 +21,7 @@ export class DocsPage {
   @Watch('path')
   fetchPage(path, oldPath?) {
     if (path == null || path === oldPath) return;
-    path = /^\/docs\/pages\/[a-z]{2}\.json$/.test(path)
+    path = /^\/pages\/[a-z]{2}\.json$/.test(path)
       ? path.replace('.json', '/index.json')
       : path;
     return fetch(path)
@@ -84,7 +84,7 @@ export class DocsPage {
 
     // Title
     const getTitle = () => {
-      const suffix = /^\/docs\/pages\/appflow.*$/.test(this.path) ?
+      const suffix = /^\/pages\/appflow.*$/.test(this.path) ?
         'Ionic Appflow Documentation' : 'Ionic Documentation';
       // Favor meta title, else go with auto-title. fallback to generic title
       return meta.title || title ? `${title} - ${suffix}` : suffix;
@@ -94,7 +94,7 @@ export class DocsPage {
 
     // Canonical URL
     updateMeta(metaEls.url, oldVal => {
-      const uri = '\/docs\/';
+      const uri = '\/';
       let path = location.pathname.split(uri)[1];
       if (path === undefined) {
         path = '';
@@ -108,7 +108,7 @@ export class DocsPage {
 
     // Sharing Image
     updateMeta(metaEls.image, () => meta.image ||
-      'https://ionicframework.com/docs/assets/img/meta/open-graph.png');
+      'https://ionicframework.com/assets/img/meta/open-graph.png');
   }
 
   hostData() {

@@ -2,9 +2,9 @@
 initialTab: 'preview'
 inlineHtmlPreviews: true
 previousText: 'Responsive Grid'
-previousUrl: '/docs/layout/grid'
+previousUrl: '/layout/grid'
 nextText: 'CSS Utilities'
-nextUrl: '/docs/layout/css-utilities'
+nextUrl: '/layout/css-utilities'
 contributors:
   - brandyscarney
 ---

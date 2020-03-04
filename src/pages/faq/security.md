@@ -1,8 +1,8 @@
 ---
 previousText: 'CORS Errors'
-previousUrl: '/docs/faq/cors'
+previousUrl: '/faq/cors'
 nextText: 'Developer Tips'
-nextUrl: '/docs/faq/tips'
+nextUrl: '/faq/tips'
 disableHtmlPreviews: true
 contributors:
   - liamdebeasi
@@ -50,7 +50,7 @@ const element = <a href={userInput}>Click Me!</a>
 
 If the developer needs to achieve more comprehensive sanitization, they can use the [sanitize-html](https://www.npmjs.com/package/sanitize-html) package.
 
-To learn more about the built-in protections that React and JSX provide, see the [React JSX Documentation](https://reactjs.org/docs/introducing-jsx.html#jsx-prevents-injection-attacks).
+To learn more about the built-in protections that React and JSX provide, see the [React JSX Documentation](https://reactjs.org/introducing-jsx.html#jsx-prevents-injection-attacks).
 
 ### Vue
 

@@ -1,8 +1,8 @@
 ---
 previousText: '导航'
-previousUrl: '/docs/react/navigation'
+previousUrl: '/react/navigation'
 nextText: '平台'
-nextUrl: '/docs/react/platform'
+nextUrl: '/react/platform'
 ---
 
 # 配置

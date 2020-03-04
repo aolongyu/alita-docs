@@ -1,6 +1,6 @@
 ---
 nextText: '脚手架'
-nextUrl: '/docs/building/scaffolding'
+nextUrl: '/building/scaffolding'
 contributors:
   - dwieeb
 ---
@@ -31,7 +31,7 @@ contributors:
 
 ### 为什么要这么明确的区分项目类型？
 
-其实主要的是在编写 h5 的时候，我们会使用[自适应样式](/docs/intro/concepts)，而在 pc 项目中我们没做其他的操作，一切特性保持 Umi 的默认，你完全可以参照 ant-design-pro 去开发一个中后台应用。
+其实主要的是在编写 h5 的时候，我们会使用[自适应样式](/intro/concepts)，而在 pc 项目中我们没做其他的操作，一切特性保持 Umi 的默认，你完全可以参照 ant-design-pro 去开发一个中后台应用。
 
 ### 如果我新建了一个h5项目，怎么改成pc项目？
 
@@ -88,4 +88,4 @@ export default BasicLayout;
 + appType:'h5'
 ```
 
-改完这个应该就可以跑起来了。如果你需要布局或者其他，可以查看更多[组件](/docs/components)
+改完这个应该就可以跑起来了。如果你需要布局或者其他，可以查看更多[组件](/components)

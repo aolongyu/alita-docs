@@ -80,10 +80,10 @@ Get the device's current position.
 
 | Name               | Type                                      | Description                                                                                  |
 | ------------------ | ----------------------------------------- | -------------------------------------------------------------------------------------------- |
-| `Optional` options | [GeolocationOptions](#geolocationoptions) | The [geolocation options](https://developer.mozilla.org/en-US/docs/Web/API/PositionOptions). |
+| `Optional` options | [GeolocationOptions](#geolocationoptions) | The [geolocation options](https://developer.mozilla.org/en-US/Web/API/PositionOptions). |
 
 
-**Returns:** `Promise`<[Geoposition](#geoposition)> Returns a Promise that resolves with the [position](https://developer.mozilla.org/en-US/docs/Web/API/Position) of the device, or rejects with an error.
+**Returns:** `Promise`<[Geoposition](#geoposition)> Returns a Promise that resolves with the [position](https://developer.mozilla.org/en-US/Web/API/Position) of the device, or rejects with an error.
 
 * * *
 
@@ -110,10 +110,10 @@ subscription.unsubscribe();
 
 | Name               | Type                                      | Description                                                                                  |
 | ------------------ | ----------------------------------------- | -------------------------------------------------------------------------------------------- |
-| `Optional` options | [GeolocationOptions](#geolocationoptions) | The [geolocation options](https://developer.mozilla.org/en-US/docs/Web/API/PositionOptions). |
+| `Optional` options | [GeolocationOptions](#geolocationoptions) | The [geolocation options](https://developer.mozilla.org/en-US/Web/API/PositionOptions). |
 
 
-**Returns:** `Observable`<[Geoposition](#geoposition)> Returns an Observable that notifies with the [position](https://developer.mozilla.org/en-US/docs/Web/API/Position) of the device, or errors.
+**Returns:** `Observable`<[Geoposition](#geoposition)> Returns an Observable that notifies with the [position](https://developer.mozilla.org/en-US/Web/API/Position) of the device, or errors.
 
 * * *
 

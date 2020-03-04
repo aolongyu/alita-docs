@@ -6,8 +6,9 @@
       "src": "build.sh",
       "use": "@now/static-build",
       "config": {
-        "distDir": "www/docs/"
+        "distDir": "www/"
       }
     }
   ],
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }

@@ -1,8 +1,8 @@
 ---
 previousText: 'Build Your First App'
-previousUrl: '/docs/intro/first-app'
+previousUrl: '/intro/first-app'
 nextText: 'Browser Support'
-nextUrl: '/docs/intro/browser-support'
+nextUrl: '/intro/browser-support'
 contributors:
   - perrygovier
   - mhartington
@@ -52,10 +52,10 @@ There is a lot here, but it boils down to a few points for Ionic apps.
 
 Apps should be able to work offline. Whether that be displaying a proper "offline" message or caching app data for display purpose.
 
-#### <a href="https://developer.mozilla.org/en-US/docs/Web/Manifest" target="_blank">Web App Manifest</a>
+#### <a href="https://developer.mozilla.org/en-US/Web/Manifest" target="_blank">Web App Manifest</a>
 
 An app manifest file should describe the resources your app will need. This includes your app's displayed name, icons, as well as splash screen. If you link to the manifest file in your index.html, browsers will detect that and load the resources for you.
 
-#### <a href="https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API" target="_blank">Service Worker</a>
+#### <a href="https://developer.mozilla.org/en-US/Web/API/Service_Worker_API" target="_blank">Service Worker</a>
 
 Service worker could be mentioned in Offline Support, but it really deserves its own section. Service worker provides a programmatic way to cache app resources. Be it JavaScript files or JSON data from a HTTP request. The programmatic API allows developers to decide how to handle caching and provides a much more flexible experience than other options.

@@ -12,7 +12,7 @@ Click `Assign to App`, then `New App`. Enter a name, then click `Create App`.
 
 Hover over a Native Plugin Key, then click to copy it to your clipboard:
 
-![test](/docs/assets/img/native/native-setup-keys.png)
+![test](/assets/img/native/native-setup-keys.png)
 
 Next, open up a terminal on your computer.
 
@@ -58,19 +58,19 @@ Install Cordova into your project by adding the native platform(s) of choice, th
 
 ### Capacitor
 
-If you don't have Capacitor installed into your Ionic project, follow [the instructions here](https://capacitor.ionicframework.com/docs/getting-started/with-ionic) first. Next, install your plugin of choice and sync the project:
+If you don't have Capacitor installed into your Ionic project, follow [the instructions here](https://capacitor.ionicframework.com/getting-started/with-ionic) first. Next, install your plugin of choice and sync the project:
 
 <command-line> <command-prompt>npm install @ionic-enterprise/plugin-name</command-prompt> <command-prompt>npx cap sync</command-prompt> </command-line>
 
 #### Update Native Project Configuration
 
-Some Ionic Native solutions require updating the native project configuration file (such as the iOS' [Info.plist](https://capacitor.ionicframework.com/docs/ios/configuration/) or Android's [AndroidManifest.xml](https://capacitor.ionicframework.com/docs/android/configuration)) before they can be used. You'll find these configurations on each solution's Capacitor installation details.
+Some Ionic Native solutions require updating the native project configuration file (such as the iOS' [Info.plist](https://capacitor.ionicframework.com/ios/configuration/) or Android's [AndroidManifest.xml](https://capacitor.ionicframework.com/android/configuration)) before they can be used. You'll find these configurations on each solution's Capacitor installation details.
 
 To make these one-time manual changes, either use the native tools (Xcode, Android Studio) or edit the config files by hand. From the root directory of your Capacitor project:
 
 - To edit `Info.plist`, navigate to `iOS` -> `App` -> `App` -> `Info.plist`.
 - To edit `AndroidManifest.xml`, navigate to `android` -> `app` -> `src` -> `main` -> `AndroidManifest.xml`.
 
-That's it! Time to add Ionic Native plugins to your app. There's lots to choose from, including [authentication](/docs/enterprise/auth-connect), [biometric security](/docs/enterprise/identity-vault), [offline storage](/docs/enterprise/offline-storage), or one of the [common device features](/docs/enterprise/camera).
+That's it! Time to add Ionic Native plugins to your app. There's lots to choose from, including [authentication](/enterprise/auth-connect), [biometric security](/enterprise/identity-vault), [offline storage](/enterprise/offline-storage), or one of the [common device features](/enterprise/camera).
 
-After you've added a plugin or two, continue building your app using Ionic Framework [UI components](/docs/components).
+After you've added a plugin or two, continue building your app using Ionic Framework [UI components](/components).

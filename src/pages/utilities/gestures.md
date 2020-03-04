@@ -2,7 +2,7 @@
 previousText: ''
 previousUrl: ''
 nextText: 'Platform'
-nextUrl: '/docs/utilities/platform'
+nextUrl: '/utilities/platform'
 ---
 
 # Gestures
@@ -294,7 +294,7 @@ In the example above, we want to be able to detect double clicks on an element. 
 
 ## Gesture Animations
 
-See our guide on implementing gesture animations: [Gesture Animations with Ionic Animations](/docs/utilities/animations#gesture-animations)
+See our guide on implementing gesture animations: [Gesture Animations with Ionic Animations](/utilities/animations#gesture-animations)
 
 ## Browser Support
 
@@ -325,7 +325,7 @@ See our guide on implementing gesture animations: [Gesture Animations with Ionic
 | direction       | `'x' \| 'y' \| undefined`                         | `'x'`       | Limit gesture detection to movements along a certain axis.                                                                                                                                                                                                                                                              |
 | gestureName     | `string`                                            | `undefined` | The name of the gesture to create.                                                                                                                                                                                                                                                                                      |
 | gesturePriority | `number \| undefined`                              | `0`         | Gestures with higher priorities will override gestures with lower priorities. Useful for ensuring the multiple gestures do not collide with one another.                                                                                                                                                                |
-| passive         | `boolean \| undefined`                             | `true`      | If true, this will indicate that the gesture will never call `preventDefault()`. This can be used to improve scrolling performance. See [Passive Listeners](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#Improving_scrolling_performance_with_passive_listeners) for more information. |
+| passive         | `boolean \| undefined`                             | `true`      | If true, this will indicate that the gesture will never call `preventDefault()`. This can be used to improve scrolling performance. See [Passive Listeners](https://developer.mozilla.org/en-US/Web/API/EventTarget/addEventListener#Improving_scrolling_performance_with_passive_listeners) for more information. |
 | maxAngle        | `number \| undefined`                              | `40`        | The maximum angle to allow when detecting a gesture.                                                                                                                                                                                                                                                                    |
 | threshold       | `number \| undefined`                              | `10`        | Defines how much a pointer must move before the gesture kicks in.                                                                                                                                                                                                                                                       |
 | canStart        | `GestureCallback \| undefined`                     | `undefined` | A callback that returns true if a gesture is allowed to start.                                                                                                                                                                                                                                                          |
@@ -350,7 +350,7 @@ See our guide on implementing gesture animations: [Gesture Animations with Ionic
 | deltaX         | `number`            | How much the gesture has moved on the x axis since it started.                                                                            |
 | deltaY         | `number`            | How much the gesture has moved on the y axis since it started.                                                                            |
 | timeStamp      | `number`            | The current timestamp of the gesture.                                                                                                     |
-| event          | `UIEvent`           | The native event dispatched by the browser. See [UIEvent](https://developer.mozilla.org/en-US/docs/Web/API/UIEvent) for more information. |
+| event          | `UIEvent`           | The native event dispatched by the browser. See [UIEvent](https://developer.mozilla.org/en-US/Web/API/UIEvent) for more information. |
 | data           | `any \| undefined` | Any data specified by the user. This can be set and read in any of the callbacks.                                                         |
 
 ## Methods

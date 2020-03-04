@@ -37,12 +37,12 @@ export class DocsHeader {
     return [
       <docs-dropdown label={section}>
         <section>
-          <stencil-route-link url="/docs/">
+          <stencil-route-link url="/">
             Alita 2 {section === "Framework" ? <Checkmark /> : null}
           </stencil-route-link>
-          {/* <stencil-route-link url="/docs/appflow">Appflow {section === 'Appflow' ? <Checkmark/> : null}</stencil-route-link>
+          {/* <stencil-route-link url="/appflow">Appflow {section === 'Appflow' ? <Checkmark/> : null}</stencil-route-link>
           <a href="https://capacitor.ionicframework.com">Capacitor</a>
-          <stencil-route-link url="/docs/studio">Studio {section === 'Studio' ? <Checkmark/> : null}</stencil-route-link> */}
+          <stencil-route-link url="/studio">Studio {section === 'Studio' ? <Checkmark/> : null}</stencil-route-link> */}
         </section>
         {section === "Framework" ? (
           <section>
@@ -56,34 +56,34 @@ export class DocsHeader {
       section === "Framework" ? (
         <div class="SectionNav-tabs">
           <stencil-route-link
-            url="/docs/"
+            url="/"
             // urlMatch={[
-            //   /^\/docs(?!\/(api|components|cli|native|enterprise|config)).*$/
+            //   /^(?!\/(api|components|cli|native|enterprise|config)).*$/
             // ]}
             urlMatch={[
-              /^\/docs(?!\/(api|components|cli|enterprise|config)).*$/
+              /^(?!\/(api|components|cli|enterprise|config)).*$/
             ]}
           >
             {l10n.getString("header-guide")}
           </stencil-route-link>
           <stencil-route-link
-            url="/docs/config/config"
-            urlMatch={["/docs/config/config", "/docs/config/runtime"]}
+            url="/config/config"
+            urlMatch={["/config/config", "/config/runtime"]}
           >
             {l10n.getString("header-config")}
           </stencil-route-link>
           <stencil-route-link
-            url="/docs/components/alita-layout"
-            urlMatch={["/docs/api", "/docs/components"]}
+            url="/components/alita-layout"
+            urlMatch={["/api", "/components"]}
           >
             {l10n.getString("header-components")}
           </stencil-route-link>
-          {/* <stencil-route-link url="/docs/cli">
+          {/* <stencil-route-link url="/cli">
             {l10n.getString("header-cli")}
           </stencil-route-link> */}
           {/* <stencil-route-link
-            url="/docs/native"
-            urlMatch={["/docs/native", "/docs/enterprise"]}
+            url="/native"
+            urlMatch={["/native", "/enterprise"]}
           >
             {l10n.getString("header-native")}
           </stencil-route-link> */}
@@ -99,17 +99,17 @@ export class DocsHeader {
       <header>
         <docs-menu-toggle onClick={this.onToggleClick} />
 
-        <stencil-route-link url="/docs/">
+        <stencil-route-link url="/">
           <Logo class="HeaderLogo" />
         </stencil-route-link>
 
         <header-mobile-collapse>
           <nav class="SectionNav">
             <stencil-route-switch>
-              {/* <stencil-route url="/docs/appflow">
+              {/* <stencil-route url="/appflow">
                 {this.renderMenu('Appflow')}
               </stencil-route>
-              <stencil-route url="/docs/studio">
+              <stencil-route url="/studio">
                 {this.renderMenu('Studio')}
               </stencil-route> */}
               <stencil-route>{this.renderMenu("Framework")}</stencil-route>
@@ -134,7 +134,7 @@ export class DocsHeader {
                 <a href="https://spectrum.chat/ionic" target="_blank">Spectrum</a>
                 <a href="https://www.meetup.com/topics/ionic-framework/" target="_blank">Meetups</a> */}
                 {getString("dingtalk")}
-                <img src="/docs/assets/qrcode/dingding.png" />
+                <img src="/assets/qrcode/dingding.png" />
               </section>
               <section
                 style={{
@@ -144,7 +144,7 @@ export class DocsHeader {
                 {/* <a href="https://blog.ionicframework.com/" target="_blank">Blog</a>
                 <a href="https://twitter.com/ionicframework" target="_blank">Twitter</a> */}
                 {getString("wechat")}
-                <img src="/docs/assets/qrcode/wechat.png" />
+                <img src="/assets/qrcode/wechat.png" />
               </section>
             </docs-dropdown>
             <docs-dropdown label={getString("header-support")} align="right">
@@ -182,7 +182,7 @@ export class DocsHeader {
             >
               <section>
                 <a
-                  href="https://alitajs.com/docs/zh/"
+                  href="https://alitajs.com/zh/"
                   class={!isEn ? "link-active" : ""}
                 >
                   中文
@@ -193,7 +193,7 @@ export class DocsHeader {
                   )}
                 </a>
                 <a
-                  href="https://alitajs.com/docs/"
+                  href="https://alitajs.com/"
                   target="_blank"
                   class={isEn ? "link-active" : ""}
                 >
@@ -210,10 +210,10 @@ export class DocsHeader {
               </section> */}
               {/* WIP Languages - included for pre-rendering, but hidden */}
               <div style={{ display: "none" }}>
-                <a href="/docs/zh">Chinese</a>
-                <a href="/docs/fr">French</a>
-                <a href="/docs/pt">Portuguese</a>
-                <a href="/docs/es">Spanish</a>
+                <a href="/zh">Chinese</a>
+                <a href="/fr">French</a>
+                <a href="/pt">Portuguese</a>
+                <a href="/es">Spanish</a>
               </div>
             </docs-dropdown>
             <a href="https://github.com/alitajs/alita" target="_blank">

@@ -1,6 +1,6 @@
 ---
 previousText: '配置'
-previousUrl: '/docs/react/config'
+previousUrl: '/react/config'
 ---
 
 # Platform Utils

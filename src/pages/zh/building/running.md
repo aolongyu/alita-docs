@@ -1,9 +1,9 @@
 ---
 previousText: '跨平台'
-previousUrl: '/docs/building/cross-platform'
+previousUrl: '/building/cross-platform'
 nextText: '在 iOS 上运行'
-nextUrl: '/docs/building/ios'
-demoUrl: '/docs/demos/alita-init-demo/index.html'
+nextUrl: '/building/ios'
+demoUrl: '/demos/alita-init-demo/index.html'
 demoSourceUrl: 'https://github.com/alitajs/alita-docs/tree/master/src/demos/alita-init-demo/index.html'
 ---
 
@@ -12,8 +12,8 @@ demoSourceUrl: 'https://github.com/alitajs/alita-docs/tree/master/src/demos/alit
 根据不同的平台和需求，我们有三种项目运行方式。
 
 * 在 Web 浏览器中本地运行
-* [在 iOS 上运行](/docs/building/ios)
-* [在 Android 上运行](/docs/building/android)
+* [在 iOS 上运行](/building/ios)
+* [在 Android 上运行](/building/android)
 
 ## 在 Web 浏览器中本地运行
 
@@ -51,4 +51,4 @@ Alita 最强大的功能之一是，你大多数应用程序开发都可以在�
 
 你可以在项目中更改代码，并且不需要重启服务，就能实时预览。
 
-当您准备在真实设备上进行测试时，请参见此处的 [iOS](/docs/building/ios) 和 [Android](/docs/building/android)。
+当您准备在真实设备上进行测试时，请参见此处的 [iOS](/building/ios) 和 [Android](/building/android)。

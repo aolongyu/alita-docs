@@ -62,12 +62,12 @@ import {
 接下来，初始化数据库：
 
 ```typescript
-/*  
-    Note about encryption: In a real-world app, the encryption key 
-    should not be hardcoded like it is here. One strategy is to 
-    auto generate a unique encryption key per user on initial app 
+/*
+    Note about encryption: In a real-world app, the encryption key
+    should not be hardcoded like it is here. One strategy is to
+    auto generate a unique encryption key per user on initial app
     load, then store it securely in the device's keychain for later
-    retrieval. Ionic's Identity Vault plugin is an option. Using 
+    retrieval. Ionic's Identity Vault plugin is an option. Using
     IV’s storage API, you can ensure that the key cannot be read
     or accessed without the user being authenticated first.
 */
@@ -384,7 +384,7 @@ let query = QueryBuilder
 
 #### Retrieve All Unique Values for One Column
 
-Retrieve all unique values in the database for one specific column of data. Useful for populating [dropdown controls](https://ionicframework.com/docs/api/select) as part of a search interface, for example.
+Retrieve all unique values in the database for one specific column of data. Useful for populating [dropdown controls](https://ionicframework.com/api/select) as part of a search interface, for example.
 
 ```typescript
 // Find all unique Hotel names, for example

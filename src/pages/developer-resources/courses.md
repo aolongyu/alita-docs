@@ -1,8 +1,8 @@
 ---
 previousText: 'Books'
-previousUrl: '/docs/developer-resources/books'
+previousUrl: '/developer-resources/books'
 nextText: 'Guides'
-nextUrl: '/docs/developer-resources/guides'
+nextUrl: '/developer-resources/guides'
 contributors:
   - walkingriver
 ---

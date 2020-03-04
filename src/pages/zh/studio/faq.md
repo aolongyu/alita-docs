@@ -7,7 +7,7 @@
 
 Ionic Studio currently supports apps using **Ionic 4** and **Angular**.
 
-Ionic 3 is not supported. We encourage you to [migrate to Ionic 4](https://ionicframework.com/docs/building/migration).
+Ionic 3 is not supported. We encourage you to [migrate to Ionic 4](https://ionicframework.com/building/migration).
 
 ## Is Capacitor supported?
 
@@ -22,5 +22,5 @@ Open up the page you'd like to use a component in, then navigate to the module t
 In this example, our component is called "MyCustomThing":
 
 <figure>
-  <img alt="My Custom Thing NgModule" src="/docs/assets/img/studio/ss-my-custom-thing-ngmodule.png" />
+  <img alt="My Custom Thing NgModule" src="/assets/img/studio/ss-my-custom-thing-ngmodule.png" />
 </figure>

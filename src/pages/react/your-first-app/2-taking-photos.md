@@ -1,17 +1,17 @@
 ---
 previousText: 'Your First App'
-previousUrl: '/docs/react/your-first-app'
+previousUrl: '/react/your-first-app'
 nextText: 'Saving Photos on Filesystem'
-nextUrl: '/docs/react/your-first-app/3-saving-photos'
+nextUrl: '/react/your-first-app/3-saving-photos'
 ---
 
 # Taking Photos with the Camera
 
-Now for the fun part - adding the ability to take photos with the device’s camera using the Capacitor [Camera API](https://capacitor.ionicframework.com/docs/apis/camera). We’ll begin with building it for the web, then make some small tweaks to make it work on mobile (iOS and Android).
+Now for the fun part - adding the ability to take photos with the device’s camera using the Capacitor [Camera API](https://capacitor.ionicframework.com/apis/camera). We’ll begin with building it for the web, then make some small tweaks to make it work on mobile (iOS and Android).
 
 To do so, we will create our own custom React hook that will manage the photos for the gallery.
 
-> If you are not familiar with React Hooks, [Introducing React Hooks](https://reactjs.org/docs/hooks-intro.html) from the official React docs is a good resource to start with.
+> If you are not familiar with React Hooks, [Introducing React Hooks](https://reactjs.org/hooks-intro.html) from the official React docs is a good resource to start with.
 
 Create a new file at `src/hooks/usePhotoGallery.ts` and open it up.
 
@@ -67,7 +67,7 @@ const Tab2: React.FC = () => {
 
 Save the file, and if you’re not already, restart the development server in your browser by running `alitaserve`. On the Photo Gallery tab, click the Camera button. If your computer has a webcam of any sort, a modal window appears. Take a selfie!
 
-![Camera API on the web](/docs/assets/img/guides/first-app-cap-ng/camera-web.png)
+![Camera API on the web](/assets/img/guides/first-app-cap-ng/camera-web.png)
 
 _(Your selfie is probably much better than mine)_
 
@@ -117,7 +117,7 @@ And back in the Tab2 component, get access to the photos:
 const { photos, takePhoto } = usePhotoGallery();
 ```
 
-With the photo(s) stored into the main array we can display the images on the screen. Add a [Grid component](https://ionicframework.com/docs/api/grid) so that each photo will display nicely as photos are added to the gallery, and loop through each photo in the Photos array, adding an Image component (`<IonImg>`) for each. Point the `src` (source) to the photo’s path:
+With the photo(s) stored into the main array we can display the images on the screen. Add a [Grid component](https://ionicframework.com/api/grid) so that each photo will display nicely as photos are added to the gallery, and loop through each photo in the Photos array, adding an Image component (`<IonImg>`) for each. Point the `src` (source) to the photo’s path:
 
 ```typescript
 <IonContent>

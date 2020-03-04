@@ -1,8 +1,8 @@
 ---
 previousText: 'Guides'
-previousUrl: '/docs/developer-resources/guides'
+previousUrl: '/developer-resources/guides'
 nextText: 'Tools'
-nextUrl: '/docs/developer-resources/tools'
+nextUrl: '/developer-resources/tools'
 ---
 
 # Community Posts

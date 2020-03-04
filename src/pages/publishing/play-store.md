@@ -1,8 +1,8 @@
 ---
 previousText: 'App Store'
-previousUrl: 'docs/publishing/app-store'
+previousUrl: '/publishing/app-store'
 nextText: 'Desktop Electron App'
-nextUrl: '/docs/publishing/desktop-app'
+nextUrl: '/publishing/desktop-app'
 ---
 
 # Android Play Store
@@ -53,7 +53,7 @@ To start, visit the [Google Play Store Developer Console](https://play.google.co
 
 Once a developer account has been created, go ahead and click the `Create an Application`
 
-![Create an App button](/docs/assets/img/publishing/newAppGPlay.png)
+![Create an App button](/assets/img/publishing/newAppGPlay.png)
 
 Be sure to fill out the description for the app along with providing screenshots and additional info. When ready, upload the signed release APK that was generated and publish the app.
 

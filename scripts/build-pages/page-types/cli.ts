@@ -18,7 +18,7 @@ async function getCLIPages(): Promise<Page[]> {
     return {
       title: name,
       body: renderMarkdown(description),
-      path: `/docs/cli/commands/${name.slice(6).replace(/\s/g, '-')}`,
+      path: `/cli/commands/${name.slice(6).replace(/\s/g, '-')}`,
       summary: renderMarkdown(summary),
       inputs: renderInputs(inputs),
       options: renderOptions(options),

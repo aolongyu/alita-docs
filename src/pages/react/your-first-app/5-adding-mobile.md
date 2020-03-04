@@ -1,8 +1,8 @@
 ---
 previousText: 'Loading Photos on Filesystem'
-previousUrl: '/docs/react/your-first-app/4-loading-photos'
+previousUrl: '/react/your-first-app/4-loading-photos'
 nextText: 'Deploying Mobile'
-nextUrl: '/docs/react/your-first-app/6-deploying-mobile'
+nextUrl: '/react/your-first-app/6-deploying-mobile'
 ---
 
 # Adding Mobile
@@ -36,7 +36,7 @@ const savePicture = async (photo: CameraPhoto, fileName: string) => {
 };
 ```
 
-Next, update the `getPhotoFile` method. When running on mobile, return the complete file path to the photo using the Filesystem API. When setting the `webviewPath`, use the special `Capacitor.convertFileSrc` method ([details here](https://ionicframework.com/docs/building/webview#file-protocol)). Replace the existing `getPhotoFile` function with:
+Next, update the `getPhotoFile` method. When running on mobile, return the complete file path to the photo using the Filesystem API. When setting the `webviewPath`, use the special `Capacitor.convertFileSrc` method ([details here](https://ionicframework.com/building/webview#file-protocol)). Replace the existing `getPhotoFile` function with:
 
 ```typescript
 const getPhotoFile = async (cameraPhoto: CameraPhoto, fileName: string): Promise<Photo> => {
@@ -48,14 +48,14 @@ const getPhotoFile = async (cameraPhoto: CameraPhoto, fileName: string): Promise
     });
 
     // Display the new image by rewriting the 'file://' path to HTTP
-    // Details: https://ionicframework.com/docs/building/webview#file-protocol
+    // Details: https://ionicframework.com/building/webview#file-protocol
     return {
       filepath: fileUri.uri,
       webviewPath: Capacitor.convertFileSrc(fileUri.uri),
     };
   }
   else {
-    // Use webPath to display the new image instead of base64 since it's 
+    // Use webPath to display the new image instead of base64 since it's
     // already loaded into memory
     return {
       filepath: fileName,
@@ -65,7 +65,7 @@ const getPhotoFile = async (cameraPhoto: CameraPhoto, fileName: string): Promise
 };
 ```
 
-Next, add a new bit of logic in the `loadSaved` function. On mobile, we can directly point to each photo file on the Filesystem and display them automatically. On the web, however, we must read each image from the Filesystem into base64 format, using a new `base64` property on the `Photo` object. This is because the Filesystem API uses [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) under the hood. Update the `loadSaved` function inside of `useEffect` to:
+Next, add a new bit of logic in the `loadSaved` function. On mobile, we can directly point to each photo file on the Filesystem and display them automatically. On the web, however, we must read each image from the Filesystem into base64 format, using a new `base64` property on the `Photo` object. This is because the Filesystem API uses [IndexedDB](https://developer.mozilla.org/en-US/Web/API/IndexedDB_API) under the hood. Update the `loadSaved` function inside of `useEffect` to:
 
 ```typescript
 const loadSaved = async () => {
@@ -93,7 +93,7 @@ set(PHOTO_STORAGE,
   isPlatform('hybrid')
     ? JSON.stringify(newPhotos)
     : JSON.stringify(newPhotos.map(p => {
-      // Don't save the base64 representation of the photo data, 
+      // Don't save the base64 representation of the photo data,
       // since it's already saved on the Filesystem
       const photoCopy = { ...p };
       delete photoCopy.base64;

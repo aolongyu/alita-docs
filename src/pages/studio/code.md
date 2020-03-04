@@ -10,7 +10,7 @@ Ionic Studio works alongside your code editor of choice to enable more complex d
 To launch your Studio app project in your editor of choice, navigate to the Designer index and click "Open in editor." Alternatively, the Project -> Open in Editor menu bar item may be used.
 
 <figure>
-  <img alt="New Feature Button" src="/docs/assets/img/studio/2/ss-designer-index.png" />
+  <img alt="New Feature Button" src="/assets/img/studio/2/ss-designer-index.png" />
 </figure>
 
 ## Configuring your Editor

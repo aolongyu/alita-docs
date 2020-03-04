@@ -1,8 +1,8 @@
 ---
 previousText: 'Build Errors'
-previousUrl: '/docs/faq/build'
+previousUrl: '/faq/build'
 nextText: 'Native Errors'
-nextUrl: '/docs/faq/native'
+nextUrl: '/faq/native'
 contributors:
   - brandyscarney
 ---
@@ -45,7 +45,7 @@ There are a few things you can check. Make sure:
 
 - Your selector doesn't have any misspellings.
 - You're using the selector correctly as an attribute, element or class.
-- Your selector has the proper syntax: 
+- Your selector has the proper syntax:
   - `[attr]` if it's an attribute selector
   - `element` if it's an element selector
   - `.class` if it's a class selector

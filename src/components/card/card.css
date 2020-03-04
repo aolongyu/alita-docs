@@ -150,7 +150,7 @@ aside .Card-container {
   display: grid;
   grid-template-columns: minmax(0, max-content) 1fr;
   grid-template-rows: minmax(0, min-content);
-  grid-template-areas: 
+  grid-template-areas:
     "icon title"
     "icon body";
 }
@@ -168,7 +168,7 @@ aside .Card-header {
 }
 
 aside .Card-header::after {
-  background-image: url("/docs/assets/img/new-tab.svg");
+  background-image: url("/assets/img/new-tab.svg");
   display: inline-block;
   height: 13px;
   width: 13px;

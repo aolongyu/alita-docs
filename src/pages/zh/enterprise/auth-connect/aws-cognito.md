@@ -82,4 +82,4 @@ Where `REGION` is the hosted AWS region (like "us-east-1) and `USER-POOL-ID` is 
 
 ### What's Next?
 
-Check out the full list of [configuration options](/docs/enterprise/auth-connect#ionicauthoptions) available, then implement the [other steps](/docs/enterprise/auth-connect#workflow) in the Auth Connect workflow.
+Check out the full list of [configuration options](/enterprise/auth-connect#ionicauthoptions) available, then implement the [other steps](/enterprise/auth-connect#workflow) in the Auth Connect workflow.

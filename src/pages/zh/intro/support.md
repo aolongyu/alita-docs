@@ -1,8 +1,8 @@
 ---
 previousText: '版本控制'
-previousUrl: '/docs/intro/versioning'
+previousUrl: '/intro/versioning'
 nextText: 'Cli 安装'
-nextUrl: '/docs/installation/cli'
+nextUrl: '/installation/cli'
 contributors:
   - dotNetkow
   - mhartington
@@ -31,9 +31,9 @@ contributors:
 ## 钉钉群
 
 你可以扫码加入钉钉群
-![钉钉群二维码](/docs/assets/qrcode/dingding.jpg)
+![钉钉群二维码](/assets/qrcode/dingding.jpg)
 
 ## 微信群
 
 你可以扫码，添加管理员，回复 alita ，邀请进群
-![yu_xiaohu微信二维码](/docs/assets/qrcode/wechat.jpg)
+![yu_xiaohu微信二维码](/assets/qrcode/wechat.jpg)

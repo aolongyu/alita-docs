@@ -1,8 +1,8 @@
 ---
 previousText: '浏览器支持'
-previousUrl: '/docs/intro/browser-support'
+previousUrl: '/intro/browser-support'
 nextText: '发布日志'
-nextUrl: '/docs/release-notes'
+nextUrl: '/release-notes'
 ---
 
 ## 版本控制

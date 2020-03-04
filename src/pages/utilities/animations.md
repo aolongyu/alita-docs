@@ -2,7 +2,7 @@
 previousText: ''
 previousUrl: ''
 nextText: 'Config'
-nextUrl: '/docs/utilities/config'
+nextUrl: '/utilities/config'
 ---
 
 # Animations
@@ -13,7 +13,7 @@ Ionic Animations is a utility that allows developers to build complex animations
 
 Building efficient animations can be tricky. Developers are often limited by the libraries available to them as well as the hardware that their apps run on. On top of that, many animation libraries use a JavaScript-driven approach to running animations where they handle the calculation of your animation's values at every step in a `requestAnimationFrame` loop. This reduces the scalability of your animations as the library is constantly computing values and using up CPU time.
 
-Ionic Animations uses the [Web Animations API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API) to build and run your animations. In doing this, we offload all work required to compute and run your animations to the browser. As a result, this allows the browser to make any optimizations it needs and ensures your animations run as smoothly as possible. While most browsers support a basic implementation of Web Animations, we fallback to [CSS Animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations) for browsers that do not support Web Animations. The performance difference in switching between these two should typically be negligible.
+Ionic Animations uses the [Web Animations API](https://developer.mozilla.org/en-US/Web/API/Web_Animations_API) to build and run your animations. In doing this, we offload all work required to compute and run your animations to the browser. As a result, this allows the browser to make any optimizations it needs and ensures your animations run as smoothly as possible. While most browsers support a basic implementation of Web Animations, we fallback to [CSS Animations](https://developer.mozilla.org/en-US/Web/CSS/CSS_Animations/Using_CSS_animations) for browsers that do not support Web Animations. The performance difference in switching between these two should typically be negligible.
 
 ## Installation
 
@@ -79,8 +79,8 @@ import { createAnimation, Animation } from '@ionic/react';
 <CreateAnimation
   duration={1000}
   fromTo={{
-    property: 'opacity', 
-    fromValue: '1', 
+    property: 'opacity',
+    fromValue: '1',
     toValue: '0.5'
   }}
 >
@@ -560,7 +560,7 @@ render() {
 
 ## Gesture Animations
 
-Ionic Animations gives developers the ability to create powerful gesture-based animations by integrating seamlessly with [Ionic Gestures](/docs/utilities/gestures).
+Ionic Animations gives developers the ability to create powerful gesture-based animations by integrating seamlessly with [Ionic Gestures](/utilities/gestures).
 
 ### Usage
 
@@ -632,7 +632,7 @@ private started: boolean = false;
 private initialStep: number = 0;
 private MAX_TRANSLATE: number = 400;
 
-ngOnInit() {    
+ngOnInit() {
   this.animation = this.animationCtrl.create()
     .addElement(this.square.nativeElement)
     .duration(1000)
@@ -722,7 +722,7 @@ class MyComponent extends React.Component<{}, any> {
     this.gesture.enable(true);
   }
 
-  private onMove(ev: GestureDetail) {    
+  private onMove(ev: GestureDetail) {
     if (!this.started) {
       this.setState({
         ...this.state,
@@ -865,7 +865,7 @@ this.animationCtrl.create()
 
 This method works in all supported browsers when creating animations for the first time. Most browsers are also capable of dynamically updating keyframe animations as the CSS Variables change.
 
-Safari does not currently support dynamically updating keyframe animations. For developers who need this kind of support in Safari, they can use [MediaQueryList.addListener()](https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList/addListener).
+Safari does not currently support dynamically updating keyframe animations. For developers who need this kind of support in Safari, they can use [MediaQueryList.addListener()](https://developer.mozilla.org/en-US/Web/API/MediaQueryList/addListener).
 
 <docs-codepen user="ionic" slug="JjjYVKj"></docs-codepen>
 
@@ -1082,10 +1082,10 @@ interface AnimationCallbackOptions {
 
 interface AnimationPlayOptions {
   /**
-   * If true, the animation will play synchronously. 
+   * If true, the animation will play synchronously.
    * This is the equivalent of running the animation
    * with a duration of 0ms.
-   */ 
+   */
   sync: boolean;
 }
 ```
@@ -1120,7 +1120,7 @@ interface AnimationPlayOptions {
 | `delay(delay?: number): Animation`                                                                                   | Set the delay for the start of the animation in milliseconds.                                                                                                                           |
 | `destroy(): Animation`                                                                                               | Destroy the animation and clear all elements, child animations, and keyframes.                                                                                                          |
 | `duration(duration?: number): Animation`                                                                             | Set the duration of the animation in milliseconds.                                                                                                                                      |
-| `easing(easing?: string): Animation`                                                                                 | Set the easing of the animation in milliseconds. See [Easing Effects](https://developer.mozilla.org/en-US/docs/Web/API/EffectTiming/easing#Value) for a list of accepted easing values. |
+| `easing(easing?: string): Animation`                                                                                 | Set the easing of the animation in milliseconds. See [Easing Effects](https://developer.mozilla.org/en-US/Web/API/EffectTiming/easing#Value) for a list of accepted easing values. |
 | `from(property: string, value: any): Animation`                                                                      | Set the start styles of the animation.                                                                                                                                                  |
 | `fromTo(property: string, fromValue: any, toValue: any): Animation`                                                  | Set the start and end styles of the animation.                                                                                                                                          |
 | `fill(fill?: AnimationFill): Animation`                                                                              | Set how the animation applies styles to its elements before and after the animation's execution.                                                                                        |
