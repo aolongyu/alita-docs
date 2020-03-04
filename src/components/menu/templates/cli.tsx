@@ -1,6 +1,6 @@
 import { h } from '@stencil/core';
 
-import commands from '../data/cli-commands.json';
+// import commands from '../data/cli-commands.json';
 
 export default () => <docs-nav items={items}/>;
 
@@ -12,5 +12,5 @@ const items = {
     'menu-cli-using-a-proxy': '/docs/cli/using-a-proxy',
     'menu-cli-changelog': 'https://github.com/alitajs/alita/blob/develop/packages/@ionic/cli/CHANGELOG.md'
   },
-  'menu-cli-commands': Object.entries(commands).sort()
+  // 'menu-cli-commands': Object.entries(commands).sort()
 };

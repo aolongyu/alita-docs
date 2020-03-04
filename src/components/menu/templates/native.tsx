@@ -1,5 +1,5 @@
 import { Component, Prop, h } from '@stencil/core';
-import communityPlugins from '../data/native-plugins.json';
+// import communityPlugins from '../data/native-plugins.json';
 import { l10n } from '../../../l10n';
 
 @Component({
@@ -35,10 +35,10 @@ render() { return [
       </ion-segment-button>
     </ion-segment>
 
-    {this.category === 'community' ?
+    {/* {this.category === 'community' ?
       <docs-nav items={this.communityPlugins} /> :
       <docs-nav items={this.premierPlugins} />
-    }
+    } */}
   </docs-menu-collapsible>
 ]; }
 
@@ -68,7 +68,7 @@ communityPlugins = {
     'menu-native-quickstart': '/docs/native/community',
     'menu-native-faq': '/docs/native/faq'
   },
-  'menu-native-plugins': Object.entries(communityPlugins).sort()
+  // 'menu-native-plugins': Object.entries(communityPlugins).sort()
 };
 
 premierPlugins = {

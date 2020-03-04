@@ -7,7 +7,6 @@ export const config: Config = {
     {
       type: 'www',
       baseUrl: 'https://alitajs.com/docs',
-      prerenderConfig: 'prerender.config.js',
       serviceWorker: null,
       copy: [
         { src: 'pages/**/*.json' },

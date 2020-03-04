@@ -33,7 +33,7 @@ const items = {
     // 'menu-building-webview': '/docs/building/webview',
     // 'menu-building-storage': '/docs/building/storage'
   },
-  'header-native':{
+  'header-native': {
     'header-native': '/docs/native',
   },
   // 'menu-layout': {
