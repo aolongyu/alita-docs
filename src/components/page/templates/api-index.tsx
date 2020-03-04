@@ -1,6 +1,6 @@
 import { h } from '@stencil/core';
 import { toHypertext } from '../to-hypertext';
-import components from '../data/api-reference.json';
+// import components from '../data/api-reference.json';
 
 
 const listStyle = {
@@ -17,11 +17,11 @@ export default (props) => {
       </section>
       <hr/>
       <ul style={listStyle}>
-        {components.map(([name, href]) => (
+        {/* {components.map(([name, href]) => (
           <li key={name}>
             <stencil-route-link url={href}>{name}</stencil-route-link>
           </li>
-        ))}
+        ))} */}
       </ul>
     </article>
   );

@@ -2,10 +2,10 @@ import { Component, Prop, h } from '@stencil/core';
 import { Logo } from '../../icons';
 // import { FrameworkSelect } from './framework-select';
 import componentsTemplate from './templates/components';
-import cliTemplate from './templates/cli';
+// import cliTemplate from './templates/cli';
 import configTemplate from './templates/config';
-import studioTemplate from './templates/studio';
-import appflowTemplate from './templates/appflow';
+// import studioTemplate from './templates/studio';
+// import appflowTemplate from './templates/appflow';
 import mainTemplate from './templates/main';
 
 @Component({
