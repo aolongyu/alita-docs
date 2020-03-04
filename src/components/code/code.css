@@ -1,0 +1,25 @@
+@import './prismjs-theme.css';
+@import './prismjs-shell-theme.css';
+
+docs-code {
+  display: block;
+  position: relative;
+}
+
+docs-code:before {
+  color: #bdc5d1;
+  content: attr(language);
+  font-family: var(--code-font-family);
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  padding: 0.75em;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+  top: 0;
+}
+
+docs-code[language="shell"] pre {
+  white-space: pre-wrap;
+}
