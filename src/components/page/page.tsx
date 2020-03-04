@@ -85,7 +85,7 @@ export class DocsPage {
     // Title
     const getTitle = () => {
       const suffix = /^\/pages\/appflow.*$/.test(this.path) ?
-        'Ionic Appflow Documentation' : 'Ionic Documentation';
+        'Alita Documentation' : 'Alita Documentation';
       // Favor meta title, else go with auto-title. fallback to generic title
       return meta.title || title ? `${title} - ${suffix}` : suffix;
     };
@@ -104,11 +104,11 @@ export class DocsPage {
 
     // Description
     updateMeta(metaEls.description, () => meta.description ||
-      'Ionic is the app platform for web developers. Build amazing mobile, web, and desktop apps all with one shared code base and open web standards');
+      'alita is the app platform for web developers. Build amazing mobile, web, and desktop apps all with one shared code base and open web standards');
 
     // Sharing Image
     updateMeta(metaEls.image, () => meta.image ||
-      'https://ionicframework.com/assets/img/meta/open-graph.png');
+      'https://alitajs.com/assets/img/meta/open-graph.png');
   }
 
   hostData() {

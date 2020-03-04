@@ -182,7 +182,7 @@ export class DocsHeader {
             >
               <section>
                 <a
-                  href="https://alitajs.com/zh/"
+                  href="/"
                   class={!isEn ? "link-active" : ""}
                 >
                   中文
@@ -193,7 +193,7 @@ export class DocsHeader {
                   )}
                 </a>
                 <a
-                  href="https://alitajs.com/"
+                  href="/en"
                   target="_blank"
                   class={isEn ? "link-active" : ""}
                 >

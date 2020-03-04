@@ -264,7 +264,7 @@ export class IonicSearch {
            onTouchMove={e => this.results && this.results.length > 5 ?
             null : e.preventDefault()}
            onKeyDown={this.keyNavigation}>
-        <input type="text" onKeyUp={this.onKeyUp} placeholder="Search Ionic.."/>
+        <input type="text" onKeyUp={this.onKeyUp} placeholder="Search Alita.."/>
 
         <Search class={`search-static ${this.active ? ' active' : ''}`}/>
 
