@@ -1,5 +1,5 @@
 import { Component, Prop, h } from '@stencil/core';
-import communityPlugins from '../data/native-plugins.json';
+// import communityPlugins from '../data/native-plugins.json';
 import { l10n } from '../../../l10n';
 
 @Component({
@@ -35,10 +35,10 @@ render() { return [
       </ion-segment-button>
     </ion-segment>
 
-    {this.category === 'community' ?
+    {/* {this.category === 'community' ?
       <docs-nav items={this.communityPlugins} /> :
       <docs-nav items={this.premierPlugins} />
-    }
+    } */}
   </docs-menu-collapsible>
 ]; }
 
