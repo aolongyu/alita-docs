@@ -83,17 +83,17 @@ function patchBody(page: Page): Page {
     href: `#${heading.getAttribute('id')}`
   }));
 
-  // remove /docs/ and language tag
-  const prefix = /^\/docs\/([a-z]{2}\b)?/;
+  // remove / and language tag
+  const prefix = /^([a-z]{2}\b)?/;
   const pageClass = `page-${slugify(page.path.replace(prefix, ''))}`;
 
-  const [, language] = prefix.exec(page.path) || 'en';
-  if (language && language !== 'en') {
+  const [, language] = prefix.exec(page.path) || 'zh';
+  if (language && language !== 'zh') {
     if (page.previousUrl) {
-      page.previousUrl = page.previousUrl.replace(prefix, `/docs/${language}/`);
+      page.previousUrl = page.previousUrl.replace(prefix, `/${language}/`);
     }
     if (page.nextUrl) {
-      page.nextUrl = page.nextUrl.replace(prefix, `/docs/${language}/`);
+      page.nextUrl = page.nextUrl.replace(prefix, `/${language}/`);
     }
   }
 

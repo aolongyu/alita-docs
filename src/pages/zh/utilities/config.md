@@ -2,7 +2,7 @@
 previousText: ''
 previousUrl: ''
 nextText: 'Platform'
-nextUrl: '/docs/utilities/platform'
+nextUrl: '/utilities/platform'
 contributors:
   - liamdebeasi
   - mhartington

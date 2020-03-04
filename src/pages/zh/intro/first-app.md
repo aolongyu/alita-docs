@@ -1,8 +1,8 @@
 ---
 previousText: '核心概念'
-previousUrl: '/docs/intro/concepts'
+previousUrl: '/intro/concepts'
 nextText: '浏览器支持'
-nextUrl: '/docs/intro/browser-support'
+nextUrl: '/intro/browser-support'
 tableOfContents: false
 ---
 
@@ -25,7 +25,7 @@ yarn start
 
 更多教程，可以访问
 <docs-cards>
-<docs-card header="教程:王者荣耀资料库" href="https://www.yuque.com/alita/course/gcngtp" icon="/docs/assets/img/yuque.jpeg">
+<docs-card header="教程:王者荣耀资料库" href="https://www.yuque.com/alita/course/gcngtp" icon="/assets/img/yuque.jpeg">
 </docs-card>
 </docs-cards>
 涵盖了 Alita 的基本知识。在本教程中，你将构建一个应用，来展示王者荣耀的基本资料，如英雄列表，局内道具，召唤师技能等。<br />这个入门教程包含了很多Umi项目的特性，它需要通过获取并展示王者荣耀的基本数据，并在不同的视图之间导航。<br />完成本次教程，你将学会：

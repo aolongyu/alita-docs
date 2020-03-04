@@ -19,7 +19,7 @@ export class NativeEnterpriseInstall {
           <a href="#installation">Installation</a>
         </h2>
         <p>
-          After following the one-time <stencil-route-link url="/docs/enterprise/setup"> setup steps</stencil-route-link>, simply install the plugin:
+          After following the one-time <stencil-route-link url="/enterprise/setup"> setup steps</stencil-route-link>, simply install the plugin:
         </p>
         <strong>Cordova:</strong>
         <command-line>
@@ -29,7 +29,7 @@ export class NativeEnterpriseInstall {
         {
           this.capacitorSlug ?
             <div>Available as a
-              <a href={`https://capacitor.ionicframework.com/docs/apis/${this.capacitorSlug}`}> core Capacitor plugin</a>.
+              <a href={`https://capacitor.ionicframework.com/apis/${this.capacitorSlug}`}> core Capacitor plugin</a>.
             </div>
           :
           <command-line>

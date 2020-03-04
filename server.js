@@ -18,7 +18,7 @@ const start = () => {
   app.use(Sentry.Handlers.requestHandler());
   app.use(compress());
   app.use(helmet());
-  app.get('/', (_, res) => res.redirect(301, '/docs/'));
+  app.get('/', (_, res) => res.redirect(301, '/'));
   app.use((req, res, next) => {
     const pathname = path.join(parseurl(req).pathname, 'index.html');
     const options = { root: path.join(__dirname, 'www') };
@@ -30,7 +30,7 @@ const start = () => {
   }));
   app.use(Sentry.Handlers.errorHandler());
   app.use((_, res) => {
-    res.status(404).sendFile(`${__dirname}/www/docs/index.html`);
+    res.status(404).sendFile(`${__dirname}/www/index.html`);
   });
   const listener = app.listen(process.env.PORT || 3030, () => {
     console.log(`Listening on port ${listener.address().port}`);

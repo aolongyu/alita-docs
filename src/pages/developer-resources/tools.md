@@ -1,8 +1,8 @@
 ---
 previousText: 'Posts'
-previousUrl: '/docs/developer-resources/posts'
+previousUrl: '/developer-resources/posts'
 nextText: 'Videos'
-nextUrl: '/docs/developer-resources/videos'
+nextUrl: '/developer-resources/videos'
 ---
 
 # Tools
@@ -19,7 +19,7 @@ Quickly get started with a new Ionic app entirely in the browser!
 
 Check out the features that make working with TypeScript amazing.
 
-### [Glossary](/docs/faq/glossary)
+### [Glossary](/faq/glossary)
 
 A list of common terms you'll see while developing in Ionic.
 

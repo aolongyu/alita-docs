@@ -8,14 +8,7 @@
       "config": {
         "distDir": "www"
       }
-    },
-    {
-      "src": "server.js",
-      "use": "@now/node-server"
     }
   ],
-  "routes":[{
-    "src":"/(.*)",
-    "dest":"server.js"
-  }]
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }

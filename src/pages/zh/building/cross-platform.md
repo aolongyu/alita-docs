@@ -1,8 +1,8 @@
 ---
 previousText: '迁移'
-previousUrl: '/docs/building/migration'
+previousUrl: '/building/migration'
 nextText: '运行预览'
-nextUrl: '/docs/building/running'
+nextUrl: '/building/running'
 disableHtmlPreviews: true
 contributors:
   - rtpHarry
@@ -16,6 +16,6 @@ Alita 项目不止能在 web 环境中运行，我们还通过引入 Cordova，�
 
 ## Alita Native
 
-<a href="/docs/native">Alita Native</a>通过 `native:[]` 配置使用，会自动根据配置安装相应的 Cordova 插件和 Ionic Native 插件。
+<a href="/native">Alita Native</a>通过 `native:[]` 配置使用，会自动根据配置安装相应的 Cordova 插件和 Ionic Native 插件。
 
 选用 Ionic Native 是因为它具有自己的内部逻辑来检测当前应用是否在原生环境中。如果不是原生环境，并且没有可用的 Cordova 插件，它将发出警告，而不是引发运行时错误。该应用程序将不会中断，并且将继续运行，尽管没有原生功能。而且它的编写更接近与原生js，就是说，它也可以很好的跑在 react 的项目中。

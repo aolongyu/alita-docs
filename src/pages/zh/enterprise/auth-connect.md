@@ -7,7 +7,7 @@ minor: 1.5.X
 
 Ionic Auth Connect handles logging in and/or registering a user with an authentication provider (such as Auth0, Azure AD, or AWS Cognito) using industry standard OAuth/OpenId Connect on iOS, Android, or on the web.
 
-When used with [Ionic Identity Vault](/docs/enterprise/identity-vault), it provides a complete security solution for authentication and storage of logged-in credentials.
+When used with [Ionic Identity Vault](/enterprise/identity-vault), it provides a complete security solution for authentication and storage of logged-in credentials.
 
 Auth Connect also allows your app to support multiple authentication providers. Should you need to change providers, easily switch between them without having to develop a new solution. [Learn more.](https://ionicframework.com/auth-connect)
 
@@ -46,7 +46,7 @@ A [complete login/logout experience](https://github.com/ionic-team/demo-authconn
 
 The hosting app configures Auth Connect with settings specific to each authentication provider. This is done by passing in an instance of [IonicAuthOptions](#ionicauthoptions) to the [IIonicAuth](#iionicauth) class. The [IIonicAuth](#iionicauth) class is the main interface exposed by the Auth Connect plugin, and is expected to be subclassed for specific behaviors and/or events.
 
-The default behavior for caching tokens in the plugin is not secure and should be replaced with something more robust, such as integrating it with the [Ionic Identity Vault](/docs/enterprise/identity-vault).
+The default behavior for caching tokens in the plugin is not secure and should be replaced with something more robust, such as integrating it with the [Ionic Identity Vault](/enterprise/identity-vault).
 
 To access callbacks, and override behavior as needed, it is recommended to subclass the [IIonicAuth](#iionicauth) interface.
 
@@ -54,11 +54,11 @@ To access callbacks, and override behavior as needed, it is recommended to subcl
 
 Leveraging the OAuth/OpenId Connect protocols, Auth Connect supports:
 
-* [Auth0](/docs/enterprise/auth-connect/auth0)
+* [Auth0](/enterprise/auth-connect/auth0)
 * Azure Active Directory (Microsoft)
     * v1.0
-    * v2.0, including [Azure Active Directory B2C](/docs/enterprise/auth-connect/azure-ad-b2c)
-* [Cognito](/docs/enterprise/auth-connect/aws-cognito) (AWS)
+    * v2.0, including [Azure Active Directory B2C](/enterprise/auth-connect/azure-ad-b2c)
+* [Cognito](/enterprise/auth-connect/aws-cognito) (AWS)
 
 ## Workflow
 
@@ -189,7 +189,7 @@ You can find the API and interface documentation for everything below. The main 
 
 * [IIonicAuth](#iionicauth)
 * [IonicAuthOptions](#ionicauthoptions)
-* [TokenStorageProvider](#tokenstorageprovider) (if [Ionic Identity Vault](/docs/enterprise/identity-vault) is not being used.)
+* [TokenStorageProvider](#tokenstorageprovider) (if [Ionic Identity Vault](/enterprise/identity-vault) is not being used.)
 
 # Auth Connect
 
@@ -811,7 +811,7 @@ Authentication flow to use on web defaults to: `implicit` `PKCE` is not supporte
 
 **TokenStorageProvider**:
 
-This interface can be implemented by the hosting app, and set in the options it should be a wrapper around access to a secure storage solution if [Ionic Identity Vault](/docs/enterprise/identity-vault) is not being used.
+This interface can be implemented by the hosting app, and set in the options it should be a wrapper around access to a secure storage solution if [Ionic Identity Vault](/enterprise/identity-vault) is not being used.
 
 <a id="tokenstorageprovider.clear"></a>
 

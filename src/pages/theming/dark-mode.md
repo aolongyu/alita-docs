@@ -2,9 +2,9 @@
 initialTab: 'preview'
 inlineHtmlPreviews: true
 previousText: 'Themes'
-previousUrl: '/docs/theming/themes'
+previousUrl: '/theming/themes'
 nextText: 'Advanced Theming'
-nextUrl: '/docs/theming/advanced'
+nextUrl: '/theming/advanced'
 ---
 
 # Dark Mode
@@ -13,7 +13,7 @@ Ionic makes it easy to change the themes of your app, including supporting dark 
 
 ## Using Media Queries
 
-The first way to enable dark mode is by using the [CSS media query for the user's preferred color scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme). This media query will hook into the system setting of the user's device and apply the theme if a dark mode is enabled.
+The first way to enable dark mode is by using the [CSS media query for the user's preferred color scheme](https://developer.mozilla.org/en-US/Web/CSS/@media/prefers-color-scheme). This media query will hook into the system setting of the user's device and apply the theme if a dark mode is enabled.
 
 ```css
 @media (prefers-color-scheme: dark) {
@@ -60,7 +60,7 @@ Notice that the variables above are only in the `body.dark` selector now, and th
 
 ### Automatically Enable Dark Mode
 
-In the JavaScript, the `dark` class can be added to the `<body>` by checking if the document matches the media query using [matchMedia()](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia). This will enable dark mode to still work based on the user preference.
+In the JavaScript, the `dark` class can be added to the `<body>` by checking if the document matches the media query using [matchMedia()](https://developer.mozilla.org/en-US/Web/API/Window/matchMedia). This will enable dark mode to still work based on the user preference.
 
 ```javascript
 // Use matchMedia to check the user preference
@@ -116,13 +116,13 @@ function checkToggle(shouldCheck) {
 
 Ionic has a recommended theme for variables to use in order to get a dark mode based on the device running the app. It can be broken down into the following parts:
 
-1. Changing the default [Ionic colors](/docs/theming/colors) for all [modes](/docs/theming/platform-styles#ionic-modes) to complement the dark background in the `body.dark` selector.
+1. Changing the default [Ionic colors](/theming/colors) for all [modes](/theming/platform-styles#ionic-modes) to complement the dark background in the `body.dark` selector.
 2. Setting variables for the dark theme on `ios` devices.
 3. Setting variables for the dark theme on `md` devices.
 
 The following code can be copied and pasted into an app to get Ionic's dark theme. We add the `dark` class to the document body using JavaScript as mentioned in the [combining with JavaScript](#combining-with-javascript) section. The dark mode will not be enabled until the `dark` class is added to the document body.
 
-> For more information on the variables that are being changed, including other variables that can be added to further customize, see [Themes](/docs/theming/themes).
+> For more information on the variables that are being changed, including other variables that can be added to further customize, see [Themes](/theming/themes).
 
 ```css
 /*

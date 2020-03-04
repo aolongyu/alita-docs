@@ -61,10 +61,10 @@ export class DocsRoot {
         <stencil-route style={{ display: 'none' }} routeRender={this.setHistory}/>
         <docs-header onToggleClick={this.toggleMenu}/>
         <docs-menu onToggleClick={this.toggleMenu}/>
-        <stencil-route url="/docs/:page*" routeRender={props => (
+        <stencil-route url="/:page*" routeRender={props => (
           <docs-page
             history={props.history}
-            path={`/docs/pages/${props.match.params.page || 'index'}.json`}
+            path={`/pages/${props.match.params.page || 'index'}.json`}
             onClick={this.handlePageClick}/>
         )}/>
       </stencil-router>

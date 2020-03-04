@@ -106,48 +106,48 @@ Accelerate your app development with powerful solutions to common enterprise use
 
 ### 身份验证和安全
 
-- [Auth Connect](/docs/enterprise/auth-connect)
-- [Identity Vault](/docs/enterprise/identity-vault)
-- [Secure Storage](/docs/enterprise/offline-storage)
+- [Auth Connect](/enterprise/auth-connect)
+- [Identity Vault](/enterprise/identity-vault)
+- [Secure Storage](/enterprise/offline-storage)
 
 ### 常用设备功能
 
-- [Android 权限](/docs/enterprise/android-permissions)
-- [应用评分](/docs/enterprise/app-rate)
-- [应用版本](/docs/enterprise/app-version)
-- [徽标](/docs/enterprise/badge)
-- [浏览器](/docs/enterprise/inappbrowser)
-- [日历](/docs/enterprise/calendar)
-- [相机](/docs/enterprise/camera)
-- [剪贴板](/docs/enterprise/clipboard)
-- [联系人](/docs/enterprise/contacts)
-- [深度链接](/docs/enterprise/deeplinks)
-- [设备](/docs/enterprise/device)
-- [Dialogs](/docs/enterprise/dialogs)
-- [Email Composer](/docs/enterprise/email-composer)
-- [文件系统](/docs/enterprise/filesystem)
-- [地理位置](/docs/enterprise/geolocation)
-- [Globalization](/docs/enterprise/globalization)
-- [Haptics & Vibration](/docs/enterprise/vibration)
-- [键盘](/docs/enterprise/keyboard)
-- [Media](/docs/enterprise/media)
-- [Media Capture](/docs/enterprise/media-capture)
-- [数据存储](/docs/enterprise/nativestorage)
-- [Network Information](/docs/enterprise/network-information)
-- [屏幕旋转](/docs/enterprise/screen-orientation)
-- [社交分享](/docs/enterprise/social-sharing)
-- [首屏](/docs/enterprise/splashscreen)
-- [状态栏​​​​​​​](/docs/enterprise/statusbar)
+- [Android 权限](/enterprise/android-permissions)
+- [应用评分](/enterprise/app-rate)
+- [应用版本](/enterprise/app-version)
+- [徽标](/enterprise/badge)
+- [浏览器](/enterprise/inappbrowser)
+- [日历](/enterprise/calendar)
+- [相机](/enterprise/camera)
+- [剪贴板](/enterprise/clipboard)
+- [联系人](/enterprise/contacts)
+- [深度链接](/enterprise/deeplinks)
+- [设备](/enterprise/device)
+- [Dialogs](/enterprise/dialogs)
+- [Email Composer](/enterprise/email-composer)
+- [文件系统](/enterprise/filesystem)
+- [地理位置](/enterprise/geolocation)
+- [Globalization](/enterprise/globalization)
+- [Haptics & Vibration](/enterprise/vibration)
+- [键盘](/enterprise/keyboard)
+- [Media](/enterprise/media)
+- [Media Capture](/enterprise/media-capture)
+- [数据存储](/enterprise/nativestorage)
+- [Network Information](/enterprise/network-information)
+- [屏幕旋转](/enterprise/screen-orientation)
+- [社交分享](/enterprise/social-sharing)
+- [首屏](/enterprise/splashscreen)
+- [状态栏​​​​​​​](/enterprise/statusbar)
 
 ### 集成服务
 
 - [Active Directory](https://ionicframework.com/integrations/ms-activedirectory-ms-adal)
-- [mParticle](/docs/enterprise/mparticle)
+- [mParticle](/enterprise/mparticle)
 
 ### 脱机存储
 
-- [脱机存储](/docs/enterprise/offline-storage)
+- [脱机存储](/enterprise/offline-storage)
 
 ### 支付
 
-- [Apple Payment Pass](/docs/enterprise/apple-payment-pass)
+- [Apple Payment Pass](/enterprise/apple-payment-pass)

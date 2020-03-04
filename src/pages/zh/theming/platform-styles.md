@@ -1,9 +1,9 @@
 ---
 disableHtmlPreviews: true
 previousText: 'Theming Basics'
-previousUrl: '/docs/theming/basics'
+previousUrl: '/theming/basics'
 nextText: 'CSS Variables'
-nextUrl: '/docs/theming/css-variables'
+nextUrl: '/theming/css-variables'
 contributors:
   - brandyscarney
 ---
@@ -49,4 +49,4 @@ There are also many global CSS variables that can be used to override the styles
 }
 ```
 
-There are many global variables that can be overridden by mode, including [Ionic's color variables](/docs/theming/colors), [theme variables](/docs/theming/themes) and [global component variables](/docs/theming/advanced).
+There are many global variables that can be overridden by mode, including [Ionic's color variables](/theming/colors), [theme variables](/theming/themes) and [global component variables](/theming/advanced).

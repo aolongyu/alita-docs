@@ -40,5 +40,5 @@ function getPaths(cwd) {
 
 const toHref = (path: string) => {
   const [, page] = /\/pages\/(.+)\.json$/.exec(path);
-  return `/docs/${page}`;
+  return `/${page}`;
 };

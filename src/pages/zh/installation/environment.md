@@ -1,8 +1,8 @@
 ---
 previousText: 'CLI 安装'
-previousUrl: '/docs/installation/cli'
+previousUrl: '/installation/cli'
 nextText: 'iOS 设置'
-nextUrl: '/docs/installation/ios'
+nextUrl: '/installation/ios'
 contributors:
   - rtpHarry
 ---
@@ -24,9 +24,9 @@ contributors:
 
 ## Node & npm
 
-几乎所有用于现代 JavaScript 项目的工具都基于 [Node.js](/docs/faq/glossary#node)。该[下载页面](https://nodejs.org/en/download/)已预构建的安装包适用于所有平台。我们建议选择 LTS 版本以确保最佳兼容性。
+几乎所有用于现代 JavaScript 项目的工具都基于 [Node.js](/faq/glossary#node)。该[下载页面](https://nodejs.org/en/download/)已预构建的安装包适用于所有平台。我们建议选择 LTS 版本以确保最佳兼容性。
 
-Node 捆绑安装了 [npm](/docs/faq/glossary#npm)，这是一个 JavaScript 的包管理器。
+Node 捆绑安装了 [npm](/faq/glossary#npm)，这是一个 JavaScript 的包管理器。
 
 要验证安装成功，请打开一个新的终端窗口并运行：
 
@@ -35,13 +35,13 @@ $ node --version
 $ npm --version
 ```
 
-> 在 macOS 上使用 npm 安装全局模块时，经常会遇到权限问题，如果你遇到了 `EACCES` 错误，请查阅[解决权限错误](/docs/faq/tips#resolving-permission-errors)。
+> 在 macOS 上使用 npm 安装全局模块时，经常会遇到权限问题，如果你遇到了 `EACCES` 错误，请查阅[解决权限错误](/faq/tips#resolving-permission-errors)。
 
 > 注意，我们需要 node 版本在 10+，如果你使用低版本的 node ，可能会遇到一些预料之外的问题。如果你的开发环境，不允许你升级 node 版本，那你可以使用你能找到的任何方式联系我们。我们将会尝试着解决低版本兼容问题。
 
 ## Git
 
-Git 在开发运行 Alita 时，不是必须的，但是我们强烈建议你安装和使用它。[Git](/docs/faq/glossary#git) 是一个很高效流行的版本控制软件。
+Git 在开发运行 Alita 时，不是必须的，但是我们强烈建议你安装和使用它。[Git](/faq/glossary#git) 是一个很高效流行的版本控制软件。
 
 Git 通常伴随有 Git 主机，例如 GitHub，在这种情况下，需要进行其他设置。按照 Git 主机文档中的教程设置 Git：
 

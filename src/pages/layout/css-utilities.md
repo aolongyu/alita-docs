@@ -2,9 +2,9 @@
 initialTab: 'preview'
 inlineHtmlPreviews: true
 previousText: 'Global Stylesheets'
-previousUrl: '/docs/layout/global-stylesheets'
+previousUrl: '/layout/global-stylesheets'
 nextText: 'Theming'
-nextUrl: '/docs/theming/basics'
+nextUrl: '/theming/basics'
 contributors:
   - brandyscarney
 ---
@@ -225,7 +225,7 @@ There are also additional classes to modify the visibility based on the screen s
 
 The padding class sets the padding area of an element. The padding area is the space between the content of the element and its border.
 
-The default amount of `padding` to be applied is `16px` and is set by the `--ion-padding` variable. See the [CSS Variables](/docs/theming/css-variables) section for more information on how to change these values.
+The default amount of `padding` to be applied is `16px` and is set by the `--ion-padding` variable. See the [CSS Variables](/theming/css-variables) section for more information on how to change these values.
 
 ```html
 <ion-grid>
@@ -292,7 +292,7 @@ The default amount of `padding` to be applied is `16px` and is set by the `--ion
 
 The margin area extends the border area with an empty area used to separate the element from its neighbors.
 
-The default amount of `margin` to be applied is `16px` and is set by the `--ion-margin` variable. See the [CSS Variables](/docs/theming/css-variables) section for more information on how to change these values.
+The default amount of `margin` to be applied is `16px` and is set by the `--ion-margin` variable. See the [CSS Variables](/theming/css-variables) section for more information on how to change these values.
 
 ```html
 <ion-grid>
@@ -357,7 +357,7 @@ The default amount of `margin` to be applied is `16px` and is set by the `--ion-
 
 ## Flex Properties
 
-![](/docs/assets/img/layout/diagram-flex-attributes.png)
+![](/assets/img/layout/diagram-flex-attributes.png)
 
 ### Flex Container Properties
 

@@ -16,7 +16,7 @@ export default {
 async function getAPIPages(): Promise<Page[]> {
   const pages = components.map(async component => {
     const title = component.tag;
-    const path = `/docs/api/${title.slice(4)}`;
+    const path = `/api/${title.slice(4)}`;
     const demoUrl = await getDemoUrl(component);
     const { readme, usage, props, methods, ...contents } = component;
     return {
@@ -51,7 +51,7 @@ const getDemoUrl = async (component) => {
   const hasDemo = await fs.pathExists(join(DEMOS_PATH, demoPath));
   if (hasDemo) {
     return {
-      demoUrl: `/docs/demos/${demoPath}`,
+      demoUrl: `/demos/${demoPath}`,
       demoSourceUrl: `https://github.com/alitajs/alita-docs/tree/master/src/demos/${demoPath}`
     };
   }

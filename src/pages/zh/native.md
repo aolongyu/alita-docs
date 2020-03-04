@@ -1,6 +1,6 @@
 ---
 nextText: '核心概念'
-nextUrl: '/docs/intro/concepts'
+nextUrl: '/intro/concepts'
 ---
 # Native
 ## supported plugins in native config array
@@ -24,7 +24,7 @@ alita native
 
 ### camera
 
-[cordova-plugin-camera](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-camera/index.html)
+[cordova-plugin-camera](https://cordova.apache.org/en/latest/reference/cordova-plugin-camera/index.html)
 
 `config.xml` config
 
@@ -48,15 +48,15 @@ alita native
 
 ### device
 
-[cordova-plugin-device](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-device/index.html)
+[cordova-plugin-device](https://cordova.apache.org/en/latest/reference/cordova-plugin-device/index.html)
 
 ### dialogs
 
-[cordova-plugin-dialogs](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-dialogs/index.html)
+[cordova-plugin-dialogs](https://cordova.apache.org/en/latest/reference/cordova-plugin-dialogs/index.html)
 
 ### file
 
-[cordova-plugin-file](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-file/index.html)
+[cordova-plugin-file](https://cordova.apache.org/en/latest/reference/cordova-plugin-file/index.html)
 
 ### secure-storage
 
@@ -82,7 +82,7 @@ WhenPasscodeSetThisDeviceOnly (this option is available only on iOS8 and later)
 
 ### geolocation
 
-[cordova-plugin-secure-geolocation](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-geolocation/index.html)
+[cordova-plugin-secure-geolocation](https://cordova.apache.org/en/latest/reference/cordova-plugin-geolocation/index.html)
 
 - ios
 
@@ -94,11 +94,11 @@ WhenPasscodeSetThisDeviceOnly (this option is available only on iOS8 and later)
 
 ### inappbrowser
 
-[cordova-plugin-secure-inappbrowser](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-inappbrowser/index.html)
+[cordova-plugin-secure-inappbrowser](https://cordova.apache.org/en/latest/reference/cordova-plugin-inappbrowser/index.html)
 
 ### media
 
-[cordova-plugin-secure-media](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-media/index.html)
+[cordova-plugin-secure-media](https://cordova.apache.org/en/latest/reference/cordova-plugin-media/index.html)
 
 ### media-capture
 

@@ -1,8 +1,8 @@
 ---
 previousText: 'Glossary'
-previousUrl: '/docs/faq/glossary'
+previousUrl: '/faq/glossary'
 nextText: 'Runtime Errors'
-nextUrl: '/docs/faq/runtime'
+nextUrl: '/faq/runtime'
 disableHtmlPreviews: true
 contributors:
   - brandyscarney
@@ -35,7 +35,7 @@ class MyDirective {
 无法解析'YourClass'(?) 的所有参数。 确保所有参数都以 Inject 标记或有有效的类型注释，并且'YourClass' 被注入标记。
 ```
 
-这个异常是由于Angular无法确定 `YourClass` 的构造函数的一个或者多个参数 In order to do [dependency injection](https://angular.io/docs/ts/latest/guide/dependency-injection.html) Angular needs to know the type of the parameter to inject. You let Angular know this by specifying the class of the parameter. Make sure:
+这个异常是由于Angular无法确定 `YourClass` 的构造函数的一个或者多个参数 In order to do [dependency injection](https://angular.io/ts/latest/guide/dependency-injection.html) Angular needs to know the type of the parameter to inject. You let Angular know this by specifying the class of the parameter. Make sure:
 
 - You are importing the parameter's class.
 - You have properly annotated the parameter or specified its type.
@@ -54,7 +54,7 @@ export class MyClass {
 }
 ```
 
-Sometimes circular references within your code can cause this error. Circular references mean that two objects depend on each other, and so there is no way to declare both of them before each other. To get around this, we can use the [`forwardRef`](https://angular.io/docs/ts/latest/api/core/index/forwardRef-function.html) function built in to Angular.
+Sometimes circular references within your code can cause this error. Circular references mean that two objects depend on each other, and so there is no way to declare both of them before each other. To get around this, we can use the [`forwardRef`](https://angular.io/ts/latest/api/core/index/forwardRef-function.html) function built in to Angular.
 
 ```ts
 import { forwardRef } from '@angular/core';
@@ -150,7 +150,7 @@ Here's a diagram illustrating what injectors are available:
     No MyComp to inject        +------+------+
                                | P (MyDir)   | <- MyComp can be injected from parent
                                +-------------+
-    
+
 
 To expand on the previous example, you can use the Angular `@Optional` annotation if you don't always expect a component/directive reference:
 
@@ -187,7 +187,7 @@ This happens when you try and bind a property on an element that doesn't have th
 No provider for ControlContainer! (NgControlName -> ControlContainer)
 ```
 
-This error is a more specific version of the `No provider` error above. It happens when you use a form control like NgControlName without specifying a parent [NgForm](https://angular.io/docs/ts/latest/api/forms/index/NgForm-directive.html) or NgFormModel. In most cases, this can be resolved by making sure your form control is within an actual form element. NgForm uses `form` as a selector so this will instantiate a new NgForm:
+This error is a more specific version of the `No provider` error above. It happens when you use a form control like NgControlName without specifying a parent [NgForm](https://angular.io/ts/latest/api/forms/index/NgForm-directive.html) or NgFormModel. In most cases, this can be resolved by making sure your form control is within an actual form element. NgForm uses `form` as a selector so this will instantiate a new NgForm:
 
 ```typescript
 @Component({

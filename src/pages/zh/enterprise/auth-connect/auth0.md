@@ -16,7 +16,7 @@ For reference, a [complete demo app](https://github.com/ionic-team/demo-authconn
 
 Before integrating Auth Connect into your Ionic app, you’ll need to get Auth0 up and running. If you don’t have one already, create a [free Auth0 account](https://auth0.com) then head over to the Applications page and click the “Create Application” button. Give your new app a name, then choose “Native” for application type. Note the Domain and Client ID - you’ll need those later.
 
-![Auth0 app configuration settings](/docs/assets/img/native/auth0-app-settings.png)
+![Auth0 app configuration settings](/assets/img/native/auth0-app-settings.png)
 
 Next, choose your globally unique App Id, which is used both in Auth0 configuration as well as Cordova/Capacitor as well. Typically, this takes the form of “company-AppName” or reverse DNS style - “com.company.app.”
 
@@ -90,12 +90,12 @@ Some of these `IonicAuthOptions` values are unique, and must be set based on you
 
 The Discovery URL can be found under Application Details -> Show Advanced Settings -> Endpoints tab:
 
-![Finding the Discovery URL](/docs/assets/img/native/auth0-discoveryUrl.png)
+![Finding the Discovery URL](/assets/img/native/auth0-discoveryUrl.png)
 
 The audience field comes from your custom API of choice &mdash; the API Audience field:
 
-![Finding the API Audience field](/docs/assets/img/native/auth0-audience.png)
+![Finding the API Audience field](/assets/img/native/auth0-audience.png)
 
 ### What's Next?
 
-Check out the full list of [configuration options](/docs/enterprise/auth-connect#ionicauthoptions) available, then implement the [other steps](/docs/enterprise/auth-connect#workflow) in the Auth Connect workflow. A complete working example can be found [on GitHub](https://github.com/ionic-team/demo-authconnect-auth0).
+Check out the full list of [configuration options](/enterprise/auth-connect#ionicauthoptions) available, then implement the [other steps](/enterprise/auth-connect#workflow) in the Auth Connect workflow. A complete working example can be found [on GitHub](https://github.com/ionic-team/demo-authconnect-auth0).

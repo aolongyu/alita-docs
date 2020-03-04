@@ -1,8 +1,8 @@
 ---
 previousText: 'Taking Photos'
-previousUrl: '/docs/react/your-first-app/2-taking-photos'
+previousUrl: '/react/your-first-app/2-taking-photos'
 nextText: 'Loading Photos on Filesystem'
-nextUrl: '/docs/react/your-first-app/4-loading-photos'
+nextUrl: '/react/your-first-app/4-loading-photos'
 ---
 
 # Saving Photos to the Filesystem
@@ -44,7 +44,7 @@ const getPhotoFile = async (cameraPhoto: CameraPhoto, fileName: string): Promise
 
 We pass in the `cameraPhoto` object, which represents the newly captured device photo, as well as the fileName, which will provide a path for the file to be stored to.
 
-Next we use the Capacitor [Filesystem API](https://capacitor.ionicframework.com/docs/apis/filesystem) to save the photo to the filesystem. We start by converting the photo to base64 format, then feed the data to the Filesystem’s `writeFile` function.
+Next we use the Capacitor [Filesystem API](https://capacitor.ionicframework.com/apis/filesystem) to save the photo to the filesystem. We start by converting the photo to base64 format, then feed the data to the Filesystem’s `writeFile` function.
 
 `getPhotoFile` is much simpler. As you’ll recall, we display each photo on the screen by setting each image’s source path (`src` attribute in the `Tab2` component) to the webviewPath property.
 

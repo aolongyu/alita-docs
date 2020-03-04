@@ -1,8 +1,8 @@
 ---
 previousText: 'Platform Styles'
-previousUrl: '/docs/theming/platform-styles'
+previousUrl: '/theming/platform-styles'
 nextText: 'Colors'
-nextUrl: '/docs/theming/colors'
+nextUrl: '/theming/colors'
 contributors:
   - brandyscarney
   - iget-master
@@ -10,7 +10,7 @@ contributors:
 
 # CSS Variables
 
-Ionic components are built with <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables" target="_blank">CSS Variables</a> for easy customization of an application. CSS variables allow a value to be stored in one place, then referenced in multiple other places. They also make it possible to change CSS dynamically at runtime (which previously required a CSS preprocessor). CSS variables make it easier than ever to override Ionic components to match a brand or theme.
+Ionic components are built with <a href="https://developer.mozilla.org/en-US/Web/CSS/Using_CSS_variables" target="_blank">CSS Variables</a> for easy customization of an application. CSS variables allow a value to be stored in one place, then referenced in multiple other places. They also make it possible to change CSS dynamically at runtime (which previously required a CSS preprocessor). CSS variables make it easier than ever to override Ionic components to match a brand or theme.
 
 ## Setting Values
 
@@ -59,7 +59,7 @@ ion-button {
 
 ### Variables set via JavaScript
 
-CSS variables can also be changed via JavaScript using [setProperty()](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/setProperty):
+CSS variables can also be changed via JavaScript using [setProperty()](https://developer.mozilla.org/en-US/Web/API/CSSStyleDeclaration/setProperty):
 
 ```js
 const el = document.querySelector('.fancy-button');
@@ -70,7 +70,7 @@ el.style.setProperty('--background', '#36454f');
 
 ### Using CSS
 
-The [var() CSS function](https://developer.mozilla.org/en-US/docs/Web/CSS/var) can be used to get the value of a CSS variable, along with any number of fallback values, if desired. In the below example, the `--background` property will be set to the value of the `--charcoal` variable, if defined, and if not it will use `#36454f`.
+The [var() CSS function](https://developer.mozilla.org/en-US/Web/CSS/var) can be used to get the value of a CSS variable, along with any number of fallback values, if desired. In the below example, the `--background` property will be set to the value of the `--charcoal` variable, if defined, and if not it will use `#36454f`.
 
 ```css
 .fancy-button {
@@ -80,7 +80,7 @@ The [var() CSS function](https://developer.mozilla.org/en-US/docs/Web/CSS/var) c
 
 ### Using JavaScript
 
-The value of a CSS variable can be read in JavaScript using [getPropertyValue()](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/getPropertyValue):
+The value of a CSS variable can be read in JavaScript using [getPropertyValue()](https://developer.mozilla.org/en-US/Web/API/CSSStyleDeclaration/getPropertyValue):
 
 ```js
 const el = document.querySelector('.fancy-button');
@@ -91,8 +91,8 @@ const color = el.style.getPropertyValue('--charcoal');
 
 ### Component Variables
 
-Ionic provides variables that exist at the component level, such as `--background` and `--color`. For a list of the custom properties a component accepts, view the `CSS Custom Properties` section of its [API reference](/docs/api/). For example, see the [Button CSS Custom Properties](/docs/api/button#css-custom-properties).
+Ionic provides variables that exist at the component level, such as `--background` and `--color`. For a list of the custom properties a component accepts, view the `CSS Custom Properties` section of its [API reference](/api/). For example, see the [Button CSS Custom Properties](/api/button#css-custom-properties).
 
 ### Global Variables
 
-There are several global variables that Ionic provides in order to make theming an entire application easier. For more information, see [Colors](/docs/theming/colors), [Themes](/docs/theming/themes) and [Advanced Theming](/docs/theming/advanced).
+There are several global variables that Ionic provides in order to make theming an entire application easier. For more information, see [Colors](/theming/colors), [Themes](/theming/themes) and [Advanced Theming](/theming/advanced).

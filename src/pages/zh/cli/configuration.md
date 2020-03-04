@@ -7,7 +7,7 @@
 
 Configuration values are stored in JSON files. The Ionic CLI maintains a global configuration file, usually located at `~/.ionic/config.json`, and project configuration files, usually at the project's root directory as `ionic.config.json`.
 
-The CLI provides commands for setting and printing config values from project config files and the global CLI config file. See `alitaconfig --help` or see the documentation for usage of [`alitaconfig get`](/docs/cli/commands/config-get) and [`alitaconfig set`](/docs/cli/commands/config-set).
+The CLI provides commands for setting and printing config values from project config files and the global CLI config file. See `alitaconfig --help` or see the documentation for usage of [`alitaconfig get`](/cli/commands/config-get) and [`alitaconfig set`](/cli/commands/config-set).
 
 ### Project Configuration File
 
@@ -93,7 +93,7 @@ module.exports = function(ctx) {
 
 <small><em>Available in CLI 4.3.0+</em></small>
 
-The Ionic CLI supports a multi-app configuration setup, which involves multiple Ionic apps and shared code within a single repository, or [monorepo](/docs/faq/glossary#monorepo).
+The Ionic CLI supports a multi-app configuration setup, which involves multiple Ionic apps and shared code within a single repository, or [monorepo](/faq/glossary#monorepo).
 
 ### Setup Steps
 

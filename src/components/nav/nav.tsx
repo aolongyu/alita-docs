@@ -50,10 +50,10 @@ export class DocsNav {
       );
     }
 
-    const prefix = /^\/docs(\/[a-z]{2})?\//;
+    const prefix = /^(\/[a-z]{2})?\//;
     const language = l10n.getLocale();
-    const url = language !== 'en'
-      ? `/docs/${language}/${href.replace(prefix, '')}`
+    const url = language !== 'zh'
+      ? `/${language}/${href.replace(prefix, '')}`
       : href;
 
     return (

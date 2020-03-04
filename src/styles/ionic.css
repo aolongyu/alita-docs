@@ -1,6 +1,6 @@
 
 	/* Ionic Variables and Theming. For more information, please see
-	 * https://ionicframework.com/docs/theming/
+	 * https://ionicframework.com/theming/
 	 */
 
 	/** Core CSS required for alitacomponents to work property */
@@ -26,11 +26,11 @@
 	* to match your app's branding. Ionic provides eight layered colors
 	* that can be changed to theme an app. Additional colors can be
 	* added as well (see below). For more information, please see
-	* https://ionicframework.com/docs/theming/advanced
+	* https://ionicframework.com/theming/advanced
 	*
 	* To easily create custom color palettes for your app’s UI,
 	* check out our color generator:
-	* https://ionicframework.com/docs/theming/color-generator
+	* https://ionicframework.com/theming/color-generator
 	*/
 
 	:root {

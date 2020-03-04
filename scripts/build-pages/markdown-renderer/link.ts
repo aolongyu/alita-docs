@@ -1,8 +1,8 @@
 import { resolve } from 'url';
 
 const hasTrailingSlash = /\/$/;
-const isInternal = /^\/docs\/.*/;
-const isV3 = /^\/docs\/v3\//;
+const isExternal = /^http.*/;
+const isV3 = /^\/v3\//;
 
 export default function(href: string, title: string, text: string) {
   const { baseUrl } = this.options;
@@ -11,7 +11,7 @@ export default function(href: string, title: string, text: string) {
     href = resolve(hasTrailingSlash.test(baseUrl) ? baseUrl : `${baseUrl}/`, href);
   }
 
-  if (isInternal.test(href) && !isV3.test(href)) {
+  if (!isExternal.test(href) && !isV3.test(href)) {
     return `<stencil-route-link url=${href} ${title ? `anchorTitle=${title}` : ''}>${text}</stencil-route-link>`;
   }
 

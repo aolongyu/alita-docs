@@ -24,7 +24,7 @@ Sign into the [Azure Portal](https://portal.azure.com) then navigate to the `Azu
 
 Begin by creating a new Application under Manage -> Applications -> Add.
 
-![Azure app configuration settings](/docs/assets/img/native/azure-app-settings.png)
+![Azure app configuration settings](/assets/img/native/azure-app-settings.png)
 
 Give your app a new name, then toggle `Yes` for both _Web App_ and _Allow implicit flow_. For _Reply URL_, specify `http://localhost:8100/` along with the name of your app's core login page (typically, `login`).
 
@@ -115,7 +115,7 @@ Where `B2C-TENANT-NAME` is your tenant name and the `POLICY-NAME` is the name of
 
 ### What's Next?
 
-Check out the full list of [configuration options](/docs/enterprise/auth-connect#ionicauthoptions) available, then implement the [other steps](/docs/enterprise/auth-connect#workflow) in the Auth Connect workflow.
+Check out the full list of [configuration options](/enterprise/auth-connect#ionicauthoptions) available, then implement the [other steps](/enterprise/auth-connect#workflow) in the Auth Connect workflow.
 
 ## Implementing Password Reset
 
@@ -123,7 +123,7 @@ To implement password reset functionality, a custom User Flow needs to be create
 
 Within your app, implement the following logic:
 
-If an error is thrown after the [Login](/docs/enterprise/auth-connect#iionicauth.login) function is called, inspect the `message` property. If it starts with the string `AADB2C90118` (part of the error message returned by Azure AD), then call [Login](#iionicauth.login) again, this time specifying the location of the password reset endpoint.
+If an error is thrown after the [Login](/enterprise/auth-connect#iionicauth.login) function is called, inspect the `message` property. If it starts with the string `AADB2C90118` (part of the error message returned by Azure AD), then call [Login](#iionicauth.login) again, this time specifying the location of the password reset endpoint.
 
 ```typescript
 // Snippet example: Password reset

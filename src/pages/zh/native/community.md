@@ -7,16 +7,16 @@ Community Plugins are a collection of open source Cordova plugins that make it e
 
 Community Plugins are submitted and maintained by the Ionic community. While community members are generally quick to find and fix issues, certain plugins may not function properly. For teams that require dedicated native plugin support, please explore Ionic Native then [request a free trial](https://ionicframework.com/enterprise/contact).
 
-> Note: These docs are for apps built with Ionic Framework 4.0.0 and greater. For older Ionic v3 projects, please [see here](/docs/v3/native).
+> Note: These docs are for apps built with Ionic Framework 4.0.0 and greater. For older Ionic v3 projects, please [see here](/v3/native).
 
 ## Capacitor Support
 
-In addition to Cordova, Ionic Native also works with [Capacitor](https://capacitor.ionicframework.com), Ionic's official native runtime. Basic usage below. For complete details, [see the Capacitor documentation](https://capacitor.ionicframework.com/docs/cordova/using-cordova-plugins).
+In addition to Cordova, Ionic Native also works with [Capacitor](https://capacitor.ionicframework.com), Ionic's official native runtime. Basic usage below. For complete details, [see the Capacitor documentation](https://capacitor.ionicframework.com/cordova/using-cordova-plugins).
 
 ## Usage
 All plugins have two components - the native code (Cordova) and the TypeScript code (Ionic Native). Cordova plugins are also wrapped in a `Promise` or `Observable` in order to provide a common plugin interface and modernized development approach.
 
-Using the [Camera plugin](/docs/native/camera) as an example, first install it:
+Using the [Camera plugin](/native/camera) as an example, first install it:
 
 <docs-tabs> <docs-tab tab="Cordova">
 
@@ -33,7 +33,7 @@ $ npm install @ionic-native/core
 
 </docs-tab> <docs-tab tab="Capacitor">
 
-For complete details, [see the Capacitor documentation](https://capacitor.ionicframework.com/docs/cordova/using-cordova-plugins).
+For complete details, [see the Capacitor documentation](https://capacitor.ionicframework.com/cordova/using-cordova-plugins).
 
 ```shell
 // Install Ionic Native TypeScript wrapper
@@ -48,7 +48,7 @@ $ alitacap sync
 
 </docs-tab> </docs-tabs>
 
-Next, begin using the plugin, following the various framework usage options below. For FAQ, see [here](/docs/native/faq).
+Next, begin using the plugin, following the various framework usage options below. For FAQ, see [here](/native/faq).
 
 ## Angular
 Angular apps can use either Cordova or Capacitor to build native mobile apps. Import the plugin in a `@NgModule` and add it to the list of Providers. For Angular, the import path should end with `/ngx`.  Angular's change detection is automatically handled.

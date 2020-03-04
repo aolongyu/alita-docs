@@ -1,8 +1,8 @@
 ---
 previousText: 'Your First App'
-previousUrl: '/docs/react/your-first-app'
+previousUrl: '/react/your-first-app'
 nextText: 'Navigation'
-nextUrl: '/docs/react/navigation'
+nextUrl: '/react/navigation'
 ---
 
 # React Lifecycle

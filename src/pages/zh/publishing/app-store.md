@@ -1,8 +1,8 @@
 ---
 previousText: 'Progressive Web App'
-previousUrl: 'docs/publishing/progressive-web-app'
+previousUrl: '/publishing/progressive-web-app'
 nextText: 'Android Play Store'
-nextUrl: '/docs/publishing/play-store'
+nextUrl: '/publishing/play-store'
 contributors:
   - zaarheed
 ---

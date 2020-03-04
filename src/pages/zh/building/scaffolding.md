@@ -1,8 +1,8 @@
 ---
 previousText: '开始'
-previousUrl: '/docs/building/starting'
+previousUrl: '/building/starting'
 nextText: '迁移'
-nextUrl: '/docs/building/migration'
+nextUrl: '/building/migration'
 contributors:
   - mhartington
   - brandyscarney
@@ -52,11 +52,11 @@ export default {
 
 然后访问 `/api/hello` 就能得到 `{ text: 'Alita' }` 的响应，其他以此类推。
 
-更多 mock 文件的编写方法，请查看 Umi 的文档，[Mock 数据](https://umijs.org/zh-CN/docs/mock)
+更多 mock 文件的编写方法，请查看 Umi 的文档，[Mock 数据](https://umijs.org/zh-CN/mock)
 
 ### src
 
-`src/` 目录下几乎包含了我们项目的全部业务代码。会有几个约定的文件，如果你对这些文件不太了解，那你可以先了解一下我们的[核心概念](/docs/intro/concepts)。 `services/api.ts` 文件规定用来存放我们封装好的api请求方法。只是一种项目规范。无特殊约定，使用时需要在需要的地方手动 `import`。通常我们只编写页面的话，只需要修改 `src/pages` 目录。
+`src/` 目录下几乎包含了我们项目的全部业务代码。会有几个约定的文件，如果你对这些文件不太了解，那你可以先了解一下我们的[核心概念](/intro/concepts)。 `services/api.ts` 文件规定用来存放我们封装好的api请求方法。只是一种项目规范。无特殊约定，使用时需要在需要的地方手动 `import`。通常我们只编写页面的话，只需要修改 `src/pages` 目录。
 
 <file-tree>
     <file-tree-directory name="src">
@@ -102,4 +102,4 @@ export default {
 
 我们建议使用 Alita Cli 来创建基本页面，以保持最佳实践。Cli 在创建页面之后，还会创建相对应的 dva model 文件，如果你不需要，你可以手动删除它，但是别忘了，在 page 页面上修改绑定哦。不过尽量不要这么做，我们最好保持，一个页面一个model的风格，让页面逻辑分离的更加清晰。
 
-有关更多详细信息，请从命令行运行 `alita g --help` 或参阅文档[文档](/docs/cli/commands/generate)。
+有关更多详细信息，请从命令行运行 `alita g --help` 或参阅文档[文档](/cli/commands/generate)。

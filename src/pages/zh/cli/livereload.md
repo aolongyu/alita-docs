@@ -3,7 +3,7 @@
 
 # Live Reload
 
-One option that can boost productivity when building Ionic apps is **Live Reload** (or **live-reload**). When active, Live Reload will reload the browser or [Web View](/docs/building/webview) when changes in the app are detected. This is particularly useful for developing using hardware devices.
+One option that can boost productivity when building Ionic apps is **Live Reload** (or **live-reload**). When active, Live Reload will reload the browser or [Web View](/building/webview) when changes in the app are detected. This is particularly useful for developing using hardware devices.
 
 ## Terms
 
@@ -43,6 +43,6 @@ Remember, with the `--external` option, others on your Wi-Fi network will be abl
 
 ## Tips
 
-- Use the `--device`, `--emulator`, and `--target` options to narrow down target devices. Use the `--list` option to list all targets. See usage in the [command docs](/docs/cli/commands/cordova-run).
-- You can separate the dev server process and the deploy process by using `alitaserve` and the [`--livereload-url`](/docs/cli/commands/cordova-run#option-livereload-url) option of `alitacordova run`.
+- Use the `--device`, `--emulator`, and `--target` options to narrow down target devices. Use the `--list` option to list all targets. See usage in the [command docs](/cli/commands/cordova-run).
+- You can separate the dev server process and the deploy process by using `alitaserve` and the [`--livereload-url`](/cli/commands/cordova-run#option-livereload-url) option of `alitacordova run`.
 - For Android, it is possible to configure [adb](https://developer.android.com/studio/command-line/adb) to setup the bridge over TCP such that subsequent deploys no longer need a USB cable.

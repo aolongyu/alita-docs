@@ -1,8 +1,8 @@
 ---
 previousText: 'Theming'
-previousUrl: '/docs/developer-resources/guides/first-app-v3/theming'
+previousUrl: '/developer-resources/guides/first-app-v3/theming'
 nextText: 'Track Bugs with Ionic Monitoring'
-nextUrl: '/docs/developer-resources/guides/first-app-v3/track-bugs-ionic-monitoring'
+nextUrl: '/developer-resources/guides/first-app-v3/track-bugs-ionic-monitoring'
 ---
 
 # Realtime App Updates with Ionic Deploy
@@ -24,7 +24,7 @@ $ alitacordova plugin add cordova-plugin-ionic@latest --save
 
 There are two unique values to provide: your app id and channel name. Sign into Ionic Pro, then find the App Id on your app’s dashboard:
 
-![app id location](/docs/assets/img/guides/first-app-v3/app-id-location.png)
+![app id location](/assets/img/guides/first-app-v3/app-id-location.png)
 
 And we’ll just use “Master” as the channel name. Putting this together looks like:
 
@@ -77,7 +77,7 @@ Next, create a local, native build of the app.
 
 ## Android Builds
 
-Follow the [Android Setup instructions](/docs/installation/android), which includes installing Java 8 and Android Studio on your machine. Then, in your Terminal run:
+Follow the [Android Setup instructions](/installation/android), which includes installing Java 8 and Android Studio on your machine. Then, in your Terminal run:
 
 ```shell
 alitacordova build android --prod
@@ -87,13 +87,13 @@ This will generate a unsigned debug build (meaning the app can run on any Androi
 
 ## iOS Builds
 
-iOS is [a bit trickier to set up](/docs/installation/ios) than Android and requires a Mac computer. Ensure XCode is updated to the latest version and set up a development team. Then, in your Terminal, run:
+iOS is [a bit trickier to set up](/installation/ios) than Android and requires a Mac computer. Ensure XCode is updated to the latest version and set up a development team. Then, in your Terminal, run:
 
 ```shell
 alitacordova build ios --prod
 ```
 
-Then, continue to [follow the instructions here](/docs/publishing/app-store) regarding signing certificates, etc. With a native version of your app built, let’s copy it to your device of choice.
+Then, continue to [follow the instructions here](/publishing/app-store) regarding signing certificates, etc. With a native version of your app built, let’s copy it to your device of choice.
 
 ## Add the Native App to Your Local Device
 
@@ -133,19 +133,19 @@ $ git push alitamaster
 
 Log into the [Ionic Pro dashboard](https://dashboard.ionicframework.com) and navigate to Deploy -> Builds. You’ll see this newest commit begin to build immediately. Since we assigned the Ionic Pro plugin to the Master branch (the one we always Git Push to), the Channel label will also point to this commit, effectively auto-deploying this change to all app users:
 
-![deploy channel](/docs/assets/img/guides/first-app-v3/deploy-channel.png)
+![deploy channel](/assets/img/guides/first-app-v3/deploy-channel.png)
 
 A Channel points to a specific JavaScript Build or Snapshot of your app that will be shared with devices listening to that channel for updates. You can change which Build a Channel points to whenever you’d like.
 
-Each time a user launches our Photo Gallery app, it will poll for updates from Ionic Pro. If new code is available, the update is downloaded in the background. There are [a handful of ways](/docs/pro/deploy/api/#update_method) to control how updates are performed, but by default they will be applied the next time the user closes then opens the app.
+Each time a user launches our Photo Gallery app, it will poll for updates from Ionic Pro. If new code is available, the update is downloaded in the background. There are [a handful of ways](/pro/deploy/api/#update_method) to control how updates are performed, but by default they will be applied the next time the user closes then opens the app.
 
-When the latest Build has been successful, close your local copy of Photo Gallery app or put it in the background for 30 seconds (the [MIN_BACKGROUND_DURATION default](/docs/pro/deploy/api/#min_background_duration)), then reopen it. The title of the Photo Gallery page should change from “Photo Gallery” to “Photo Viewer.”
+When the latest Build has been successful, close your local copy of Photo Gallery app or put it in the background for 30 seconds (the [MIN_BACKGROUND_DURATION default](/pro/deploy/api/#min_background_duration)), then reopen it. The title of the Photo Gallery page should change from “Photo Gallery” to “Photo Viewer.”
 
 What if you deploy a change, then realize that there is a bug? Or perhaps you’re just not happy with the name “Photo Viewer?” No problem: Ionic Pro Deploy makes it easy to roll back changes as well!
 
 On the Deploy Builds page, click the “Assign to Channel” button on the previous commit, then click “Deploy.” App users will be reverted to the previous version, and our “Photo Gallery” name has been restored.
 
-![deploy channel](/docs/assets/img/guides/first-app-v3/deploy-revertChange.png)
+![deploy channel](/assets/img/guides/first-app-v3/deploy-revertChange.png)
 
 This was just a taste of what you can do with Ionic Deploy! You can also set up multiple deployment channels to send targeted updates to specific groups of users. Use it to run A/B tests, or target the distribution of updates by audience, geography, or test group.
 

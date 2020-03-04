@@ -1,13 +1,13 @@
 ---
 previousText: 'Android Play Store'
-previousUrl: 'docs/publishing/play-store'
+previousUrl: '/publishing/play-store'
 contributors:
   - mhartington
 ---
 
 # Desktop App
 
-Building a desktop app with Ionic allows developers to reuse 100% of their code and ship a traditional desktop app while still having access to all the native device features, like push notifications. This guide assumes familiarity with Electron, and does not go into "how" to build an electron app. For that, check out the official <a href="https://electronjs.org/docs/tutorial/first-app" target="_blank">Electron guide</a>.
+Building a desktop app with Ionic allows developers to reuse 100% of their code and ship a traditional desktop app while still having access to all the native device features, like push notifications. This guide assumes familiarity with Electron, and does not go into "how" to build an electron app. For that, check out the official <a href="https://electronjs.org/tutorial/first-app" target="_blank">Electron guide</a>.
 
 ## macOS App
 
@@ -20,7 +20,7 @@ There are two hard requirements for publishing an app on the macOS app store
 
 ### Publishing
 
-The Electron team has a detailed guide on how to publish an app for macOS. Please review [the docs here.](https://electronjs.org/docs/tutorial/mac-app-store-submission-guide)
+The Electron team has a detailed guide on how to publish an app for macOS. Please review [the docs here.](https://electronjs.org/tutorial/mac-app-store-submission-guide)
 
 ## Windows App
 
@@ -41,4 +41,4 @@ $ npm install -g electron-windows-store
 
 ### Publishing
 
-Like macOS, Electron has a detailed guide on how to publish an app for Windows. Please review [the docs here](https://electronjs.org/docs/tutorial/windows-store-guide)
+Like macOS, Electron has a detailed guide on how to publish an app for Windows. Please review [the docs here](https://electronjs.org/tutorial/windows-store-guide)

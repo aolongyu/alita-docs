@@ -92,7 +92,7 @@ const renderCordovaPromotion = (isPremier: string) => {
       <h2>Stuck on a Cordova issue?</h2>
       <docs-card class="cordova-ee-card" header="Don't waste precious time on plugin issues." href="https://ionicframework.com/sales?product_of_interest=Ionic%20Native">
         <div>
-          <img src="/docs/assets/icons/native-cordova-bot.png" class="cordova-ee-img" />
+          <img src="/assets/icons/native-cordova-bot.png" class="cordova-ee-img" />
           <p>If you're building a serious project, you can't afford to spend hours troubleshooting. Ionic’s experts offer premium advisory services for both community plugins and premier plugins.</p>
           <docs-button class="native-ee-detail">Contact Us Today!</docs-button>
         </div>
@@ -127,7 +127,7 @@ const renderInstallation = (cordova: string, npm: string) => {
         </docs-tab>
         <docs-tab tab="Enterprise">
           <blockquote>Ionic Native Enterprise comes with fully supported and maintained plugins from the Ionic Team. &nbsp;
-            <a class="btn" href="/docs/enterprise">Learn More</a> or if you're interested in an enterprise version of this plugin <a class="btn" href="https://ionicframework.com/sales?product_of_interest=Ionic%20Enterprise%20Engine">Contact Us</a></blockquote>
+            <a class="btn" href="/enterprise">Learn More</a> or if you're interested in an enterprise version of this plugin <a class="btn" href="https://ionicframework.com/sales?product_of_interest=Ionic%20Enterprise%20Engine">Contact Us</a></blockquote>
         </docs-tab>
       </docs-tabs>
     </section>
@@ -163,7 +163,7 @@ const renderUsage = (usage: any) => {
       <h2 id="usage">
         <a href="#usage">Usage</a>
       </h2>
-      <p><strong>Using React?</strong> <stencil-route-link url={`/docs/native/community#react`}>See here.</stencil-route-link></p>
+      <p><strong>Using React?</strong> <stencil-route-link url={`/native/community#react`}>See here.</stencil-route-link></p>
       {toHypertext(h, usage)}
     </section>
   );
@@ -195,9 +195,9 @@ const renderPremier = (premierSlug: string) => {
         <a href="#premier">Premier Version Available</a>
       </h2>
       <docs-card class="cordova-ee-card"
-        header="Plugins and solutions built and supported by Ionic." href={`/docs/enterprise/${premierSlug}`}>
+        header="Plugins and solutions built and supported by Ionic." href={`/enterprise/${premierSlug}`}>
         <div>
-          <img src="/docs/assets/icons/native-enterprise.png" class="cordova-ee-img" />
+          <img src="/assets/icons/native-enterprise.png" class="cordova-ee-img" />
           <p>Featuring regular release cycles, security and bug fixes, and guaranteed SLAs.</p>
           <docs-button class="native-ee-detail">Available here</docs-button>
         </div>

@@ -1,8 +1,8 @@
 ---
 previousText: 'Alita 框架是什么'
-previousUrl: '/docs/intro'
+previousUrl: '/intro'
 nextText: '创建你的第一个应用'
-nextUrl: '/docs/intro/first-app'
+nextUrl: '/intro/first-app'
 ---
 
 # 核心概念
@@ -134,12 +134,12 @@ export default function(props) {
 }
 ```
 
-更多 Umi 核心原理，请查阅 [Umi 如何工作？](https://umijs.org/zh-CN/docs/how-umi-works)
+更多 Umi 核心原理，请查阅 [Umi 如何工作？](https://umijs.org/zh-CN/how-umi-works)
 
 ## 业务组件封装
 
 对于业务和功能的封装，alita 都以“能不能只写一行代码就实现”的角度去设计和思考。针对当前业务上遇到的难题，抛弃“以后可能有的需求”的思想，进行针对性封装，在实践中遇难题解决难题，对组件进行扩展升级。
-了解更多组件封装，请查阅 [组件](/docs/components)
+了解更多组件封装，请查阅 [组件](/components)
 
 ## 自适应样式
 
@@ -148,12 +148,12 @@ export default function(props) {
 ## 导航
 
 内置了 tabs 风格的导航，可以通过 `mobileLayout:true` 开启。
-在 `src/app.ts` 里面进行配置，API和方法详解，请查阅[layout插件](/docs/plugins/layout)
+在 `src/app.ts` 里面进行配置，API和方法详解，请查阅[layout插件](/plugins/layout)
 
 ## 原生能力
 
 通过 `native:['','']` 配置使用，配置完，需要执行 `alita native` 安装 `cordova` 插件和`ionic-native` 对应的组件，`alitanative` 只是对调用做了一层封装，在 React 项目中也可以正常使用。
-更多信息，请查阅 [native](/docs/native)
+更多信息，请查阅 [native](/native)
 
 ## 主题色
 

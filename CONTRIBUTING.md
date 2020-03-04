@@ -45,8 +45,8 @@ At a high level, the production documentation works like this:
    ├── intro.json
    └── intro.md
    ```
-2. At runtime, the `docs-page` component receives the current path (e.g. `/docs/intro`)
-3. The `docs-page` component fetches and parses the [JSON representation](https://ionicframework.com/docs/pages/intro.json) of that page
+2. At runtime, the `docs-page` component receives the current path (e.g. `/intro`)
+3. The `docs-page` component fetches and parses the [JSON representation](https://ionicframework.com/pages/intro.json) of that page
 4. The `docs-page` component renders that data using a [template](https://github.com/alitajs/alita-docs/tree/master/src/components/page/templates)
 
 > **Note**: most reference content (e.g. APIs, native plugins, CLI commands) is not stored as Markdown. Those pages are created using data provided by other repositories to the `build-pages` script.
@@ -81,10 +81,10 @@ The [`docs-menu`](https://github.com/alitajs/alita-docs/blob/master/src/componen
 The content of the Ionic docs is written as [Markdown](https://commonmark.org/) in `src/pages`. Each Markdown file corresponds to a route.
 
 ```
-/docs/intro             =>  src/pages/intro.md
-/docs/installation/cli  =>  src/pages/installation/cli.md
-/docs/theming/advanced  =>  src/pages/theming/advanced.md
-/docs/theming           =>  src/pages/theming.md
+/intro             =>  src/pages/intro.md
+/installation/cli  =>  src/pages/installation/cli.md
+/theming/advanced  =>  src/pages/theming/advanced.md
+/theming           =>  src/pages/theming.md
 ```
 
 You can make copy edits to the site by [editing the Markdown files directly on GitHub](https://help.github.com/articles/editing-files-in-another-user-s-repository/). In your pull request, please explain what was missing from or inaccurate about the content.
@@ -103,13 +103,13 @@ $ npm run watch-pages
 
 The Markdown in `src/pages` does not contain all of the Ionic documentation's content:
 
-- Paths matching `/docs/api/*` are built from the [Ionic Framework](https://github.com/alitajs/alita) source code
-- Paths matching `/docs/native/*` are built from the [Ionic Native](https://github.com/alitajs/alita-native) source code
-- Paths matching `/docs/cli/commands/*` are built from the [Ionic CLI](https://github.com/alitajs/alita-cli) source code
+- Paths matching `/api/*` are built from the [Ionic Framework](https://github.com/alitajs/alita) source code
+- Paths matching `/native/*` are built from the [Ionic Native](https://github.com/alitajs/alita-native) source code
+- Paths matching `/cli/commands/*` are built from the [Ionic CLI](https://github.com/alitajs/alita-cli) source code
 
 #### Updating Ionic Native Community Plugins
 
-To add or update an Ionic Native [community plugin](/docs/native/overview):
+To add or update an Ionic Native [community plugin](/native/overview):
 1) Open a pull request on the [Ionic Native](https://github.com/alitajs/alita-native) repository (both code or documentation).
 2) Once the change has been approved and merged into master by the Ionic team, do the following steps:
 
@@ -126,7 +126,7 @@ npm ci
 npm run docs-json
 
 # Overwrite the ionic-docs native.json file with the new changes
-mv scripts/docs-json/plugins.json /path/to/docs/scripts/data/native.json
+mv scripts/docs-json/plugins.json /path/to/scripts/data/native.json
 ```
 
 3) Open a PR in the `ionic-docs` repo, submitting the new `native.json` file.
@@ -151,7 +151,7 @@ For example, in `src/components/menu/templates/main.tsx`:
 
 ```javascript
 // 'token': 'path'
-'menu-installation-cli': '/docs/installation/cli',
+'menu-installation-cli': '/installation/cli',
 ```
 
 Then, add the token and its translation to each file within the `src/assets/locales` folder:

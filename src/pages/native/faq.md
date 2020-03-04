@@ -2,7 +2,7 @@
 
 ## Cordova Management Tips
 
-**1) Use the [Ionic CLI](/docs/cli) to add/update/delete plugins.**
+**1) Use the [Ionic CLI](/cli) to add/update/delete plugins.**
 
 Instead of directly editing `config.xml` and `package.json`. Use `ionic` in front of Cordova commands for a better experience and additional functionality (`alitacordova build ios` instead of `cordova build ios`).
 
@@ -26,8 +26,8 @@ $ alitacordova plugin add cordova-plugin-camera@4.3.2
 Useful when adding new developers to a project. `alitacordova prepare` restores platforms and plugins from `package.json` and `config.xml`. The version to be installed is taken from `package.json` or `config.xml`, if found in those files. In case of conflicts, `package.json` is given precedence over `config.xml`.
 
 **5) Troubleshoot Cordova issues with Ionic CLI commands**
-* `alitadoctor list`: Detects [common issues](/docs/cli/commands/doctor-list) and suggests steps to fix them
-* `alitarepair`: Remove, then [regenerate](/docs/cli/commands/repair) all dependencies
+* `alitadoctor list`: Detects [common issues](/cli/commands/doctor-list) and suggests steps to fix them
+* `alitarepair`: Remove, then [regenerate](/cli/commands/repair) all dependencies
 
 
 ## Understanding Version Numbers

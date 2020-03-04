@@ -2,9 +2,9 @@
 initialTab: '预览'
 inlineHtmlPreviews: true
 previousText: '主题'
-previousUrl: '/docs/theming/themes'
+previousUrl: '/theming/themes'
 nextText: 'Color Generator'
-nextUrl: '/docs/theming/color-generator'
+nextUrl: '/theming/color-generator'
 contributors:
   - brandyscarney
   - marcjulian
@@ -28,8 +28,8 @@ contributors:
 | `--ion-safe-area-right`   | 调整应用右侧的安全区域                                                 |
 | `--ion-safe-area-bottom`  | 调整应用底部的安全区域                                                 |
 | `--ion-safe-area-left`    | 调整应用左侧的安全区域                                                 |
-| `--ion-margin`            | 调整 [Margin 属性](/docs/layout/css-utilities#element-margin)   |
-| `--ion-padding`           | 调整 [Padding 属性](/docs/layout/css-utilities#element-padding) |
+| `--ion-margin`            | 调整 [Margin 属性](/layout/css-utilities#element-margin)   |
+| `--ion-padding`           | 调整 [Padding 属性](/layout/css-utilities#element-padding) |
 
 
 ### 网格变量
@@ -53,7 +53,7 @@ contributors:
 
 ### The Alpha Problem
 
-There is not yet full <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Browser_compatibility" target="_blank">browser support</a> for alpha use of a hex color. The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgb()_and_rgba()" target="_blank">rgba()</a> function only accepts a value in `R, G, B, A` (Red, Green, Blue, Alpha) format. The following code shows examples of correct and incorrect values passed to `rgba()`.
+There is not yet full <a href="https://developer.mozilla.org/en-US/Web/CSS/color_value#Browser_compatibility" target="_blank">browser support</a> for alpha use of a hex color. The <a href="https://developer.mozilla.org/en-US/Web/CSS/color_value#rgb()_and_rgba()" target="_blank">rgba()</a> function only accepts a value in `R, G, B, A` (Red, Green, Blue, Alpha) format. The following code shows examples of correct and incorrect values passed to `rgba()`.
 
 ```css
 /* These examples use the same color: blueviolet. */
@@ -72,7 +72,7 @@ There is not yet full <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/
 }
 ```
 
-> See the [CSS Variables](/docs/theming/css-variables) section for more information on how to get and set CSS variables.
+> See the [CSS Variables](/theming/css-variables) section for more information on how to get and set CSS variables.
 
 Ionic uses colors with an opacity (alpha) in several components. In order for this to work, those properties must be provided in RGB format. When changing any of the properties that have a variation ending in `-rgb`, it is important they are also provided in a comma separated format **without parentheses**. Below are some examples for changing text and background color.
 
@@ -98,7 +98,7 @@ body {
 
 ### Variables in Media Queries
 
-CSS variables in [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries) are not currently supported, but there are open drafts to add [custom media queries](https://drafts.csswg.org/mediaqueries-5/#custom-mq) and [custom environment variables](https://drafts.csswg.org/css-env-1/) that would solve this problem! However, with the current state of support, the following will **not** work:
+CSS variables in [media queries](https://developer.mozilla.org/en-US/Web/CSS/Media_Queries) are not currently supported, but there are open drafts to add [custom media queries](https://drafts.csswg.org/mediaqueries-5/#custom-mq) and [custom environment variables](https://drafts.csswg.org/css-env-1/) that would solve this problem! However, with the current state of support, the following will **not** work:
 
 ```css
 :root {
@@ -112,7 +112,7 @@ CSS variables in [media queries](https://developer.mozilla.org/en-US/docs/Web/CS
 
 ### Modifying CSS Color Variables
 
-While it is possible to easily alter a color in Sass using its built-in functions, it is currently not as easy to modify colors set in CSS Variables. This can be accomplished in CSS by splitting the [RGB](https://developer.mozilla.org/en-US/docs/Glossary/RGB) or [HSL](https://en.wikipedia.org/wiki/HSL_and_HSV) channels and modifying each value, but it is complex and has missing functionality.
+While it is possible to easily alter a color in Sass using its built-in functions, it is currently not as easy to modify colors set in CSS Variables. This can be accomplished in CSS by splitting the [RGB](https://developer.mozilla.org/en-US/Glossary/RGB) or [HSL](https://en.wikipedia.org/wiki/HSL_and_HSV) channels and modifying each value, but it is complex and has missing functionality.
 
 What exactly does this mean? Basically, using a CSS preprocessor, such as Sass, allows us to use functions to manipulate a single color. For example, we can create the following colors in Sass:
 

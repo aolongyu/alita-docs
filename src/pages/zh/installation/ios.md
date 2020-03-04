@@ -1,8 +1,8 @@
 ---
 previousText: '环境设置'
-previousUrl: '/docs/installation/environment'
+previousUrl: '/installation/environment'
 nextText: 'Android 设置'
-nextUrl: '/docs/installation/android'
+nextUrl: '/installation/android'
 ---
 
 # iOS 设置
@@ -21,7 +21,7 @@ $ xcode-select --install
 
 会自动弹出一个安装程序，点击 “安装”，并同意协议。
 
-![Xcode Select](/docs/assets/img/installation/xcode-select.jpg)
+![Xcode Select](/assets/img/installation/xcode-select.jpg)
 
 > 我们不建议使用 Xcode 开发应用程序。相反，它仅应真正用于构建和运行适用于本机 macOS 平台的应用程序以及管理模拟器。
 
@@ -31,7 +31,7 @@ $ xcode-select --install
 
 打开 Xcode 并导航到 **Xcode** &raquo; **Preferences** &raquo; **Accounts**。如果未列出任何Apple ID，请添加。登录后，个人团队将出现在Apple ID的团队列表中。
 
-![Xcode Accounts](/docs/assets/img/installation/ios-xcode-accounts.png)
+![Xcode Accounts](/assets/img/installation/ios-xcode-accounts.png)
 
 > 如果你使用的是企业级证书，请联系你们的证书管理员，她会教你怎么做的。
 
@@ -41,11 +41,11 @@ iOS 模拟器模拟 Mac 上的 iOS 设备。以下文档是设置 iOS 模拟器�
 
 打开 Xcode 并导航到 **Window** &raquo; **Devices and Simulators**。如果尚不存在，请创建一个 **iPhone 11** 模拟器。
 
-![iOS Simulators](/docs/assets/img/installation/ios-xcode-simulators-setup.png)
+![iOS Simulators](/assets/img/installation/ios-xcode-simulators-setup.png)
 
 ### 安装 ios-sim & ios-deploy
 
-The [`ios-sim`](https://github.com/ios-control/ios-sim) and [`ios-deploy`](https://github.com/ios-control/ios-deploy) are utilities that deploy apps to the iOS simulator and iOS devices during development. They can be installed globally with [npm](/docs/faq/glossary#npm).
+The [`ios-sim`](https://github.com/ios-control/ios-sim) and [`ios-deploy`](https://github.com/ios-control/ios-deploy) are utilities that deploy apps to the iOS simulator and iOS devices during development. They can be installed globally with [npm](/faq/glossary#npm).
 
 该 [`ios-sim`](https://github.com/ios-control/ios-sim) 和 [`ios-deploy`](https://github.com/ios-control/ios-deploy) 是实用工具，部署应用到开发过程中的 iOS 模拟器和 iOS 设备。你可以通过以下命令安装。
 

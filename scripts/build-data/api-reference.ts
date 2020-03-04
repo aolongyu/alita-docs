@@ -1,4 +1,4 @@
-import { components } from '@ionic/docs/core.json';
+import { components } from '@ionic/core.json';
 import { resolve } from 'path';
 import { outputJson } from 'fs-extra';
 
@@ -9,7 +9,7 @@ const OUTPUT_PATH = resolve(
 
 const reference = components.map(component => [
   component.tag,
-  `/docs/api/${component.tag.slice(4)}`
+  `/api/${component.tag.slice(4)}`
 ]);
 
 export default {

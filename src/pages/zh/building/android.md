@@ -1,8 +1,8 @@
 ---
 previousText: '在 iOS 上运行'
-previousUrl: '/docs/building/ios'
+previousUrl: '/building/ios'
 # nextText: 'Testing'
-# nextUrl: '/docs/building/testing'
+# nextUrl: '/building/testing'
 ---
 
 
@@ -57,7 +57,7 @@ cross-env CORDOVA=android alita build
 
 在Android Studio中，在编译器右上角，选择目标模拟器或设备（如果你都没有设备和模拟器，你可以根据指引添加一个模拟器），然后单击“播放”按钮。
 
-![Android Studio Run Button Area](/docs/assets/img/running/android-studio-run-button-area.png)
+![Android Studio Run Button Area](/assets/img/running/android-studio-run-button-area.png)
 
 ### 查看原生日志
 
@@ -65,7 +65,7 @@ cross-env CORDOVA=android alita build
 
 > 如果你的 Android Studio **Logcat** 是隐藏的，可以设置 **View** &raquo; **Tool Windows** &raquo; **Logcat** 显示。
 
-![Android Studio Logcat](/docs/assets/img/running/android-studio-logcat.png)
+![Android Studio Logcat](/assets/img/running/android-studio-logcat.png)
 
 ## 实时开发调试
 

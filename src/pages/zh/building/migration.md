@@ -1,8 +1,8 @@
 ---
 previousText: '脚手架'
-previousUrl: '/docs/building/scaffolding'
+previousUrl: '/building/scaffolding'
 nextText: '跨平台'
-nextUrl: '/docs/building/cross-platform'
+nextUrl: '/building/cross-platform'
 contributors:
   - mhartington
   - kensodemann

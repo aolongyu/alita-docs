@@ -1,8 +1,8 @@
 ---
 previousText: '设置iOS环境'
-previousUrl: '/docs/installation/ios'
+previousUrl: '/installation/ios'
 nextText: 'Starting an App'
-nextUrl: '/docs/building/starting'
+nextUrl: '/building/starting'
 contributors:
   - rtpHarry
 ---
@@ -13,7 +13,7 @@ contributors:
 
 ## Android Studio
 
-<a href="https://developer.android.com/studio/" target="_blank">Android Studio</a> 是用于创建原生 Android 应用程序的 IDE。 它包括<a href="/docs/faq/glossary#android-sdk">Android SDK</a>。
+<a href="https://developer.android.com/studio/" target="_blank">Android Studio</a> 是用于创建原生 Android 应用程序的 IDE。 它包括<a href="/faq/glossary#android-sdk">Android SDK</a>。
 
 > 我们不建议使用 Android Studio 开发应用程序。相反，它仅应真正用于构建和运行适用于原生 Android 平台的应用程序以及管理 Android SDK 和模拟器。
 
@@ -25,13 +25,13 @@ contributors:
 
 安装完成后，打开Android Studio。IDE 会检测到需要安装 Android SDK 。在**SDK Components Setup** 屏幕中，完成 SDK 的安装。记下 Android SDK 的位置。下面的环境配置中需要用到这个位置。
 
-![Android Studio SDK Setup](/docs/assets/img/installation/android-studio-sdk-setup.png)
+![Android Studio SDK Setup](/assets/img/installation/android-studio-sdk-setup.png)
 
 默认情况下，会安装最新的稳定 SDK 平台，其中包含针对该 Android 版本的软件包的集合。
 
 要安装系统映像和其他次要 SDK 平台软件包，您可能需要确保在 SDK Manager 的底部选中了 **Show Package Details** 。
 
-![Android Studio SDK Manager](/docs/assets/img/installation/android-studio-sdk.png)
+![Android Studio SDK Manager](/assets/img/installation/android-studio-sdk.png)
 
 ### 配置命令行工具
 
@@ -65,12 +65,12 @@ $ export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
 
 在Android Studio欢迎屏幕中，单击**Configure** &raquo; **AVD Manager**。也可以在**Tools** &raquo; **AVD Manager** 菜单中打开 `AVDs` 管理器。
 
-![AVD Setup](/docs/assets/img/installation/android-studio-avd-setup.png)
+![AVD Setup](/assets/img/installation/android-studio-avd-setup.png)
 
 单击**Create Virtual Device**，然后选择合适的设备。如果不确定，请选择Pixel 2。然后，选择合适的系统映像。如果不确定，请选择带有Google Play服务的Pie（API 28）。有关Android版本的信息，请参见<a href="https://en.wikipedia.org/wiki/Android_version_history" target="_blank">Android版本历史记录</a>。
 
 <figure class="device">
-  <img alt="Android Emulator Booting" src="/docs/assets/img/installation/android-emulator-booting.png" />
+  <img alt="Android Emulator Booting" src="/assets/img/installation/android-emulator-booting.png" />
 </figure>
 
 ### 设置 Android 设备(真机)

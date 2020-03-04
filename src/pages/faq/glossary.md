@@ -1,6 +1,6 @@
 ---
 # nextText: 'Build Errors'
-# nextUrl: '/docs/faq/build'
+# nextUrl: '/faq/build'
 ---
 
 # Glossary
@@ -35,7 +35,7 @@
 
   <section id="commonjs">
     <a href="#commonjs"><h3>CommonJS</h3></a>
-    <p><a href="https://webpack.github.io/docs/commonjs.html" target="_blank">CommonJS</a> is a group that defines standard formats for JavaScript APIs. They have defined standards for JavaScript modules and packages.</p>
+    <p><a href="https://webpack.github.io/commonjs.html" target="_blank">CommonJS</a> is a group that defines standard formats for JavaScript APIs. They have defined standards for JavaScript modules and packages.</p>
   </section>
 
   <section id="cordova">
@@ -45,7 +45,7 @@
 
   <section id="cors">
     <a href="#cors"><h3>CORS</h3></a>
-    <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS" target="_blank">CORS</a> (Cross-Origin Resource Sharing) is a mechanism for servers to control client access to web assets. See the <a href="/docs/faq/cors">CORS FAQs</a> for more information.</p>
+    <p><a href="https://developer.mozilla.org/en-US/Web/HTTP/CORS" target="_blank">CORS</a> (Cross-Origin Resource Sharing) is a mechanism for servers to control client access to web assets. See the <a href="/faq/cors">CORS FAQs</a> for more information.</p>
   </section>
 
   <section id="decorators">
@@ -76,7 +76,7 @@
 
   <section id="genymotion">
     <a href="#genymotion"><h3>Genymotion</h3></a>
-    <p>Genymotion is a third-party Android emulator. It is extremely fast, and is useful for quickly testing your app on Android. Check out our <a href="/docs/resources/developer-tips/#using-genymotion-android">resource section</a> on Genymotion for more info.</p>
+    <p>Genymotion is a third-party Android emulator. It is extremely fast, and is useful for quickly testing your app on Android. Check out our <a href="/resources/developer-tips/#using-genymotion-android">resource section</a> on Genymotion for more info.</p>
   </section>
 
   <section id="git">
@@ -91,7 +91,7 @@
 
   <section id="es-modules">
     <a href="#es-modules"><h3>ES Modules</h3></a>
-    <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import" target="_blank">ES Modules</a> brings the concept of modules natively to JavaScript. With modules, classes and variables are no longer in the global scope and have to be explicitly imported into your project to be used. This makes it much easier to understand where your code is coming from and increases modularity and compartmentalization of functionality.</p>
+    <p><a href="https://developer.mozilla.org/en-US/Web/JavaScript/Reference/Statements/import" target="_blank">ES Modules</a> brings the concept of modules natively to JavaScript. With modules, classes and variables are no longer in the global scope and have to be explicitly imported into your project to be used. This makes it much easier to understand where your code is coming from and increases modularity and compartmentalization of functionality.</p>
   </section>
 
   <section id="karma">
@@ -111,7 +111,7 @@
 
   <section id="livereload">
     <a href="#livereload"><h3>Live Reload</h3></a>
-    <p><strong>Live Reload</strong> (or <strong>live-reload</strong>) is a tool that automatically reloads the browser or <a href="/docs/building/webview">Web View</a> when it detects changes in your app. In some cases, it can replace parts of your app without having to reload the entire window. See the <a href="/docs/cli/livereload">Live Reload docs</a> for more information.</p>
+    <p><strong>Live Reload</strong> (or <strong>live-reload</strong>) is a tool that automatically reloads the browser or <a href="/building/webview">Web View</a> when it detects changes in your app. In some cases, it can replace parts of your app without having to reload the entire window. See the <a href="/cli/livereload">Live Reload docs</a> for more information.</p>
   </section>
 
   <section id="node">

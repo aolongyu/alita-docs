@@ -6,136 +6,136 @@ tableOfContents: false
 
 # UI组件
 
-Ionic apps are made of high-level building blocks called Components, which allow you to quickly construct the UI for your app. Ionic comes stock with a number of components, including cards, lists, and tabs. 一旦你熟悉了基础知识，请参阅 [API Index](/docs/api) 以获取每个组件和子组件的完整列表。
+Ionic apps are made of high-level building blocks called Components, which allow you to quickly construct the UI for your app. Ionic comes stock with a number of components, including cards, lists, and tabs. 一旦你熟悉了基础知识，请参阅 [API Index](/api) 以获取每个组件和子组件的完整列表。
 
-<docs-cards> <docs-card header="Action Sheet" href="/docs/api/action-sheet" img="/docs/assets/icons/feature-component-actionsheet-icon.png"> 
+<docs-cards> <docs-card header="Action Sheet" href="/api/action-sheet" img="/assets/icons/feature-component-actionsheet-icon.png">
 
 Action Sheets display a set of options with the ability to confirm or cancel an action.</docs-card>
 
-<docs-card header="Alert" href="/docs/api/alert" icon="/docs/assets/icons/component-alert-icon.png"> 
+<docs-card header="Alert" href="/api/alert" icon="/assets/icons/component-alert-icon.png">
 
 Alerts are a great way to offer the user the ability to choose a specific action or list of actions.</docs-card>
 
-<docs-card header="Badge" href="/docs/api/badge" icon="/docs/assets/icons/component-badge-icon.png"> 
+<docs-card header="Badge" href="/api/badge" icon="/assets/icons/component-badge-icon.png">
 
 Badges are a small component that typically communicate a numerical value to the user.</docs-card>
 
-<docs-card header="Button" href="/docs/api/button" icon="/docs/assets/icons/component-button-icon.png"> 
+<docs-card header="Button" href="/api/button" icon="/assets/icons/component-button-icon.png">
 
 Buttons let your users take action. They're an essential way to interact with and navigate through an app.</docs-card>
 
-<docs-card header="Card" href="/docs/api/card" icon="/docs/assets/icons/component-card-icon.png"> 
+<docs-card header="Card" href="/api/card" icon="/assets/icons/component-card-icon.png">
 
 Cards are a great way to display an important piece of content, and can contain images, buttons, text, and more.</docs-card>
 
-<docs-card header="Checkbox" href="/docs/api/checkbox" icon="/docs/assets/icons/component-checkbox-icon.png"> 
+<docs-card header="Checkbox" href="/api/checkbox" icon="/assets/icons/component-checkbox-icon.png">
 
 Checkboxes can be used to let the user know they need to make a binary decision.</docs-card>
 
-<docs-card header="Chip" href="/docs/api/chip" icon="/docs/assets/icons/component-chip-icon.png"> 
+<docs-card header="Chip" href="/api/chip" icon="/assets/icons/component-chip-icon.png">
 
 Chips are a compact way to display data or actions.</docs-card>
 
-<docs-card header="Content" href="/docs/api/content" icon="/docs/assets/icons/component-content-icon.png"> 
+<docs-card header="Content" href="/api/content" icon="/assets/icons/component-content-icon.png">
 
 Content is the quintessential way to interact with and navigate through an app.</docs-card>
 
-<docs-card header="Date & Time Pickers" href="/docs/api/datetime" icon="/docs/assets/icons/component-datetimepicker-icon.png"> 
+<docs-card header="Date & Time Pickers" href="/api/datetime" icon="/assets/icons/component-datetimepicker-icon.png">
 
 Date & time pickers are used to present an interface that makes it easy for users to select dates and times.</docs-card>
 
-<docs-card header="Floating Action Button" href="/docs/api/fab" icon="/docs/assets/icons/component-fab-icon.png"> 
+<docs-card header="Floating Action Button" href="/api/fab" icon="/assets/icons/component-fab-icon.png">
 
 Floating action buttons are circular buttons that perform a primary action on a screen.</docs-card>
 
-<docs-card header="Icons" href="https://ionicons.com" img="/docs/assets/icons/feature-component-icons-icon.png"> 
+<docs-card header="Icons" href="https://ionicons.com" img="/assets/icons/feature-component-icons-icon.png">
 
 Beautifully designed icons for use in web, iOS, Android, and desktop apps.</docs-card>
 
-<docs-card header="Grid" href="/docs/api/grid" icon="/docs/assets/icons/component-grid-icon.png"> 
+<docs-card header="Grid" href="/api/grid" icon="/assets/icons/component-grid-icon.png">
 
 The grid is a powerful mobile-first system for building custom layouts.</docs-card>
 
-<docs-card header="Infinite Scroll" href="/docs/api/infinite-scroll" icon="/docs/assets/icons/component-infinitescroll-icon.png"> 
+<docs-card header="Infinite Scroll" href="/api/infinite-scroll" icon="/assets/icons/component-infinitescroll-icon.png">
 
 Infinite scroll allows you to load new data as the user scrolls through your app.</docs-card>
 
-<docs-card header="Input" href="/docs/api/input" icon="/docs/assets/icons/component-input-icon.png"> 
+<docs-card header="Input" href="/api/input" icon="/assets/icons/component-input-icon.png">
 
 Inputs provides a way for users to enter data in your app.</docs-card>
 
-<docs-card header="Item" href="/docs/api/item" icon="/docs/assets/icons/component-item-icon.png"> 
+<docs-card header="Item" href="/api/item" icon="/assets/icons/component-item-icon.png">
 
 Items are an all-purpose UI container that can be used as part of a list.</docs-card>
 
-<docs-card header="List" href="/docs/api/list" icon="/docs/assets/icons/component-lists-icon.png"> 
+<docs-card header="List" href="/api/list" icon="/assets/icons/component-lists-icon.png">
 
 Lists can display rows of information, such as a contact list, playlist, or menu.</docs-card>
 
-<docs-card header="Navigation" href="/docs/api/nav" img="/docs/assets/icons/feature-component-navigation-icon.png"> 
+<docs-card header="Navigation" href="/api/nav" img="/assets/icons/feature-component-navigation-icon.png">
 
 Navigation is how users move between different pages in your app.</docs-card>
 
-<docs-card header="Menu" href="/docs/api/menu" icon="/docs/assets/icons/component-menu-icon.png"> 
+<docs-card header="Menu" href="/api/menu" icon="/assets/icons/component-menu-icon.png">
 
 Menus are a common navigation pattern. They can be permanently on-screen, or revealed when needed.</docs-card>
 
-<docs-card header="Modal" href="/docs/api/modal" icon="/docs/assets/icons/component-modal-icon.png"> 
+<docs-card header="Modal" href="/api/modal" icon="/assets/icons/component-modal-icon.png">
 
 Modals slide in and off screen to display a temporary UI and are often used for login or sign-up pages.</docs-card>
 
-<docs-card header="Popover" href="/docs/api/popover" icon="/docs/assets/icons/component-popover-icon.png"> 
+<docs-card header="Popover" href="/api/popover" icon="/assets/icons/component-popover-icon.png">
 
 Popover provides an easy way to present information or options without changing contexts.</docs-card>
 
-<docs-card header="Progress Indicators" href="/docs/api/progress-bar" icon="/docs/assets/icons/component-progress-icon.png"> 
+<docs-card header="Progress Indicators" href="/api/progress-bar" icon="/assets/icons/component-progress-icon.png">
 
 Progress indicators visualize the progression of an operation or activity.</docs-card>
 
-<docs-card header="Radio" href="/docs/api/radio" icon="/docs/assets/icons/component-radio-icon.png"> 
+<docs-card header="Radio" href="/api/radio" icon="/assets/icons/component-radio-icon.png">
 
 Radio inputs allow you to present a set of exclusive options.</docs-card>
 
-<docs-card header="Refresher" href="/docs/api/refresher" icon="/docs/assets/icons/component-refresher-icon.png"> 
+<docs-card header="Refresher" href="/api/refresher" icon="/assets/icons/component-refresher-icon.png">
 
 Refresher provides pull-to-refresh functionality on a content component.</docs-card>
 
-<docs-card header="Searchbar" href="/docs/api/searchbar" img="/docs/assets/icons/feature-component-search-icon.png"> 
+<docs-card header="Searchbar" href="/api/searchbar" img="/assets/icons/feature-component-search-icon.png">
 
 Searchbar is used to search or filter items, usually from a toolbar.</docs-card>
 
-<docs-card header="Reorder" href="/docs/api/reorder" icon="/docs/assets/icons/component-reorder-icon.png"> 
+<docs-card header="Reorder" href="/api/reorder" icon="/assets/icons/component-reorder-icon.png">
 
 Reorder lets users drag and drop to reorder a list of items.</docs-card>
 
-<docs-card header="Routing" href="/docs/api/router" icon="/docs/assets/icons/component-routing-icon.png"> 
+<docs-card header="Routing" href="/api/router" icon="/assets/icons/component-routing-icon.png">
 
 Routing allows navigation based on the current path.</docs-card>
 
-<docs-card header="Segment" href="/docs/api/segment" icon="/docs/assets/icons/component-segment-icon.png"> 
+<docs-card header="Segment" href="/api/segment" icon="/assets/icons/component-segment-icon.png">
 
 Segments provide a set of exclusive buttons that can be used as a filter or view switcher.</docs-card>
 
-<docs-card header="Select" href="/docs/api/select" icon="/docs/assets/icons/component-select-icon.png"> 
+<docs-card header="Select" href="/api/select" icon="/assets/icons/component-select-icon.png">
 
 Select is similar to the native HTML select, with a few improvements to sorting and selecting.</docs-card>
 
-<docs-card header="Slides" href="/docs/api/slides" icon="/docs/assets/icons/component-slides-icon.png"> 
+<docs-card header="Slides" href="/api/slides" icon="/assets/icons/component-slides-icon.png">
 
 Slides make it easy to create complex UI such as galleries, tutorials, and page-based layouts.</docs-card>
 
-<docs-card header="Tabs" href="/docs/api/tabs" img="/docs/assets/icons/feature-component-tabs-icon.png"> 
+<docs-card header="Tabs" href="/api/tabs" img="/assets/icons/feature-component-tabs-icon.png">
 
 Tabs enable tabbed navigation, a standard navigation pattern in modern apps.</docs-card>
 
-<docs-card header="Toast" href="/docs/api/toast" icon="/docs/assets/icons/component-toast-icon.png"> 
+<docs-card header="Toast" href="/api/toast" icon="/assets/icons/component-toast-icon.png">
 
 Toast is used to show a notification over the top of an app's content. It can be temporary or dismissable.</docs-card>
 
-<docs-card header="Toggle" href="/docs/api/toggle" icon="/docs/assets/icons/component-toggle-icon.png"> 
+<docs-card header="Toggle" href="/api/toggle" icon="/assets/icons/component-toggle-icon.png">
 
 Toggles are an input for binary options, often used for options and switches.</docs-card>
 
-<docs-card header="Toolbar" href="/docs/api/toolbar" icon="/docs/assets/icons/component-toolbar-icon.png"> 
+<docs-card header="Toolbar" href="/api/toolbar" icon="/assets/icons/component-toolbar-icon.png">
 
 Toolbars are used to house information and actions relating to your app.</docs-card> </docs-cards>

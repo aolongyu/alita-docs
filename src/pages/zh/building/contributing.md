@@ -1,8 +1,8 @@
 ---
 previousText: 'Testing'
-previousUrl: '/docs/building/testing'
+previousUrl: '/building/testing'
 nextText: 'Web View'
-nextUrl: '/docs/building/webview'
+nextUrl: '/building/webview'
 contributors:
   - brandyscarney
 ---
@@ -50,7 +50,7 @@ Please see the [Contributor Code of Conduct](https://github.com/alitajs/alita/bl
 #### Modifying Components
 
 1. Locate the component(s) to modify inside `/core/src/components/`.
-2. Take a look at the [Stencil Documentation](https://stenciljs.com/docs/introduction/) and other components to understand the implementation of these components.
+2. Take a look at the [Stencil Documentation](https://stenciljs.com/introduction/) and other components to understand the implementation of these components.
 3. Make your changes to the component. If the change is overly complex or out of the ordinary, add comments so we can understand the changes.
 4. [Preview your changes](#preview-changes) locally.
 5. [Modify the documentation](#modifying-documentation) if needed.
@@ -93,7 +93,7 @@ Please see the [Contributor Code of Conduct](https://github.com/alitajs/alita/bl
 ##### Screenshot Tests
 
 1. If the test exists in screenshot, there will be a file named `e2e.ts` in the directory of the test.
-2. A screenshot test can be added by including this file and adding one or more `test()` calls that include a call to `page.compareScreenshot()`. See [Stencil end-to-end testing](https://stenciljs.com/docs/end-to-end-testing) and existing tests in `core/` for examples.
+2. A screenshot test can be added by including this file and adding one or more `test()` calls that include a call to `page.compareScreenshot()`. See [Stencil end-to-end testing](https://stenciljs.com/end-to-end-testing) and existing tests in `core/` for examples.
 3. **Important:** each `test()` should have only one screenshot (`page.compareScreenshot()`) call **or** it should check the expect at the end of each test. If there is a mismatch it will fail the test which will prevent the rest of the test from running, i.e. if the first screenshot fails the remaining screenshot calls would not be called *unless* they are in a separate test or all of the expects are called at the end.
 4. To run screenshot locally, use the following command: `npm run test.screenshot`.
     - To run screenshot for a specific test, pass the path to the test or a string to search for.

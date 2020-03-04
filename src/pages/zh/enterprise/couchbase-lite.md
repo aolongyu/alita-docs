@@ -9,7 +9,7 @@ minor: 1.0.X
 
 Ionic Couchbase Lite  is a cross-platform data storage system that works on iOS and Android, and Electron on desktop. Powered by [Couchbase Lite](https://docs.couchbase.com/couchbase-lite/2.6/index.html), a NoSQL database engine that provides simple yet powerful query, replication, and sync APIs.
 
-This solution makes it easy to add offline storage to Ionic apps that are secure (encrypted on device), highly performant, and provide advanced data querying. [Learn more.](https://ionicframework.com/docs/enterprise/couchbase-lite)
+This solution makes it easy to add offline storage to Ionic apps that are secure (encrypted on device), highly performant, and provide advanced data querying. [Learn more.](https://ionicframework.com/enterprise/couchbase-lite)
 
 <native-ent-install plugin-id="couchbase-lite" variables=""></native-ent-install>
 
@@ -59,12 +59,12 @@ import {
 Next, initialize the database:
 
 ```typescript
-/*  
-    Note about encryption: In a real-world app, the encryption key 
-    should not be hardcoded like it is here. One strategy is to 
-    auto generate a unique encryption key per user on initial app 
+/*
+    Note about encryption: In a real-world app, the encryption key
+    should not be hardcoded like it is here. One strategy is to
+    auto generate a unique encryption key per user on initial app
     load, then store it securely in the device's keychain for later
-    retrieval. Ionic's Identity Vault plugin is an option. Using 
+    retrieval. Ionic's Identity Vault plugin is an option. Using
     IV’s storage API, you can ensure that the key cannot be read
     or accessed without the user being authenticated first.
 */
@@ -408,7 +408,7 @@ let query = QueryBuilder
 
 #### Retrieve All Unique Values for One Column
 
-Retrieve all unique values in the database for one specific column of data. Useful for populating [dropdown controls](https://ionicframework.com/docs/api/select) as part of a search interface, for example.
+Retrieve all unique values in the database for one specific column of data. Useful for populating [dropdown controls](https://ionicframework.com/api/select) as part of a search interface, for example.
 
 ```typescript
 // Find all unique Hotel names, for example
@@ -1018,5 +1018,5 @@ config.setPinnedServerCertificate(cert);</code></pre>
 ### Bug Fixes
 
 * field mapping on all results for Android 818b4da
-* convert * to database name in . result 
+* convert * to database name in . result
 

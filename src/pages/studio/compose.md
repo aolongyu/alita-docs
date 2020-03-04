@@ -19,7 +19,7 @@ Compose mode features include:
 * Focus on building the app, not fighting with the file tree
 
 <figure>
-  <img alt="Compose Mode" src="/docs/assets/img/studio/ss-compose.png" />
+  <img alt="Compose Mode" src="/assets/img/studio/ss-compose.png" />
 </figure>
 
 ## Pages and Components
@@ -29,19 +29,19 @@ In Compose mode, pages and components are brought to life from the collection of
 When first loaded, the page index is shown. This list comprises the pages that Ionic Studio found in the app.
 
 <blockquote>
-  
+
 <p>Since the difference between pages and components is conceptual, Ionic Studio relies on convention to differentiate them. If there are pages missing, make sure each page follows the convention Ionic Studio is expecting:</p>
 <p>The files that represent each page must have the proper suffixes (e.g. <code>.page.ts</code>, <code>.page.html</code>, <code>.page.scss</code>). See the <a href="https://angular.io/guide/styleguide#naming">Angular style guide</a> for additional information about naming conventions.</p>
 </blockquote>
 
 <figure>
-  <img alt="Page Index" src="/docs/assets/img/studio/ss-page-index.png" />
+  <img alt="Page Index" src="/assets/img/studio/ss-page-index.png" />
 </figure>
 
 Switching to the component index reveals all the components found in the app.
 
 <figure>
-  <img alt="Component Index" src="/docs/assets/img/studio/ss-component-index.png" />
+  <img alt="Component Index" src="/assets/img/studio/ss-component-index.png" />
 </figure>
 
 See [Adding Features](#adding-features) to create new pages and components.
@@ -51,7 +51,7 @@ See [Adding Features](#adding-features) to create new pages and components.
 To add features to an app, click the **Add Feature** button at the top left of Ionic Studio.
 
 <figure>
-  <img alt="New Feature Button" src="/docs/assets/img/studio/ss-new-feature-button.png" />
+  <img alt="New Feature Button" src="/assets/img/studio/ss-new-feature-button.png" />
 </figure>
 
 There are several types of features available:
@@ -68,13 +68,13 @@ There are several types of features available:
 When adding a component, Ionic Studio will prompt for the name and a page in which to register it.
 
 <figure>
-  <img alt="New Component Modal" src="/docs/assets/img/studio/ss-new-component-modal.png" />
+  <img alt="New Component Modal" src="/assets/img/studio/ss-new-component-modal.png" />
 </figure>
 
 This adds the component as a *import* in the NgModule of the selected page, which allows it to be used in that page.
 
 <blockquote>
-The same code changes are necessary to use the component in other pages. See <a href="/docs/studio/faq#using-a-custom-component-in-additional-pages">this FAQ</a> for details.
+The same code changes are necessary to use the component in other pages. See <a href="/studio/faq#using-a-custom-component-in-additional-pages">this FAQ</a> for details.
 </blockquote>
 
 ## Template Mode
@@ -84,7 +84,7 @@ In **Template** mode, the code on the left and canvas on the right are synchroni
 A great deal can be accomplished with the interactive canvas and the properties panel alone, but template code may need to be manually edited when extensive dynamic template logic is used, or other complex use cases.
 
 <figure>
-  <img alt="Editing Templates" src="/docs/assets/img/studio/ss-compose-template.png" />
+  <img alt="Editing Templates" src="/assets/img/studio/ss-compose-template.png" />
 </figure>
 
 ## Drag & Drop
@@ -102,13 +102,13 @@ To enable fine-selection, which selects the deepest child under the mouse cursor
 To select any element under the cursor, right click and choose an element from the `Select Element` dropdown:
 
 <figure>
-  <img alt="Selecting elements" src="/docs/assets/img/studio/ss-select-element-menu.png" />
+  <img alt="Selecting elements" src="/assets/img/studio/ss-select-element-menu.png" />
 </figure>
 
 To select any element in the current document, access the element tree and click on the element to select:
 
 <figure>
-  <img alt="Editing Templates" src="/docs/assets/img/studio/ss-element-tree.png" />
+  <img alt="Editing Templates" src="/assets/img/studio/ss-element-tree.png" />
 </figure>
 
 ### Adding New Elements
@@ -116,7 +116,7 @@ To select any element in the current document, access the element tree and click
 To add new elements to a template, first open the element insertion dropdowns by clicking one of the buttons near the top of Compose.
 
 <figure>
-  <img alt="Add Element Menu" src="/docs/assets/img/studio/ss-add-element-menu.png" />
+  <img alt="Add Element Menu" src="/assets/img/studio/ss-add-element-menu.png" />
 </figure>
 
 These menus contains HTML elements, Ionic components, and the custom components in the app.
@@ -130,7 +130,7 @@ Dragging an element into code allows more precise placement, but dragging it int
 Certain elements support quickly adding child elements by right-clicking and selecting an element in the `Quick Add` menu. Some components that support quickly adding new elements include List, List Item, Grid, Segment Button, and more.
 
 <figure>
-  <img alt="Quick Add Element Menu" src="/docs/assets/img/studio/ss-quick-add-element-menu.png" />
+  <img alt="Quick Add Element Menu" src="/assets/img/studio/ss-quick-add-element-menu.png" />
 </figure>
 
 ### Rearranging Existing Elements
@@ -144,7 +144,7 @@ Remember, it is also possible to drag and drop code selections in the code edito
 When the cursor is inside of an element in the code editor, or selected in canvas, the properties panel will update to reflect the selected element.
 
 <figure>
-  <img alt="Properties Panel" src="/docs/assets/img/studio/ss-properties-panel.png" />
+  <img alt="Properties Panel" src="/assets/img/studio/ss-properties-panel.png" />
 </figure>
 
 In the properties panel, the properties for the selected element are listed. Properties can be changed, as well.
@@ -160,7 +160,7 @@ Unfortunately, the properties panel does not show properties for custom componen
 In **Styles** mode, changes to the component's styles are reflected in the canvas when saved. The styles in this mode are only applicable to the current page or component.
 
 <figure>
-  <img alt="Editing Styles" src="/docs/assets/img/studio/ss-compose-styles.png" />
+  <img alt="Editing Styles" src="/assets/img/studio/ss-compose-styles.png" />
 </figure>
 
 ## Other Compose Modes
@@ -168,7 +168,7 @@ In **Styles** mode, changes to the component's styles are reflected in the canva
 The **Scripts** and **Module** modes are for making changes to the controller and NgModule, respectively. These modes are mostly here for convenience and do not actively change the canvas or properties panel.
 
 <figure>
-  <img alt="Editing Scripts" src="/docs/assets/img/studio/ss-compose-scripts.png" />
+  <img alt="Editing Scripts" src="/assets/img/studio/ss-compose-scripts.png" />
 </figure>
 
 ## Troubleshooting the Canvas
@@ -176,5 +176,5 @@ The **Scripts** and **Module** modes are for making changes to the controller an
 If the canvas gets into an inconsistent or incorrect state, click the reload icon from the canvas utility bar to cause the canvas to reload its current contents:
 
 <figure>
-  <img alt="Editing Scripts" src="/docs/assets/img/studio/ss-canvas-reload.png" />
+  <img alt="Editing Scripts" src="/assets/img/studio/ss-canvas-reload.png" />
 </figure>

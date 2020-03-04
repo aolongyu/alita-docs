@@ -1,6 +1,6 @@
 ---
 nextText: 'Responsive Grid'
-nextUrl: '/docs/layout/grid'
+nextUrl: '/layout/grid'
 initialTab: 'preview'
 contributors:
   - brandyscarney
@@ -15,12 +15,12 @@ Ionic Framework provides several different layouts that can be used to structure
 ### Header
 
 <aside>
-  <docs-card href="/docs/api/header" header="Learn More" icon="/docs/assets/icons/component-header-icon.png">
+  <docs-card href="/api/header" header="Learn More" icon="/assets/icons/component-header-icon.png">
     <code>ion-header</code> API docs
   </docs-card>
 </aside>
 
-The most simple layout available consists of a [header](/docs/api/header) and [content](/docs/api/content). Most pages in an app generally have both of these, but a header is not required in order to use content.
+The most simple layout available consists of a [header](/api/header) and [content](/api/content). Most pages in an app generally have both of these, but a header is not required in order to use content.
 
 ```html
 <ion-app>
@@ -39,7 +39,7 @@ The most simple layout available consists of a [header](/docs/api/header) and [c
 ### Footer
 
 <aside>
-  <docs-card href="/docs/api/footer" header="Learn More" icon="/docs/assets/icons/component-footer-icon.png">
+  <docs-card href="/api/footer" header="Learn More" icon="/assets/icons/component-footer-icon.png">
     <code>ion-footer</code> API docs
   </docs-card>
 </aside>
@@ -86,7 +86,7 @@ These can also be combined on one page to have a toolbar above *and* below the c
 
 ## Tabs Layout
 
-A layout consisting of horizontal [tabs](/docs/api/tabs) can be used to let the user quickly change between content views. Each tab can contain static content or a navigation stack by using an `ion-router-outlet` or `ion-nav`.
+A layout consisting of horizontal [tabs](/api/tabs) can be used to let the user quickly change between content views. Each tab can contain static content or a navigation stack by using an `ion-router-outlet` or `ion-nav`.
 
 ```html
 <ion-app>
@@ -114,7 +114,7 @@ A layout consisting of horizontal [tabs](/docs/api/tabs) can be used to let the 
 
 ## Menu Layout
 
-A standard layout among mobile apps includes the ability to toggle a side [menu](/docs/api/menu) by clicking a button or swiping it open from the side. Side menus are generally used for navigation, but they can contain any content.
+A standard layout among mobile apps includes the ability to toggle a side [menu](/api/menu) by clicking a button or swiping it open from the side. Side menus are generally used for navigation, but they can contain any content.
 
 ```html
 <ion-app>
@@ -167,7 +167,7 @@ A standard layout among mobile apps includes the ability to toggle a side [menu]
 
 ## Split Pane Layout
 
-A [split pane](/docs/api/split-pane) layout has a more complex structure because it can combine the previous layouts. It allows for multiple views to be displayed when the viewport is above a specified breakpoint. If the device's screen size is below a certain size, the split pane view will be hidden.
+A [split pane](/api/split-pane) layout has a more complex structure because it can combine the previous layouts. It allows for multiple views to be displayed when the viewport is above a specified breakpoint. If the device's screen size is below a certain size, the split pane view will be hidden.
 
 By default, the split pane view will show when the screen is larger than `768px`, or the `md` breakpoint, but this can be customized to use different breakpoints by setting the `when` property. Below is an example where the split pane contains a menu that is visible for `sm` screens and up, or when the viewport is larger than `576px`. By resizing the browser horizontally so that the app is smaller than this, the split pane view will disappear.
 
@@ -220,4 +220,4 @@ By default, the split pane view will show when the screen is larger than `768px`
 </ion-app>
 ```
 
-It's important to note that the element with the `id` matching the `content-id` specified by the split pane will be the main content that is always visible. This can be any element, including an [ion-nav](/docs/api/nav), [ion-router-outlet](/docs/api/router-outlet), or an [ion-tabs](/docs/api/tabs).
+It's important to note that the element with the `id` matching the `content-id` specified by the split pane will be the main content that is always visible. This can be any element, including an [ion-nav](/api/nav), [ion-router-outlet](/api/router-outlet), or an [ion-tabs](/api/tabs).

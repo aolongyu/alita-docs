@@ -10,9 +10,9 @@ export class DocsButton {
 
   render() {
     if (typeof this.href === 'string') {
-      const isInternal = /^\/docs/.test(this.href);
+      const isExternal = /^http.*/.test(this.href);
 
-      if (isInternal) {
+      if (!isExternal) {
         return (
           <stencil-route-link url={this.href}>
             <slot/>

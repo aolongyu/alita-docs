@@ -1,8 +1,8 @@
 ---
 previousText: 'Adding Mobile'
-previousUrl: '/docs/react/your-first-app/5-adding-mobile'
+previousUrl: '/react/your-first-app/5-adding-mobile'
 nextText: 'Rapid App Dev with Live Reload'
-nextUrl: '/docs/react/your-first-app/7-live-reload'
+nextUrl: '/react/your-first-app/7-live-reload'
 ---
 
 # Deploying to iOS and Android
@@ -11,7 +11,7 @@ Since we added Capacitor to our project when it was first created, there’s onl
 
 ## Capacitor Setup
 
-Capacitor is Ionic’s official app runtime that makes it easy to deploy web apps to native platforms like iOS, Android, and more. If you’ve used Cordova in the past, consider reading more about the differences [here](https://capacitor.ionicframework.com/docs/cordova#differences-between-capacitor-and-cordova).
+Capacitor is Ionic’s official app runtime that makes it easy to deploy web apps to native platforms like iOS, Android, and more. If you’ve used Cordova in the past, consider reading more about the differences [here](https://capacitor.ionicframework.com/cordova#differences-between-capacitor-and-cordova).
 
 If you’re still running `alitaserve` in the terminal, cancel it. Complete a fresh build of the Ionic project, fixing any errors that it reports:
 
@@ -52,9 +52,9 @@ First, run the Capacitor `open` command, which opens the native iOS project in X
 $ alitacap open ios
 ```
 
-In order for some native plugins to work, user permissions must be configured. In our photo gallery app, this includes the Camera plugin: iOS displays a modal dialog automatically after the first time that `Camera.getPhoto()` is called, prompting the user to allow the app to use the Camera. The permission that drives this is labeled “Privacy - Camera Usage.” To set it, the `Info.plist` file must be modified ([more details here](https://capacitor.ionicframework.com/docs/ios/configuration)). To access it, click "Info," then expand "Custom iOS Target Properties."
+In order for some native plugins to work, user permissions must be configured. In our photo gallery app, this includes the Camera plugin: iOS displays a modal dialog automatically after the first time that `Camera.getPhoto()` is called, prompting the user to allow the app to use the Camera. The permission that drives this is labeled “Privacy - Camera Usage.” To set it, the `Info.plist` file must be modified ([more details here](https://capacitor.ionicframework.com/ios/configuration)). To access it, click "Info," then expand "Custom iOS Target Properties."
 
-![Xcode Custom iOS Target Properties](/docs/assets/img/guides/first-app-cap-ng/xcode-info-plist.png)
+![Xcode Custom iOS Target Properties](/assets/img/guides/first-app-cap-ng/xcode-info-plist.png)
 
 
 
@@ -64,17 +64,17 @@ Locate the `NSCameraUsageDescription` Key (if should exist already if you follow
 
 Next, click on `App` in the Project Navigator on the left-hand side, then within the `Signing & Capabilities` section, select your Development Team.
 
-![Xcode - Selecting Development Team](/docs/assets/img/guides/first-app-cap-ng/xcode-signing.png)
+![Xcode - Selecting Development Team](/assets/img/guides/first-app-cap-ng/xcode-signing.png)
 
 
 With permissions in place and Development Team selected, we are ready to try out the app on a real device! Connect an iOS device to your Mac computer, select it (`App -> Matthew’s iPhone` for me) then click the "Build" button to build, install, and launch the app on your device:
 
-![Xcode build button](/docs/assets/img/guides/first-app-cap-ng/xcode-build-button.png)
+![Xcode build button](/assets/img/guides/first-app-cap-ng/xcode-build-button.png)
 
 
 Upon tapping the Camera button on the Photo Gallery tab, the permission prompt will display. Tap OK, then take a picture with the Camera. Afterward, the photo shows in the app!
 
-![iOS Camera permissions](/docs/assets/img/guides/first-app-cap-ng/ios-permissions-photo.png)
+![iOS Camera permissions](/assets/img/guides/first-app-cap-ng/ios-permissions-photo.png)
 
 
 ## Android
@@ -89,7 +89,7 @@ $ alitacap open android
 
 Similar to iOS, we must enable the correct permissions to use the Camera. Configure these in the `AndroidManifest.xml` file. Android Studio will likely open this file automatically, but in case it doesn't, locate it under `android/app/src/main/`.
 
-![Android Manifest location](/docs/assets/img/guides/first-app-cap-ng/android-manifest.png)
+![Android Manifest location](/assets/img/guides/first-app-cap-ng/android-manifest.png)
 
 
 Scroll to the `Permissions` section and ensure these entries are included:
@@ -101,12 +101,12 @@ Scroll to the `Permissions` section and ensure these entries are included:
 
 Save the file. With permissions in place, we are ready to try out the app on a real device! Connect an Android device to your computer. Within Android Studio, click the "Run" button, select the attached Android device, then click OK to build, install, and launch the app on your device.
 
-![Launching app on Android](/docs/assets/img/guides/first-app-cap-ng/android-device.png)
+![Launching app on Android](/assets/img/guides/first-app-cap-ng/android-device.png)
 
 
 Once again, upon tapping the Camera button on the Photo Gallery tab, the permission prompt should be displayed. Tap OK, then take a picture with the Camera. Afterward, the photo should appear in the app.
 
-![Android Camera permissions](/docs/assets/img/guides/first-app-cap-ng/android-permissions-photo.png)
+![Android Camera permissions](/assets/img/guides/first-app-cap-ng/android-permissions-photo.png)
 
 
 Our Photo Gallery app has just been deployed to Android and iOS devices. 🎉
