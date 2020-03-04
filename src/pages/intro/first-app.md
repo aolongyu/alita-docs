@@ -22,23 +22,6 @@ yarn
 yarn start
 ```
 
-
-Pick the JavaScript framework you plan to use while building your Ionic app:
-
-<docs-cards>
-  <docs-card header="Start with Angular" href="/angular/your-first-app" icon="/assets/icons/logo-angular-icon.png">
-    <p>A complete guide to get you up to speed with the basics of building Ionic apps with Angular.</p>
-  </docs-card>
-
-  <docs-card header="Start with React" href="/react/your-first-app" icon="/assets/icons/logo-react-icon.png">
-    <p>A complete guide to get you up to speed with the basics of building Ionic apps with React.</p>
-  </docs-card>
-
-  <docs-card class="disabled" header="Start with Vue (soon)" href="" icon="/assets/icons/logo-vue-icon.png">
-    <p>A complete guide to get you up to speed with the basics of building Ionic apps with Vue.</p>
-  </docs-card>
-</docs-cards>
-
 更多教程，可以访问
 <docs-cards>
 <docs-card header="教程:王者荣耀资料库" href="https://www.yuque.com/alita/course/gcngtp" icon="/assets/img/yuque.jpeg">
