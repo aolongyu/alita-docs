@@ -188,7 +188,7 @@ export class DocsHeader {
                   中文
                   {!isEn && (
                     <svg viewBox="0 0 512 512" width="14">
-                      <path d="M186.301 339.893L96 249.461l-32 30.507L186.301 402 448 140.506 416 110z"></path>
+                      <path d="M186.301 339.893L96 249.461l-32 30.507L186.301 402 448 140.506 416 110z" />
                     </svg>
                   )}
                 </a>
@@ -200,7 +200,7 @@ export class DocsHeader {
                   英文
                   {isEn && (
                     <svg viewBox="0 0 512 512" width="14">
-                      <path d="M186.301 339.893L96 249.461l-32 30.507L186.301 402 448 140.506 416 110z"></path>
+                      <path d="M186.301 339.893L96 249.461l-32 30.507L186.301 402 448 140.506 416 110z" />
                     </svg>
                   )}
                 </a>
@@ -217,7 +217,7 @@ export class DocsHeader {
               </div>
             </docs-dropdown>
             <a href="https://github.com/alitajs/alita" target="_blank">
-              <ion-icon name="logo-github" class="lg-only"></ion-icon>
+              <ion-icon name="logo-github" class="lg-only" />
               <span class="sm-only">
                 GitHub <ForwardArrow class="Dropdown-arrow" />
               </span>
