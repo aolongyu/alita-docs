@@ -68,7 +68,7 @@ communityPlugins = {
     'menu-native-quickstart': '/docs/native/community',
     'menu-native-faq': '/docs/native/faq'
   },
-  'menu-native-plugins': Object.entries(communityPlugins).sort()
+  // 'menu-native-plugins': Object.entries(communityPlugins).sort()
 };
 
 premierPlugins = {
