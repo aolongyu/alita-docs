@@ -337,14 +337,14 @@ export class IonicSearch {
       </div>,
 
       <div class={`SearchBtn ${this.active ? ' active' : ''}`}>
-        <Search class="SearchBtn__sm"
+        {/* <Search class="SearchBtn__sm"
                 onClick={this.active ? null : this.activate}/>
 
         <div class="SearchBtn__lg" onClick={this.active ? null : this.activate}>
           <Search class="SearchBtn__lg__icon"/>
           <span class="SearchBtn__lg__text">Search docs</span>
           <span class="SearchBtn__lg__key">/</span>
-        </div>
+        </div> */}
       </div>,
 
       <div class={`backdrop ${this.active ? 'active' : null}`}

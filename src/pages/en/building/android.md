@@ -1,8 +1,8 @@
 ---
 previousText: '在 iOS 上运行'
 previousUrl: '/building/ios'
-# nextText: 'Testing'
-# nextUrl: '/building/testing'
+nextText: '原生'
+nextUrl: '/native'
 ---
 
 
