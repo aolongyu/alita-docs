@@ -40,7 +40,7 @@ export interface ToStaticPageOptions {
 
 export const toPage = async (path: string, { prod = true }: ToStaticPageOptions = {}) => {
   return {
-    path: path.replace(PAGES_DIR, '/').replace(/\.md$/i, ''),
+    path: path.replace(PAGES_DIR, '/docs').replace(/\.md$/i, ''),
     github: prod ? await getGitHubData(path) : null,
     ...renderMarkdown(await readMarkdown(path))
   };

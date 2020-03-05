@@ -5,7 +5,6 @@ import { createDocument } from '@stencil/core/mock-doc';
 import Listr from 'listr';
 import Static, { ToStaticPageOptions, toPage as toStaticPage } from './page-types/static';
 // import API from './page-types/api';
-// import CLI from './page-types/cli';
 // import Native from './page-types/native';
 import { convertHtmlToHypertextData } from './html-to-hypertext-data';
 
