@@ -41,7 +41,7 @@ Alita 的设计初衷就是面向场景化的方案，所以我们的配置方�
 
 * Type: boolean
 
-开启 mobile layout 的运行时模式，可以在 `src/app.ts` 中，设置[运行时配置](docs/zh/config/runtime) `mobileLayout`。
+开启 mobile layout 的运行时模式，可以在 `src/app.ts` 中，设置[运行时配置](/config/runtime) `mobileLayout`。
 还可以在页面中使用 `setPageNavBar` 修改当前页面的 layout。
 
 ```tsx
@@ -68,6 +68,16 @@ const SettingsPage: FC<> = ({ settings, dispatch, location })=>{
   return <div className={styles.center}>Hello Alita</div>;
 }
 ```
+
+`setPageNavBar` 接收两个参数，一个是需要修改的 `pagePath`，如果是当前页面，可以在 `props.location.pathname` 中取到。第二个参数是 `navBar` 配置的是 `antd-mobile` 的 `NavBar`,支持的参数有
+
+| 属性 | 说明 | 类型 | 默认值 |
+|  :-  | :-:  | :-:  | :-:  |
+| mode | 模式 | string | 'dark' enum{'dark', 'light'} |
+| icon | 出现在最左边的图标占位符 |  ReactNode | - |
+| leftContent | 导航左边内容 | any | 无 |
+| rightContent | 导航右边内容 | any | 无 |
+| onLeftClick | 导航左边点击回调 |  (e: Object): void | 无 |
 
 ### displayName 和 packageId
 
