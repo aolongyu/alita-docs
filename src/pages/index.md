@@ -3,7 +3,7 @@
 meta:
   image: /assets/img/meta/open-graph.png
   description: Alita 是基于Umi的移动端开发框架
-tableOfContents: false
+# tableOfContents: false
 ---
 
 <docs-cards>
