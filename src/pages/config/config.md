@@ -16,16 +16,18 @@ Alita 的设计初衷就是面向场景化的方案，所以我们的配置方�
 |  配置 | 说明 | 类型 |是否必须 |
 |  :-  | :-:  |:-: |:-: |
 | appType | 项目类型 | `pc`,`h5`,`cordova`| 是 |
-|mobileLayout|开启 mobile layout 的运行时配置模式|boolean|否|
+| mobileLayout | 开启 mobile layout 的运行时配置模式 | boolean | 否 |
+| keepalive | 开启页面状态保持 | string[] | 否 |
 | displayName | 打包时的包名 | string | appType 为 `cordova`时，必须 |
 | packageId | 打包时的Bundle Identifier | string | appType 为 `cordova`时，必须 |
 | mainPath | 修改路由的主入口，如 `mainPath:'/home'`  | string | 否 |
 | native | 调用的原生能力的数组  | string[] | 否,appType 为 `cordova`时才生效 |
 | proxy | 配置请求代理  | object | 否，遇到跨域问题可尝试配置 |
+| theme | 配置全局的 less 变量 ｜ object | 否|
 
 ## 配置方式
 
-约定 `config/config.ts`  为项目配置文件。
+约定 `config/config.ts` 为项目配置文件。
 
 ## 配置项
 
@@ -78,6 +80,26 @@ const SettingsPage: FC<> = ({ settings, dispatch, location })=>{
 | leftContent | 导航左边内容 | any | 无 |
 | rightContent | 导航右边内容 | any | 无 |
 | onLeftClick | 导航左边点击回调 |  (e: Object): void | 无 |
+
+### keepalive
+
+* Type: string[]
+
+配置需要状态保持的路由，需要通过 `dropByCacheKey` 方法解除。
+
+```ts
+export default {
+  keepalive:['route path','route path']
+}
+```
+
+解除当前缓存
+
+```ts
+import { dropByCacheKey } from 'alita';
+
+dropByCacheKey('/list');
+```
 
 ### displayName 和 packageId
 
@@ -144,3 +166,20 @@ export default {
 然后访问 `/api/users` 就能访问到 [http://jsonplaceholder.typicode.com/users](http://jsonplaceholder.typicode.com/users) 的数据。
 
 > 代理只是服务请求代理，这个地址是不会变的。原理可以简单的理解为，在本地启了一个服务，你先请求了本地的服务，本地的服务转发了你的请求到实际服务器。所以你在浏览器上看到的请求地址还是 `http://localhost:8000/xxx` 。以服务端是否收到请求为准。
+
+### theme
+
+* Type: `object`
+* Default: `{}`
+
+配置主题，实际上是修改 less 变量，可选的参数是，[antd-mobile](https://github.com/ant-design/ant-design-mobile/blob/master/components/style/themes/default.less) 的所有变量，和 [dform](https://github.com/alitajs/DynamicForm/blob/master/src/styles/index.less) 导出的所有变量。
+
+常用的是配置主题色，比如：
+
+```ts
+export default {
+  theme: {
+    'brand-primary': '#1DA57A',
+  },
+}
+```
