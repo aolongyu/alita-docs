@@ -172,7 +172,7 @@ export class DocsHeader {
                 </a>
               </section>
             </docs-dropdown>
-            <docs-dropdown
+            {/* <docs-dropdown
               icon={Translation}
               align="right"
               label="Translations"
@@ -196,17 +196,17 @@ export class DocsHeader {
                   )}
                 </a>
               </section>
-              {/* <section>
+              <section>
                 <a href="https://ionicframework.com/translate" target="_blank">Translate</a>
-              </section> */}
-              {/* WIP Languages - included for pre-rendering, but hidden */}
+              </section>
+              WIP Languages - included for pre-rendering, but hidden
               <div style={{ display: "none" }}>
                 <a href="/zh">Chinese</a>
                 <a href="/fr">French</a>
                 <a href="/pt">Portuguese</a>
                 <a href="/es">Spanish</a>
               </div>
-            </docs-dropdown>
+            </docs-dropdown> */}
             <a href="https://github.com/alitajs/alita" target="_blank">
               <ion-icon name="logo-github" class="lg-only" />
               <span class="sm-only">

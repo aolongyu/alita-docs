@@ -4,7 +4,7 @@ previousUrl: '/building/cross-platform'
 nextText: '在 iOS 上运行'
 nextUrl: '/building/ios'
 demoUrl: '/demos/alita-init-demo/index.html'
-demoSourceUrl: 'https://github.com/alitajs/alita-docs/tree/master/src/demos/alita-init-demo/index.html'
+demoSourceUrl: 'https://github.com/alitajs/next-alita-app'
 ---
 
 # 运行预览
