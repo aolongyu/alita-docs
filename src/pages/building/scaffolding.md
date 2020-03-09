@@ -75,24 +75,18 @@ export default {
 
 最开始为了快速创建页面，所以我们提供了 `yarn create alita` 命令用于快速创建页面。但现在你已经对 alita 有所了解了，你应该使用它来为你做更多的事情。所以在这里我们建议你在全局安装 alita，只需要在你的命令行中，执行 `yarn global add alita`。
 
-使用一下命令，创建页面。
+使用以下命令，创建页面。
+
 <command-line>
     <command-prompt>alita g pages paneName</command-prompt>
     <command-output>
         <br />
-        <span class="green">CREATE</span> src/app/user-detail/user-detail.module.ts (564 bytes)
+        <span class="green">Write:</span> src/pages/paneName/index.tsx
         <br />
-        <span class="green">CREATE</span> src/app/user-detail/user-detail.page.scss (0 bytes)
+        <span class="green">Write:</span> src/pages/paneName/index.less
         <br />
-        <span class="green">CREATE</span> src/app/user-detail/user-detail.page.html (138 bytes)
+        <span class="green">Write:</span> src/models/paneName.ts
         <br />
-        <span class="green">CREATE</span> src/app/user-detail/user-detail.page.spec.ts (720 bytes)
-        <br />
-        <span class="green">CREATE</span> src/app/user-detail/user-detail.page.ts (280 bytes)
-        <br />
-        <span class="bold">UPDATE</span> src/app/app-routing.module.ts (475 bytes)
-        <br />
-        [<span class="green bold">OK</span>] Generated page!
     </command-output>
 </command-line>
 
