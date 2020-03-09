@@ -1,6 +1,6 @@
 ---
-# nextText: 'Build Errors'
-# nextUrl: '/faq/build'
+nextText: '编译错误'
+nextUrl: '/faq/build'
 ---
 
 # Glossary

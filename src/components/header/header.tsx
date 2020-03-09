@@ -60,9 +60,7 @@ export class DocsHeader {
             // urlMatch={[
             //   /^(?!\/(api|components|cli|native|enterprise|config)).*$/
             // ]}
-            urlMatch={[
-              /^(?!\/(api|components|cli|enterprise|config)).*$/
-            ]}
+            urlMatch={[/^(?!\/(api|components|plugins|enterprise|config)).*$/]}
           >
             {l10n.getString("header-guide")}
           </stencil-route-link>
@@ -78,9 +76,9 @@ export class DocsHeader {
           >
             {l10n.getString("header-components")}
           </stencil-route-link>
-          {/* <stencil-route-link url="/cli">
-            {l10n.getString("header-cli")}
-          </stencil-route-link> */}
+          <stencil-route-link url="/plugins" urlMatch={["/plugins"]}>
+            {l10n.getString("menu-plugins")}
+          </stencil-route-link>
           {/* <stencil-route-link
             url="/native"
             urlMatch={["/native", "/enterprise"]}
@@ -181,10 +179,7 @@ export class DocsHeader {
               class="label-sm-only"
             >
               <section>
-                <a
-                  href="/"
-                  class={!isEn ? "link-active" : ""}
-                >
+                <a href="/" class={!isEn ? "link-active" : ""}>
                   中文
                   {!isEn && (
                     <svg viewBox="0 0 512 512" width="14">
@@ -192,11 +187,7 @@ export class DocsHeader {
                     </svg>
                   )}
                 </a>
-                <a
-                  href="/en"
-                  target="_blank"
-                  class={isEn ? "link-active" : ""}
-                >
+                <a href="/en" target="_blank" class={isEn ? "link-active" : ""}>
                   英文
                   {isEn && (
                     <svg viewBox="0 0 512 512" width="14">

@@ -1,7 +1,7 @@
 ---
-previousText: 'Native Errors'
+previousText: '运行时错误'
 previousUrl: '/faq/native'
-nextText: 'Security'
+nextText: '安全性'
 nextUrl: '/faq/security'
 contributors:
   - FdezRomero

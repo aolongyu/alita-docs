@@ -108,13 +108,13 @@ const items = {
   // },
   'menu-faq': {
     'menu-faq-glossary': '/faq/glossary',
-    // 'menu-faq-build': '/faq/build',
-    // 'menu-faq-runtime': '/faq/runtime',
+    'menu-faq-build': '/faq/build',
+    'menu-faq-runtime': '/faq/runtime',
     // 'menu-faq-native': '/faq/native',
-    // 'menu-faq-cors': '/faq/cors',
-    // 'menu-faq-security': '/faq/security',
-    // 'menu-faq-tips': '/faq/tips',
-    'menu-faq-changelog': 'https://github.com/alitajs/alita/blob/master/CHANGELOG.md'
+    'menu-faq-cors': '/faq/cors',
+    'menu-faq-security': '/faq/security',
+    'menu-faq-tips': '/faq/tips',
+    // 'menu-faq-changelog': 'https://github.com/alitajs/alita/blob/master/CHANGELOG.md'
   },
   // 'menu-resources': {
   //   'menu-resources-books': '/developer-resources/books',

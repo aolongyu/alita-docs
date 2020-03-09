@@ -81,7 +81,7 @@ const SettingsPage: FC<> = ({ settings, dispatch, location })=>{
 | rightContent | 导航右边内容 | any | 无 |
 | onLeftClick | 导航左边点击回调 |  (e: Object): void | 无 |
 
-### keepalive
+### keepalive [beta]
 
 * Type: string[]
 

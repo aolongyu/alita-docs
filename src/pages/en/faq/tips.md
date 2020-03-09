@@ -1,5 +1,5 @@
 ---
-previousText: 'Security'
+previousText: '安全性'
 previousUrl: '/faq/security'
 contributors:
   - rtpHarry

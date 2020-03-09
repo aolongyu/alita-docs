@@ -282,5 +282,12 @@
   "menu-components-dfrom":"Mobile Dynamic Form",
   "menu-components-dfrom-pag":"@alitajs/dform",
   "menu-components-gesture-password":"Gesture Password",
-  "menu-components-gp-pag":"@alitajs/gesture-password-react"
+  "menu-components-gp-pag":"@alitajs/gesture-password-react",
+  "menu-plugins":"插件",
+  "menu-plugins-cordova":"cordova",
+  "menu-plugins-dva":"dva 类型辅助",
+  "menu-plugins-keepalive":"状态保持",
+  "menu-plugins-main-path":"路由主入口",
+  "menu-plugins-native":"原生能力对接",
+  "menu-plugins-routes":"过滤路由页面"
 }

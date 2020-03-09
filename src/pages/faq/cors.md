@@ -1,7 +1,7 @@
 ---
-previousText: 'Native Errors'
+previousText: '运行时错误'
 previousUrl: '/faq/native'
-nextText: 'Security'
+nextText: '安全性'
 nextUrl: '/faq/security'
 contributors:
   - FdezRomero
@@ -152,50 +152,6 @@ Ionic apps may be run from different origins, but only one origin can be specifi
 
 Please note that all of the `Access-Control-Allow-*` headers have to be sent from the server, and don't belong in your app code.
 
-Here are some of the origins your Ionic app may be served from:
-
-#### Capacitor
-
-| Platform | Origin                  |
-| -------- | ----------------------- |
-| iOS      | `capacitor://localhost` |
-| Android  | `http://localhost`      |
-
-
-Replace `localhost` with your own hostname if you have changed the default in the Capacitor config.
-
-#### Ionic WebView 3.x plugin on Cordova
-
-| Platform | Origin              |
-| -------- | ------------------- |
-| iOS      | `ionic://localhost` |
-| Android  | `http://localhost`  |
-
-
-Replace `localhost` with your own hostname if you have changed the default in the plugin config.
-
-#### Ionic WebView 2.x plugin on Cordova
-
-| Platform | Origin                  |
-| -------- | ----------------------- |
-| iOS      | `http://localhost:8080` |
-| Android  | `http://localhost:8080` |
-
-
-Replace port `8080` with your own if you have changed the default in the plugin config.
-
-#### Local development in the browser
-
-| Command                       | Origin                                                   |
-| ----------------------------- | -------------------------------------------------------- |
-| `alitaserve`                 | `http://localhost:8100` or `http://YOUR_MACHINE_IP:8100` |
-| `npm run start` or `ng serve` | `http://localhost:4200` for Ionic Angular apps.          |
-
-
-Port numbers can be higher if you are serving multiple apps at the same time.
-
-<br />
-
 Allowing any origin with `Access-Control-Allow-Origin: *` is guaranteed to work in all scenarios but may have security implications — like some CSRF attacks — depending on how the server controls access to resources and use sessions and cookies.
 
 For more information on how to enable CORS in different web and app servers, please check <a href="https://enable-cors.org" target="_blank" rel="noopener">enable-cors.org</a>
@@ -240,66 +196,16 @@ app.listen(3000, () => {
 
 ### B. Working around CORS in a server you can't control
 
-#### Don't leak your keys!
+开发时，可以先配置 [proxy](/config/config#proxy)。
 
-If you are trying to connect to a 3rd-party API, first check in its documentation that is safe to use it directly from the app (client-side) and that it won't leak any secret/private keys or credentials, as it's easy to see them in clear text in Javascript code. Many APIs don't support CORS on purpose, in order to force developers to use them in the server and protect important information or keys.
-
-#### 1. Native-only apps (iOS/Android)
-
-Use the <a href="/native/http/" target="_blank" rel="noopener">HTTP plugin from Ionic Native</a> to make the requests natively from outside the webview. Please note that this plugin doesn't work in the browser, so the development and testing of the app must always be done in a device or simulator going forward.
-
-##### Usage in Ionic Angular 4
-
-```typescript
-import { Component } from '@angular/core';
-import { HTTP } from '@ionic-native/http/ngx';
-
-@Component({
-  selector: 'app-home',
-  templateUrl: './home.page.html',
-  styleUrls: ['./home.page.scss'],
-})
-export class HomePage {
-  constructor(private http: HTTP) {}
-
-  async getData() {
-    try {
-      const url = 'https://api.example.com';
-      const params = {};
-      const headers = {};
-
-      const response = await this.http.get(url, params, headers);
-
-      console.log(response.status);
-      console.log(JSON.parse(response.data)); // JSON data returned by server
-      console.log(response.headers);
-
-    } catch (error) {
-      console.error(error.status);
-      console.error(error.error); // Error message as string
-      console.error(error.headers);
-    }
-  }
+```ts
+export default {
+  proxy: {
+    '/api': {
+      'target': 'http://jsonplaceholder.typicode.com/',
+      'changeOrigin': true,
+      'pathRewrite': { '^/api' : '' },
+    },
+  },
 }
 ```
-
-#### 2. Native + PWAs
-
-Send the requests through an HTTP/HTTPS proxy that bypasses them to the external resources and adds the necessary CORS headers to the responses. This proxy must be trusted or under your control, as it will be intercepting most traffic made by the app.
-
-Also, keep in mind that the browser or webview will not receive the original HTTPS certificates but the one being sent from the proxy if it's provided. URLs may need to be rewritten in your code in order to use the proxy.
-
-Check <a href="https://github.com/Rob--W/cors-anywhere/" target="_blank" rel="noopener">cors-anywhere</a> for a Node.js CORS proxy that can be deployed in your own server. Using free hosted CORS proxies in production is not recommended.
-
-### C. Disabling CORS or browser web security
-
-Please be aware that CORS exists for a reason (security of user data and to prevent attacks against your app). **It's not possible or advisable to try to disable CORS**.
-
-Older webviews like `UIWebView` on iOS don't enforce CORS but are deprecated and are very likely to disappear soon. Modern webviews like iOS `WKWebView` or Android `WebView` (both used by Capacitor) do enforce CORS and provide huge security and performance improvements.
-
-If you are developing a PWA or testing in the browser, using the `--disable-web-security` flag in Google Chrome or an extension to disable CORS is a really bad idea. You will be exposed to all kind of attacks, you can't ask your users to take the risk, and your app won't work once in production.
-
-##### Sources
-
-- <a href="https://fdezromero.com/cors-errors-in-ionic-apps" target="_blank" rel="noopener">CORS Errors in Ionic Apps</a>
-- <a href="https://developer.mozilla.org/en-US/Web/HTTP/CORS" target="_blank" rel="noopener">MDN</a>
