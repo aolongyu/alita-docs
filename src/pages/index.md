@@ -4,7 +4,7 @@ meta:
   image: /assets/img/meta/open-graph.png
   description: Alita 是基于Umi的移动端开发框架
 demoUrl: '/demos/alita-init-demo/index.html'
-demoSourceUrl: 'https://github.com/alitajs/alita-docs/tree/master/src/demos/alita-init-demo/index.html'
+demoSourceUrl: 'https://github.com/alitajs/next-alita-app/tree/show-demo'
 tableOfContents: false
 ---
 
