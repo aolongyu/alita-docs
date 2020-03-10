@@ -15,6 +15,22 @@ contributors:
 
 本文档将帮助你从 Alita 1.x 版本升级到 Alita 2.x 版本。
 
+### 升级全局 alita 版本
+
+在终端上执行：
+
+```bash
+npm install -g alita
+```
+
+或者 
+
+```bash
+yarn global add alita
+```
+
+执行后输入 `alita -v` 确认 `alita` 版本已成功升级为 `2.x`。
+
 ### package.json
 
 修改 `alita` 的版本为 ^2.0.0 或以上，
@@ -74,3 +90,4 @@ export { mobileLayout };
 ### 遇到问题
 
 Alita v2 做了非常多的细节改进和重构，我们尽可能收集了已知的所有不兼容变化和相关影响，但是有可能还是有一些场景我们没有考虑到。如果你在升级过程中遇到了问题，请到 [Github issues](https://github.com/alitajs/alita/issues) 进行反馈。我们会尽快响应和相应改进这篇文档。
+
