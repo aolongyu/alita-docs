@@ -4,7 +4,7 @@ meta:
   image: /assets/img/meta/open-graph.png
   description: Alita 是基于Umi的移动端开发框架
 demoUrl: '/demos/alita-init-demo/index.html'
-demoSourceUrl: 'https://github.com/alitajs/next-alita-app/tree/show-demo'
+demoSourceUrl: 'https://github.com/alitajs/next-alita-app'
 tableOfContents: false
 ---
 
@@ -21,7 +21,7 @@ tableOfContents: false
   <docs-card header="原生能力" href="/native" icon="/assets/icons/guide-nativeapis-icon.png">
     <p>集成并使用设备的原生能力，快速对接 cordova 插件，例如蓝牙，地图，HealthKit等.</p>
   </docs-card>
-  <docs-card header="常见问题1" href="/faq/glossary" icon="/assets/icons/guide-faq-icon.png">
+  <docs-card header="常见问题" href="/faq/glossary" icon="/assets/icons/guide-faq-icon.png">
     <p>获取有关 Alita 的一些最常见问题的答案。</p>
   </docs-card>
 </docs-cards>

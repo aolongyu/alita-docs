@@ -71,7 +71,7 @@ const SettingsPage: FC<> = ({ settings, dispatch, location })=>{
 }
 ```
 
-`setPageNavBar` 接收两个参数，一个是需要修改的 `pagePath`，如果是当前页面，可以在 `props.location.pathname` 中取到。第二个参数是 `navBar` 配置的是 `antd-mobile` 的 `NavBar`,支持的参数有
+`setPageNavBar` 接收两个参数，一个是需要修改的 `pagePath`。第二个参数是 `navBar` 配置的是 `antd-mobile` 的 `NavBar`,支持的参数有
 
 | 属性 | 说明 | 类型 | 默认值 |
 |  :-  | :-:  | :-:  | :-:  |
@@ -80,6 +80,10 @@ const SettingsPage: FC<> = ({ settings, dispatch, location })=>{
 | leftContent | 导航左边内容 | any | 无 |
 | rightContent | 导航右边内容 | any | 无 |
 | onLeftClick | 导航左边点击回调 |  (e: Object): void | 无 |
+
+> 注意：在使用 `setPageNavBar` 设置响应函数时，不要使用 `hooks` 方法。（可能会有闭包问题。）尽量使用 `dispatch` 抛出事件。
+
+> 注意：如果是从 `props.location.pathname` 中取到，可能快速切换的时候，会出现错误。尽量显示写明，如：`pagePath:'/home'`。
 
 ### keepalive [beta]
 
@@ -99,6 +103,23 @@ export default {
 import { dropByCacheKey } from 'alita';
 
 dropByCacheKey('/list');
+```
+
+以上使用方法是配合 `mobileLayout:true` 使用的。
+如果你没有使用 `mobileLayout`，而是自定义的 `layout` ，即项目中存在 `src/layouts/index.tsx`。
+需要使用 `KeepAliveLayout` 包裹 `children`。
+
+```tsx
+import { KeepAliveLayout } from 'alita';
+const BasicLayout: React.FC<BasicLayoutProps> = props => {
+  return (
+    <OtherLayout>
+      <KeepAliveLayout {...props}>{children}</KeepAliveLayout>
+    </AlitaLayout>
+  );
+};
+
+export default BasicLayout;
 ```
 
 ### displayName 和 packageId
@@ -125,6 +146,7 @@ export default {
   mainPath: '/home',
 };
 ```
+
 经过上面配置修改之后，主入口变成 `src/pages/home/index.tsx`
 
 ### native
