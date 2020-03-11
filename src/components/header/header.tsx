@@ -1,5 +1,6 @@
 import { Component, Listen, Prop, State, h } from "@stencil/core";
-import { Checkmark, ForwardArrow, Logo, Translation } from "../../icons";
+// import { Checkmark, ForwardArrow, Logo, Translation } from "../../icons";
+import { Checkmark, ForwardArrow, Logo } from "../../icons";
 import { l10n } from "../../l10n";
 
 @Component({
@@ -91,8 +92,9 @@ export class DocsHeader {
   }
 
   render() {
-    const { getString, getLocale } = l10n;
-    const isEn = getLocale() === "en";
+    // const { getString, getLocale } = l10n;
+    const { getString } = l10n;
+    // const isEn = getLocale() === "en";
     return (
       <header>
         <docs-menu-toggle onClick={this.onToggleClick} />
