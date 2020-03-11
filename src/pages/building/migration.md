@@ -23,7 +23,7 @@ contributors:
 npm install -g alita
 ```
 
-或者 
+或者
 
 ```bash
 yarn global add alita
@@ -39,10 +39,12 @@ yarn global add alita
 {
   "dependencies": {
 -   "alita": "^1"
-+   "alita": "^2"
++   "alita": "^2.1.6"
   }
 }
 ```
+
+> 如果有使用 `@alitajs/alita-layout`，需要升级到 2.0.4+。
 
 ### tsconfig.json
 
@@ -57,6 +59,15 @@ yarn global add alita
 }
 ```
 
+### 遇到问题
+
+Alita v2 做了非常多的细节改进和重构，我们尽可能收集了已知的所有不兼容变化和相关影响，但是有可能还是有一些场景我们没有考虑到。如果你在升级过程中遇到了问题，请到 [Github issues](https://github.com/alitajs/alita/issues) 进行反馈。我们会尽快响应和相应改进这篇文档。
+
+### FAQ
+
+1、想在页面级别修改 NavBar 怎么做？
+
+可以使用 `mobileLayout` 配置。旧的项目如何使用，可参照以下说明。
 ### mobileLayout
 
 如果你的项目 在 `src/layouts/index.tsx` 中使用到 `@alitajs/alita-layout` 的配置, 那么可以将 `layout` 布局配置放到 `src/app` 下。
@@ -87,7 +98,4 @@ export { mobileLayout };
 
 删除 `src/layout` 文件夹。
 
-### 遇到问题
-
-Alita v2 做了非常多的细节改进和重构，我们尽可能收集了已知的所有不兼容变化和相关影响，但是有可能还是有一些场景我们没有考虑到。如果你在升级过程中遇到了问题，请到 [Github issues](https://github.com/alitajs/alita/issues) 进行反馈。我们会尽快响应和相应改进这篇文档。
-
+删除 `package.json` 里面的 `@alitajs/alita-layout` 依赖，避免多个版本冲突。
