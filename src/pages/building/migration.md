@@ -46,9 +46,22 @@ yarn global add alita
 
 > 如果有使用 `@alitajs/alita-layout`，需要升级到 2.0.4+。
 
+### 替换 router
+
+如果有引用 `umi/router`,可以通过开发者工具全局搜索替换。
+
+```diff
+- import router from 'umi/router';
++ import { router } from 'alita';
+```
+
+> 注意：react-route 现在推荐直接使用 history，用法与 router 相同，并且可以还可以从 props.history。建议在新项目或者新页面中使用 history，你也可以继续使用 router，旧项目 router 的用法会持续兼容。
+
 ### tsconfig.json
 
-为了有更好的 ts 提示，需配置 `@@` 为 `["src/.umi/*"]`。
+typescript 中为了有更好的 ts 提示，需配置 `@@` 为 `["src/.umi/*"]`。
+
+> javascript 中无需这一步
 
 ```json
 {
@@ -64,6 +77,13 @@ yarn global add alita
 Alita v2 做了非常多的细节改进和重构，我们尽可能收集了已知的所有不兼容变化和相关影响，但是有可能还是有一些场景我们没有考虑到。如果你在升级过程中遇到了问题，请到 [Github issues](https://github.com/alitajs/alita/issues) 进行反馈。我们会尽快响应和相应改进这篇文档。
 
 ### FAQ
+
+1、Alita 中找不到 Qrcode？
+
+```diff
+- import { Qrcode } from 'alita';
++ import Qrcode from 'qrcode.react';
+```
 
 1、想在页面级别修改 NavBar 怎么做？
 
