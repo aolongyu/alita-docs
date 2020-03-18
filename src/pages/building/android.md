@@ -55,6 +55,10 @@ cross-env CORDOVA=android alita build
 
 打开Android Studio，选择项目目录下的 Android 项目 `platforms/android`。
 
+首次打开会有一个语法转化提示，点击确定即可，等待转换完成(首个项目开启，需要比较长的时间，因为需要下载sdk和gradle包)。
+
+![Android Studio Gradle Sync](/assets/img/running/gradle-sync.jpg)
+
 在Android Studio中，在编译器右上角，选择目标模拟器或设备（如果你都没有设备和模拟器，你可以根据指引添加一个模拟器），然后单击“播放”按钮。
 
 ![Android Studio Run Button Area](/assets/img/running/android-studio-run-button-area.png)

@@ -105,6 +105,8 @@ import { dropByCacheKey } from 'alita';
 dropByCacheKey('/list');
 ```
 
+> 注意，keepalive 的配置项，支持正则表达式。但是所有的路由正则匹配应该是全小写的，比如不管你的路由是 `home`、`Home` 还是 `hoMe` ，只有设置 `keepalive:[/home/]` 才有效。而字符串的配置方式就刚好相反，如果你的路由是`home`，你配置 `home`、`Home` 还是 `hoMe` 都有效。
+
 以上使用方法是配合 `mobileLayout:true` 使用的。
 如果你没有使用 `mobileLayout`，而是自定义的 `layout` ，即项目中存在 `src/layouts/index.tsx`。
 需要使用 `KeepAliveLayout` 包裹 `children`。
