@@ -24,6 +24,7 @@ Alita 的设计初衷就是面向场景化的方案，所以我们的配置方�
 | native | 调用的原生能力的数组  | string[] | 否,appType 为 `cordova`时才生效 |
 | proxy | 配置请求代理  | object | 否，遇到跨域问题可尝试配置 |
 | theme | 配置全局的 less 变量 ｜ object | 否|
+| retainLog | 配置编译之后保留日志打印 ｜ boolean | 否 |
 
 ## 配置方式
 
@@ -44,7 +45,7 @@ Alita 的设计初衷就是面向场景化的方案，所以我们的配置方�
 * Type: boolean
 
 开启 mobile layout 的运行时模式，可以在 `src/app.ts` 中，设置[运行时配置](/config/runtime) `mobileLayout`。
-还可以在页面中使用 `setPageNavBar` 修改当前页面的 layout。
+还可以在页面中使用 `setPageNavBar` 修改当前页面的 layout，使用 `setTabBarList` 在页面级修改底部 Tabs 的信息，常用与动态修改 `badge` 。
 
 ```tsx
 import React, { FC, useEffect } from 'react';
@@ -64,6 +65,11 @@ const SettingsPage: FC<> = ({ settings, dispatch, location })=>{
         ],
       },
     });
+    setTabBarList({
+      pagePath: location.pathname,
+      text:'home',
+      badge: '1',
+    });
   }, []);
   const { name } = settings;
 
@@ -71,7 +77,7 @@ const SettingsPage: FC<> = ({ settings, dispatch, location })=>{
 }
 ```
 
-`setPageNavBar` 接收两个参数，一个是需要修改的 `pagePath`。第二个参数是 `navBar` 配置的是 `antd-mobile` 的 `NavBar`,支持的参数有
+`setPageNavBar` 接收一个[对象参数](/components/alita-layout#navlist-)，有两个值，一个是需要修改的 `pagePath`。第二个参数是 `navBar` 配置的是 `antd-mobile` 的 `NavBar`,支持的参数有
 
 | 属性 | 说明 | 类型 | 默认值 |
 |  :-  | :-:  | :-:  | :-:  |
@@ -80,6 +86,19 @@ const SettingsPage: FC<> = ({ settings, dispatch, location })=>{
 | leftContent | 导航左边内容 | any | 无 |
 | rightContent | 导航右边内容 | any | 无 |
 | onLeftClick | 导航左边点击回调 |  (e: Object): void | 无 |
+
+`setTabBarList` 接收一个[对象参数](/components/alita-layout#list-)
+
+| 属性 | 类型 | 必填 | 说明|
+| --- | --- | --- | --- |
+| pagePath | string | 是 | 页面路径，必须在 pages 中先定义|
+| text | string | 是 | tab 上按钮文字|
+| iconPath | string | 是 |图片路径，当 position 为 top 时，不显示 icon。|
+| selectedIconPath | string | 是 |选中时的图片路径，当 position 为 top 时，不显示 icon。|
+| iconSize | string | 否 |0.44rem|
+| badge | string | 否 | badge |
+| onPress | function | 否 | 点击事件 |
+| title | string | 否 | 定义页面标题 |
 
 > 注意：在使用 `setPageNavBar` 设置响应函数时，不要使用 `hooks` 方法。（可能会有闭包问题。）尽量使用 `dispatch` 抛出事件。
 
@@ -205,5 +224,15 @@ export default {
   theme: {
     'brand-primary': '#1DA57A',
   },
+}
+```
+
+### retainLog
+
+默认在编译的时候，会去除日志打印，需要编译之后查看日志，需要手动配置保留。
+
+```ts
+export default {
+  retainLog: true,
 }
 ```
