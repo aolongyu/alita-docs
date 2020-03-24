@@ -26,11 +26,11 @@ Alita 的设计初衷就是面向场景化的方案，所以我们的配置方�
 | theme | 配置全局的 less 变量 ｜ object | 否|
 | retainLog | 配置编译之后保留日志打印 ｜ boolean | 否 |
 
-## 配置方式
+### 配置方式
 
 约定 `config/config.ts` 为项目配置文件。
 
-## 配置项
+### 配置项
 
 ### appType
 
