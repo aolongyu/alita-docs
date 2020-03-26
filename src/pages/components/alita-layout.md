@@ -1,9 +1,6 @@
 # alita-layout
 
-<div align="center">
-
 The generic h5 layout in umi uses antd-mobile.
-</div>
 
 > umi@2 和 alita@1 请使用1.x版本
 > 2.x版本只支持umi@3和alita@2
@@ -28,12 +25,12 @@ render(<BasicLayout />, document.getElementById('root'));
 
 | 属性 | 类型 | 必填 | 默认值 | 描述 |
 | --- | --- | --- | --- | --- |
-| tarBar | TarBarProps | 否 | 无 | 定义页面切换页信息，api参考微信小程序 |
+| tabBar | TabBarProps | 否 | 无 | 定义页面切换页信息，api参考微信小程序 |
 | documentTitle | string | 否 | 无 | 定义项目的默认title |
 | titleList | TitleListItem[] | 否 | 无 | 定义所有页面的title |
 | navBar | NavBarProps | 否 | 无 | 定义头部导航信息 |
 
-### tarBar 参数说明
+### tabBar 参数说明
 
 | 属性 | 类型 | 必填 | 默认值 | 描述 |
 | --- | --- | --- | --- | --- |
@@ -42,6 +39,44 @@ render(<BasicLayout />, document.getElementById('root'));
 | backgroundColor | HexColor | 是 | | tab 的背景色，仅支持十六进制颜色 |
 | list | Array  | 是 | | tab 的列表，详见 list 属性说明，最少 2 个、最多 5 个 tab |
 | position | string | 否 | bottom | tabBar 的位置，仅支持 bottom / top |
+| tabsGroup | string[][] | 否 |  | 当一个项目需要多个 TabBar 时配置 |
+
+> tabsGroup 仅仅标记 tab 分组，是否是 tab 页面，和其他参数依旧在 list 中配置
+
+比如有四个页面是 tab 页面，你先不管他们如何分组，全部按照 list 的配置，写到 list 里
+```ts
+const tabList: TabBarListItem[] = [
+  {
+    pagePath: '/',
+    title: '首页',
+    ...
+  },
+  {
+    pagePath: '/list',
+    title: '列表',
+    ...
+  },
+  {
+    pagePath: '/settings',
+    title: '设置',
+    ...
+  },
+  {
+    pagePath: '/show',
+    title: '展示',
+    ...
+  },
+];
+```
+
+然后再将他们进行分组，比如将首页和列表分为一组，当访问首页的时候，底部 TabBar 会有首页和列表两个切换项。
+
+```ts
+const tabBar: TarBarProp
+  list: tabList,
+  tabsGroup: [['/','/list'],['/setting','/show']]
+};
+```
 
 ### list 参数说明
 
