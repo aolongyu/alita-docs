@@ -35,17 +35,18 @@ export default IndexPage;
 
 ## API
 
-| 参数 | 说明 | 类型 | 默认值 | 是否必填 |
-| --- | --- | --- | --- | --- |
-| height | 滚动容器的高度 | string | 充满剩余容器高度 | 否 |
-| alias | 请求参数的别名 | AliasProps | 见表格下方备注 | 否 |
-| requestFunc | 请求执行函数 | 异步函数 | 无 | 是 |
-| requestParams | 请求参数 | object | {} | 否 |
-| renderRow | 从数据源(data source)中接受一条数据，以及它和它所在 section 的 ID。返回一个可渲染的组件来为这行数据进行渲染。默认情况下参数中的数据就是放进数据源中的数据本身，不过也可以提供一些转换器。如果某一行正在被高亮（通过调用 highlightRow 函数），ListView 会得到相应的通知。 | (rowData, sectionID, rowID, highlightRow) => renderable | 无 | 是 |
-| renderFooter | 重新渲染页脚，会传入三个参数，表示列表页面的当前状态。 | ( noMore, loadingMore, loadMore?) => React.ReactElement | '' | 否 |
-| isTabsPage | 在 Tabs 页面中使用时需要配置，高度需要减去底部tabs 高度  | false | 否 |
-| onChange | 数据变化时回调，你可以通过它取得当前列表的所有值  | (data)=>void | 否 |
-| 其他 ListView 参数 | 能接收 ListView 的其他参数，请注意不要设置 'onEndReached'、 'dataSource' | 无 | 否 |
+| 参数               | 说明                                                                                                                                                                                                                                                                     | 类型                                                    | 默认值           | 是否必填 |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------- | ---------------- | -------- |
+| height             | 滚动容器的高度                                                                                                                                                                                                                                                           | string                                                  | 充满剩余容器高度 | 否       |
+| alias              | 请求参数的别名                                                                                                                                                                                                                                                           | AliasProps                                              | 见表格下方备注   | 否       |
+| requestFunc        | 请求执行函数                                                                                                                                                                                                                                                             | 异步函数                                                | 无               | 是       |
+| noData             | 空列表展示内容                                                                                                                                                                                                                                                           | string or node                                          | ''               | 否       |
+| requestParams      | 请求参数                                                                                                                                                                                                                                                                 | object                                                  | {}               | 否       |
+| renderRow          | 从数据源(data source)中接受一条数据，以及它和它所在 section 的 ID。返回一个可渲染的组件来为这行数据进行渲染。默认情况下参数中的数据就是放进数据源中的数据本身，不过也可以提供一些转换器。如果某一行正在被高亮（通过调用 highlightRow 函数），ListView 会得到相应的通知。 | (rowData, sectionID, rowID, highlightRow) => renderable | 无               | 是       |
+| renderFooter       | 重新渲染页脚，会传入三个参数，表示列表页面的当前状态。                                                                                                                                                                                                                   | ( noMore, loadingMore, loadMore?) => React.ReactElement | ''               | 否       |
+| isTabsPage         | 在 Tabs 页面中使用时需要配置，高度需要减去底部tabs 高度                                                                                                                                                                                                                  | false                                                   | 否               |
+| onChange           | 数据变化时回调，你可以通过它取得当前列表的所有值                                                                                                                                                                                                                         | (data)=>void                                            | 否               |
+| 其他 ListView 参数 | 能接收 ListView 的其他参数，请注意不要设置 'onEndReached'、 'dataSource'                                                                                                                                                                                                 | 无                                                      | 否               |
 
 > 如果不需要下拉刷新的功能，可以设置 pullToRefresh={<></>}
 
@@ -144,17 +145,17 @@ export default Page;
 
 > 请注意，为了防止误写和认知差异 renderRow 属性会被弃用。
 
-| 参数 | 说明 | 类型 | 默认值 | 是否必填 |
-| --- | --- | --- | --- | --- |
-| renderCartRow | 定义渲染每行的方式 | (rowData: any,isSelected: boolean,selectItem: (key: any) => void,unSelectItem: (key: any) => void,) => React.ReactElement | 无 | 是 |
-| onSelectChange | 选中数据变更时，回调 | (selectData: any, isSelectAll: boolean) => void | 无 | 是 |
+| 参数           | 说明                 | 类型                                                                                                                      | 默认值 | 是否必填 |
+| -------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------ | -------- |
+| renderCartRow  | 定义渲染每行的方式   | (rowData: any,isSelected: boolean,selectItem: (key: any) => void,unSelectItem: (key: any) => void,) => React.ReactElement | 无     | 是       |
+| onSelectChange | 选中数据变更时，回调 | (selectData: any, isSelectAll: boolean) => void                                                                           | 无     | 是       |
 
-| 参数 | 说明 | 类型 |
-| --- | --- | --- |
-| rowData | 用于渲染每行的数据 | any |
-| isSelected | 当前行是否被选中 | boolean |
-| selectItem | 选中当前行 | (item: any) => void |
-| unSelectItem | 取消选中当前行 | (item: any) => void |
+| 参数         | 说明               | 类型                |
+| ------------ | ------------------ | ------------------- |
+| rowData      | 用于渲染每行的数据 | any                 |
+| isSelected   | 当前行是否被选中   | boolean             |
+| selectItem   | 选中当前行         | (item: any) => void |
+| unSelectItem | 取消选中当前行     | (item: any) => void |
 
 可以用上面的参数来渲染页面，如
 
@@ -226,12 +227,12 @@ export interface CartListAttributes {
 }
 ```
 
-| 参数 | 说明 |
-| --- | --- |
-| toggleAll | 切换全选选中状态，在true或false之间变更 |
-| getSelectAll | 获取当前的 全选状态 |
-| selectItem | 动态的选中某一项，item 为 rowData |
-| unSelectItem | 动态的取消选中某一项，item 为 rowData |
-| getListData | 获取当前列表中的值，与 onChange 中取到的值一致 |
-| getSelectDate | 获取当前列表中被选中的值，与 onSelectChange 中取到的值一致 |
-| reloadDataSource | 手动刷新列表数据，从初始值开始重新请求 |
+| 参数             | 说明                                                       |
+| ---------------- | ---------------------------------------------------------- |
+| toggleAll        | 切换全选选中状态，在true或false之间变更                    |
+| getSelectAll     | 获取当前的 全选状态                                        |
+| selectItem       | 动态的选中某一项，item 为 rowData                          |
+| unSelectItem     | 动态的取消选中某一项，item 为 rowData                      |
+| getListData      | 获取当前列表中的值，与 onChange 中取到的值一致             |
+| getSelectDate    | 获取当前列表中被选中的值，与 onSelectChange 中取到的值一致 |
+| reloadDataSource | 手动刷新列表数据，从初始值开始重新请求                     |
