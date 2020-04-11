@@ -61,7 +61,7 @@ export class DocsHeader {
             // urlMatch={[
             //   /^(?!\/(api|components|cli|native|enterprise|config)).*$/
             // ]}
-            urlMatch={[/^(?!\/(api|components|plugins|enterprise|config)).*$/]}
+            urlMatch={[/^(?!\/(api|components|plugins|enterprise|config|tutorial)).*$/]}
           >
             {l10n.getString("header-guide")}
           </stencil-route-link>
@@ -80,12 +80,19 @@ export class DocsHeader {
           <stencil-route-link url="/plugins" urlMatch={["/plugins"]}>
             {l10n.getString("menu-plugins")}
           </stencil-route-link>
-          {/* <stencil-route-link
+          <stencil-route-link
             url="/native"
             urlMatch={["/native", "/enterprise"]}
           >
             {l10n.getString("header-native")}
-          </stencil-route-link> */}
+          </stencil-route-link>
+          <stencil-route-link
+            url="/tutorial/buildEnvironment"
+            urlMatch={["/tutorial"]}
+          >
+            {l10n.getString("header-tutorial")}
+          </stencil-route-link>
+
         </div>
       ) : null
     ];
