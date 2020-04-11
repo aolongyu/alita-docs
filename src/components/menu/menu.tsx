@@ -8,6 +8,7 @@ import configTemplate from './templates/config';
 // import studioTemplate from './templates/studio';
 // import appflowTemplate from './templates/appflow';
 import mainTemplate from './templates/main';
+import tutorialTemplate from './templates/tutorial';
 
 @Component({
   tag: 'docs-menu',
@@ -40,6 +41,7 @@ export class DocsMenu {
         {/* <stencil-route url="/:lang([a-z]{2})?/native/:plugin" routeRender={() => <docs-menu-native category="community"/>}/> */}
         {/* <stencil-route url="/:lang([a-z]{2})?/native" routeRender={() => <docs-menu-native category="premier"/>}/> */}
         <stencil-route url="/:lang([a-z]{2})?/config" routeRender={configTemplate}/>
+        <stencil-route url="/:lang([≥a-z]{2})?/tutorial" routeRender={tutorialTemplate}/>
         {/* <stencil-route url="/:lang([a-z]{2})?/enterprise" routeRender={() => <docs-menu-native category="premier"/>}/> */}
         <stencil-route routeRender={mainTemplate}/>
       </stencil-route-switch>
