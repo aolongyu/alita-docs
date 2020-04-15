@@ -7,14 +7,14 @@ routes modification plugin for umi.
 Install via yarn or npm.
 
 ```bash
-$ yarn add @umijs/plugin-routes
+$ yarn add @alitajs/routes
 ```
 
 Configure it in the `.umirc.js`.
 
 ```js
 export default {
-   plugins: ['@umijs/plugin-routes'],
+   plugins: ['@alitajs/routes'],
    routesExtend: {
      exclude: [],
      update:(routes) => {

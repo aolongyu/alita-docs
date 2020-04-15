@@ -1,61 +1,70 @@
-# @alitajs/routes
-
-routes modification plugin for umi.
+# @alitajs/native
 
 ## Usage
 
 Install via yarn or npm.
 
 ```bash
-$ yarn add @umijs/plugin-routes
+$ yarn add @umijs/native
 ```
 
 Configure it in the `.umirc.js`.
 
 ```js
 export default {
-   plugins: ['@umijs/plugin-routes'],
-   routesExtend: {
-     exclude: [],
-     update:(routes) => {
-        return routes；
-     }
-   }
+   plugins: ['@alitajs/native'],
+   native:[]
 }
 ```
 
-## routesExtend
+> 无法单独使用，需要结合 @alitajs/cordova
 
-### routesExtend.exclude
+## supported plugins in native config array
 
-type: `Array(RegExp|Function)`
+`camera`, `device`, `dialogs`, `file`, `geolocation`, `inappbrowser`, `media`, `media-capture`, `keyboard`, `secure-storage`, `network`, `screen-orientation`, `statusbar`, `vibration`
 
-e.g.
+## camera
 
-```js
-{
-  exclude: [
-    // exclude all the `models` directory
-    /models\//,
-    // exclude ./pages/a.js
-    (route) { return route.component === './pages/a.js' },
-  ],
-}
+[cordova-plugin-camera](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-camera/index.html)
+
+`config.xml` config
+
+```xml
+<edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
+    <string>need camera access to take pictures</string>
+</edit-config>
+
+<edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
+    <string>need photo library access to get pictures from there</string>
+</edit-config>
+
+<edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
+    <string>need location access to find things nearby</string>
+</edit-config>
+
+<edit-config target="NSPhotoLibraryAddUsageDescription" file="*-Info.plist" mode="merge">
+    <string>need photo library access to save pictures there</string>
+</edit-config>
 ```
 
-### routesExtend.update
+## secure-storage
 
-type: `Function`
+[cordova-plugin-secure-storage](https://github.com/Crypho/cordova-plugin-secure-storage)
 
-e.g.
+`config.xml` config
+
+```xml
+<platform name="ios">
+    <preference name="KeychainAccessibility" value="WhenUnlocked"/>
+</platform>
+```
+
+supported values:
 
 ```
-{
-  update(routes) {
-    return [
-      { path: '/foo', component: './bar.js' },
-      ...routes,
-    ];
-  }
-}
+AfterFirstUnlock
+AfterFirstUnlockThisDeviceOnly
+WhenUnlocked (default)
+WhenUnlockedThisDeviceOnly
+WhenPasscodeSetThisDeviceOnly (this option is available only on iOS8 and later)
 ```
