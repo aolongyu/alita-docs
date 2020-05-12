@@ -104,6 +104,8 @@
   "menu-publishing-play-store": "Android Play 商店",
   "menu-publishing-desktop-app": "Electron 桌面应用",
   "menu-faq": "常见问题解答(FAQ)",
+  "menu-other": "前置基础知识",
+  "menu-docschina": "印记中文",
   "menu-faq-glossary": "词汇表",
   "menu-faq-build": "编译错误",
   "menu-faq-runtime": "运行时错误",

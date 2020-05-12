@@ -34,20 +34,49 @@ export class InternalAd {
   }
 
   render() {
-    return (
+    return (<div>
       <a href="https://umijs.org"
-         target="_blank"
-        >
+        target="_blank"
+      >
         <picture>
-          <source media="(min-width: 37.5em)" src="/assets/ad/umi3banner.jpeg"/>
+          <source media="(min-width: 37.5em)" src="/assets/ad/umi3banner.jpeg" />
           {/* <source src={this.ad.ad_image['1x'].url}/> */}
           <img src="/assets/ad/umi3banner.jpeg"
-               alt='发布UMI3,插件化的企业级前端应用框架'
-              //  height={1042}
-               width={240} />
-          <p>发布UMI3,插件化的企业级前端应用框架</p>
+            alt='发布UMI3,插件化的企业级前端应用框架'
+            //  height={1042}
+            width={240} />
+          <p style={{ textAlign: "center" }}>发布UMI3,插件化的企业级前端应用框架</p>
         </picture>
       </a>
+      <br />
+      <a href="https://d.umijs.org/"
+        target="_blank"
+      >
+        <picture>
+          <source media="(min-width: 37.5em)" src="/assets/ad/dumi.jpeg" />
+          {/* <source src={this.ad.ad_image['1x'].url}/> */}
+          <img src="/assets/ad/dumi.jpeg"
+            alt='dumi，你崭新的 React 组件开发和文档编写利器'
+            //  height={1042}
+            width={240} />
+          <p style={{ textAlign: "center" }}>dumi，你崭新的 React 组件开发和文档编写利器</p>
+        </picture>
+      </a>
+      <br />
+      <a href="https://www.docschina.org/"
+        target="_blank"
+      >
+        <picture>
+          <source media="(min-width: 37.5em)" src="/assets/ad/docschina.jpeg" />
+          {/* <source src={this.ad.ad_image['1x'].url}/> */}
+          <img src="/assets/ad/docschina.jpeg"
+            alt='印记中文官方公众号'
+            //  height={1042}
+            width={240} />
+          <p style={{ textAlign: "center" }}>印记中文官方公众号</p>
+        </picture>
+      </a>
+    </div>
     );
     // if (!this.ad || Object.keys(this.ad).length === 0) return;
 

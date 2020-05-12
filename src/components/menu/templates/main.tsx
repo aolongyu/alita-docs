@@ -106,6 +106,9 @@ const items = {
   //   'menu-publishing-play-store': '/publishing/play-store',
   //   'menu-publishing-desktop-app': '/publishing/desktop-app'
   // },
+  'menu-other': {
+    'menu-docschina': 'https://www.docschina.org/',
+  },
   'menu-faq': {
     'menu-faq-glossary': '/faq/glossary',
     'menu-faq-build': '/faq/build',

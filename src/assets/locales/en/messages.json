@@ -117,6 +117,8 @@
   "menu-publishing-desktop-app": "Electron Desktop App",
 
   "menu-faq": "FAQ",
+  "menu-other": "Pre basic knowledge",
+  "menu-docschina": "docschina",
   "menu-faq-glossary": "Glossary",
   "menu-faq-build": "Build Errors",
   "menu-faq-runtime": "Runtime Errors",
