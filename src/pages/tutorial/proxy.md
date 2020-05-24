@@ -10,7 +10,7 @@ disableHtmlPreviews: true
 
 ## proxy请求代理
 
-![](https://cdn.nlark.com/yuque/0/2018/png/123174/1544147728619-f6d75162-09d5-45d2-8605-355b0631ea30.png#align=center&display=inline&height=184&originHeight=184&originWidth=1104&status=done&width=747)
+![img](../../assets/img/tutorial/proxy1.png)
 
 上一小节中，我们还存在一个问题未处理，就是跨域访问问题。
 
@@ -67,7 +67,7 @@ export default {
 
 这时候我们就取到了网络上的数据了。
 
-![image.png](https://cdn.nlark.com/yuque/0/2019/png/123174/1559269291940-da31c85c-e148-4c56-963e-558ed01dc1a1.png#align=left&display=inline&height=779&name=image.png&originHeight=1558&originWidth=2862&size=718530&status=done&width=1431)
+![img](../../assets/img/tutorial/proxy2.png)
 
 ## 代理只是请求服务代理，不是请求地址
 
@@ -89,7 +89,7 @@ export default {
 
 将服务端给我们的地址，直接在浏览器中访问，如果能正确返回数据，那说明服务端给的接口没有问题。
 
-![](https://cdn.nlark.com/yuque/0/2018/png/123174/1544150095668-b7ee56cb-5a40-465f-b1e0-09cb43eca79d.png#align=center&display=inline&height=148&originHeight=148&originWidth=944&status=done&width=747)
+![img](../../assets/img/tutorial/proxy3.png)
 
 > 如果返回错误，那就可以先不往下进行了，可以先让服务端修正他的错误
 
@@ -138,3 +138,7 @@ export default {
 也不要去问任何人，在任何开源项目的iss里面提问题，因为他们能够给你的帮助，不会比上述更详细了。
 
 不行，只有一个问题，那就是你不够细心，设置错误咯，那就从step1再走一回，加油吧！少年。
+
+## 本章节代码
+
+[alita github: feat-proxy分支](https://github.com/alitajs/alitaDemo/tree/feat-proxy)

@@ -8,7 +8,7 @@ disableHtmlPreviews: true
 
 # 增加过滤条件
 
-![](https://cdn.nlark.com/yuque/0/2018/gif/123174/1545138897422-11de4b8d-8c42-448f-a64d-568aaf5ffb5f.gif#align=center&display=inline&height=816&originHeight=816&originWidth=1958&status=done&width=747)
+![](../../assets/img/tutorial/filter1.gif)
 
 这小节，我们会简单的使用antd的Card和Radio，还是一样的，你可以自己先尝试着，实现，如果你可以独立完成，那你就不需要阅读本节了。
 
@@ -42,7 +42,7 @@ const heroType = [
 ...
 ```
 
-![](https://cdn.nlark.com/yuque/0/2018/png/123174/1545139238245-109d65e8-05d3-4191-9cf3-5016c07e01d4.png#align=center&display=inline&height=246&originHeight=246&originWidth=1732&status=done&width=747)
+![](../../assets/img/tutorial/filter2.png)
 
 ### step3 增加单选框分组
 
@@ -113,7 +113,7 @@ state: {
 ```diff
 const onChange = e => {
 -    console.log(e.target.value);
-+    dispatch({
++    dispatch!({
 +     type:"hero/save",
 +     payload:{
 +       filterKey:e.target.value
@@ -148,7 +148,7 @@ reducers: {
 
 ### step7 保存，运行程序
 
-![](https://cdn.nlark.com/yuque/0/2018/gif/123174/1545140337075-3ff02e9d-a35b-4801-9c98-981085a0ba76.gif#align=center&display=inline&height=816&originHeight=816&originWidth=1958&status=done&width=747)
+![](../../assets/img/tutorial/filter3.gif)
 
 ## 作业
 
@@ -168,4 +168,8 @@ const itemType = [
 ];
 ```
 
-![](https://cdn.nlark.com/yuque/0/2018/gif/123174/1545141114618-664e8b3a-e541-44f1-b805-4b45d2c9861a.gif#align=center&display=inline&height=802&originHeight=802&originWidth=1960&status=done&width=747)
+![](../../assets/img/tutorial/filter4.gif)
+
+## 本章节代码
+
+[alita github: feat-filter分支](https://github.com/alitajs/alitaDemo/tree/feat-filter)

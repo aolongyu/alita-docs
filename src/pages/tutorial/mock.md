@@ -21,11 +21,11 @@ disableHtmlPreviews: true
 
 在框架中使用 `mock` 还是蛮简单的，任何配置都不需要，只要在 `./mock/` 文件夹下，新建 `js` 或`ts` 文件，然后按照规范编写文档，就可以使用 `mock` 功能了。
 
-## ./mock/heros.js
+## ./mock/heros.ts
 
 ```javascript
 export default {
-  'POST /api/herolist.json': [
+  '/api/herolist.json': [
     {
       ename: 106,
       cname: '小乔',
@@ -56,7 +56,7 @@ export default {
 
 然后开启开发服务器
 
-![](https://cdn.nlark.com/yuque/0/2018/png/123174/1544197788386-90082fb0-11c1-4bef-b7f6-d9257e16a6b8.png#align=center&display=inline&height=694&originHeight=694&originWidth=1222&status=done&width=747)
+![img](../../assets/img/tutorial/mock1.png)
 
 > 我们写在model里面的静态文件是有两个英雄的，使用proxy代理，从官方取得是有几十个英雄的，从mock里面取的是一个英雄的数据。
 
@@ -90,7 +90,7 @@ export default {
 
 定义了这个请求是 `post` 请求，并从请求参数中取出来 `ename` 对原数组做了过滤。
 
-然后在 `./src/models/hero.js` 中修改请求。
+然后在 `./src/models/hero.ts` 中修改请求。
 
 ```javascript
 const data = yield request('/api/herodetails.json', {
@@ -134,6 +134,10 @@ const data = yield request('/api/herodetails.json', {
 });
 ```
 
-![](https://cdn.nlark.com/yuque/0/2018/png/123174/1544201761590-b2281533-d577-428a-8c83-c042e96858d6.png#align=center&display=inline&height=692&originHeight=692&originWidth=1250&status=done&width=747)
+![img](../../assets/img/tutorial/mock2.png)
 
 这两种写法是比较简单常用的，更多的mock推荐用法，可以查阅umi官网，[mock-data](https://umijs.org/zh/guide/mock-data.html)
+
+## 本章节代码
+
+[alita github: feat-mock分支](https://github.com/alitajs/alitaDemo/tree/feat-mock)

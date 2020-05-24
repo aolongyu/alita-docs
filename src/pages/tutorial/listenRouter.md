@@ -60,6 +60,18 @@ const HeroModel: HeroModelType = {
 然后在 `effects` 里面，响应这个事件。
 
 ```javascript
+export interface HeroModelType {
+  namespace: 'hero';
+  state: HeroModelState;
+  effects: {
+-    query: Effect;
++    fetch: Effect;
+  };
+  reducers: {
+    save: Reducer<HeroModelState>;
+  };
+}
+
 effects: {
   *fetch({ payload }, { put, call, select }) {
     const data = [
@@ -139,11 +151,10 @@ export interface HeroModelState {
 ```diff
 const HeroPage: FC<PageProps> = ({ hero, dispatch }) => {
 -  const { name } = hero;  
-+  const { name, heros } = hero;  
++  const { heros } = hero;  
 
 return (
   <div className={styles.center}>
-    Hello {name}
 +   <h2>This is {JSON.stringify(heros)}</h2>
   </div>
 );
@@ -156,9 +167,13 @@ return (
 export default connect(({ hero }: { hero: HeroModelState }) => ({ hero }))(HeroPage);
 ```
 
-![image.png](https://cdn.nlark.com/yuque/0/2019/png/123174/1559267896922-5e965681-6b69-4d78-942a-d5717d575439.png#align=left&display=inline&height=773&name=image.png&originHeight=1546&originWidth=2806&size=390601&status=done&width=1403)
+![img](../../assets/img/tutorial/listen1.png)
 
 这样我们就实现了，监听路由事件取得静态数据，修改页面 `state`，触发页面重绘。
+
+## 本章节代码
+
+[alita github: feat-listenrouter分支](https://github.com/alitajs/alitaDemo/tree/feat-listenrouter)
 
 
 

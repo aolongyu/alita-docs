@@ -37,15 +37,15 @@ Write: src/models/itemdetail.ts
 ```
 
 动态路由的参数通过 `match`，这里打印的值，如上述标注。相当于this.props.match。
-访问http://localhost:8000/itemdetail/123
+访问http://localhost:8000/#/itemdetail/1726
 
-![](https://cdn.nlark.com/yuque/0/2018/png/123174/1545661946872-a173fff5-82d7-4fdf-ba1f-a66fd85025c9.png#align=center&display=inline&height=215&originHeight=750&originWidth=2600&status=done&width=747)
+![](../../assets/img/tutorial/dyrouter1.png)
 
 ## 路由修改
 
-当我们在动态路由 `http://localhost:8000/itemdetail/123` 去点击 `tab` 上的英雄、局内道具、召唤师技能按钮会发现路由出现了问题。在以下页面进行路由配置修改。
+当我们在动态路由 `http://localhost:8000/#/itemdetail/1726` 去点击 `tab` 上的英雄、局内道具、召唤师技能按钮会发现路由出现了问题。在以下页面进行路由配置修改。
 
-`src/layouts/BasicLayout.tsx`
+`src/layouts/index.tsx`
 
 ```diff
 - const menuData = [
@@ -124,7 +124,7 @@ subscriptions: {
 
 ```js
 export interface ItemdetailModelState {
-    name: string;
+-    name: string;
 +   itemDetail: {};
 }
 
@@ -132,7 +132,7 @@ const ItemdetailModel: ItemdetailModelType = {
   namespace: 'itemdetail',
 
   effects: {
-      query: Effect;
+-      query: Effect;
 +     fetch: Effect;
   };
 
@@ -144,8 +144,8 @@ const ItemdetailModel: ItemdetailModelType = {
   effects: {
     *fetch({ payload }, { put, select }) {
       const { itemId = '' } = payload;
-      const { items = [] } = yield select((_: { item: any }) => _.item);
-      const itemDetail = items.filter((it: any) => it.item_id === JSON.parse(itemId));
+      const { itemList = [] } = yield select((_: { item: any }) => _.item);
+      const itemDetail = itemList.filter((it: any) => it.item_id === JSON.parse(itemId));
       yield put({
         type: 'save',
         payload: {
@@ -161,7 +161,7 @@ const ItemdetailModel: ItemdetailModelType = {
 
 ```diff
 -  const { name } = itemdetail;
-+  const { itemDetail } = itemdetail;
++  const { itemDetail = {} } = itemdetail;
 
 -  return <div className={styles.center}>Hello {name}</div>;
 +  return <div className={styles.center}>Hello {JSON.stringify(itemDetail)}</div>;
@@ -175,6 +175,10 @@ import { router } from 'alita';
 ...
 <Button onClick={() => router.goBack()}>返回英雄列表页</Button>
 ```
+
+## 本章节代码
+
+[alita github: feat-dyRouter分支](https://github.com/alitajs/alitaDemo/tree/feat-dyRouter)
 
 
 

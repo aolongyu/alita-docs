@@ -8,17 +8,20 @@ disableHtmlPreviews: true
 
 # 完成英雄页banner
 
-![](https://cdn.nlark.com/yuque/0/2018/gif/123174/1545657176862-076055b7-2644-4082-b1ea-d198049c47a5.gif#align=center&display=inline&height=1470&originHeight=1470&originWidth=2570&status=done&width=747)
+![](../../assets/img/tutorial/banner1.gif)
 
 这是一篇纯写样式的代码，旨在让你再次熟悉数据流，和页面渲染。如果你能够独立完成上面的效果，那你就不用继续阅读这篇文章了。
 
 ### 1.添加mock数据
 
-`./mock/api.js`
+`./mock/api.ts`
 
 ```javascript
+import { Request, Response } from 'express';
+import herolist from './heros';
+
 export default {
-  'POST /api/freeheros.json': (req, res) => {
+  'POST /api/freeheros.json': (req: Request, res: Response) => {
     const { number } = req.body;
     function getRandomArrayElements(arr, count) {
       const shuffled = arr.slice(0);
@@ -62,7 +65,15 @@ export async function queryFreeHeros(params: any): Promise<any> {
 
 ```diff
 - import { queryHeroList, getHeroDetails } from '@/services/api';
-+ import { queryHeroList, getHeroDetails, getFreeHeros } from '@/services/api';
++ import { queryHeroList, getHeroDetails, queryFreeHeros } from '@/services/api';
+
+export interface HeroModelState {
+   heros: any;
+   filterKey: number;
++  freeheros: any;
++  itemHover: number;
+}
+
 export default {
   state: {
     heros: [],
@@ -80,7 +91,7 @@ export default {
     *fetch({ type, payload }, { put, call, select }) {
       const herolist = yield call(queryHeroList);
       const herodetails = yield call(getHeroDetails, { ename: 110 });
-+     const freeheros = yield call(getFreeHeros,{number:13});
++     const freeheros = yield call(queryFreeHeros,{number:13});
       yield put({
         type: 'save',
         payload: {
@@ -133,7 +144,7 @@ export default FreeHeroItem;
 
 `./src/pages/hero/index.tsx`
 
-```jsx
+```js
 import FreeHeroItem from '@/components/FreeHeroItem';
 ... ...
 const { heros = [], filterKey = 0, freeheros = [] ,itemHover=0} = hero;
@@ -214,3 +225,7 @@ return (
 //这里面的详细代码见步骤5
 )
 ```
+
+## 本章节代码
+
+[alita github: feat-banner分支](https://github.com/alitajs/alitaDemo/tree/feat-banner)

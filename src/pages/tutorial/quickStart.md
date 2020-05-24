@@ -94,7 +94,7 @@ alita g app myApp
 
 教程中我们创建的是 pc 项目。
 
-![image.png](https://img-blog.csdnimg.cn/20200321215058117.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjI3ODk3OQ==,size_16,color_FFFFFF,t_70)
+![img](../../assets/img/tutorial/quick1.png)
 
 **如果想在已创建的项目中切换项目类型，可以参考[官网](https://alitajs.com/building/starting)。**
 
@@ -127,7 +127,7 @@ $ yarn start
 
 在浏览器上访问 `http://localhost:8000`:
 
-![image.png](https://cdn.nlark.com/yuque/0/2019/png/123174/1559199422236-c5ddd799-0a7e-4694-b68e-4a25916ef35c.png#align=left&display=inline&height=138&name=image.png&originHeight=276&originWidth=762&size=23668&status=done&width=381)
+![img](../../assets/img/tutorial/quick2.png)
 
 ## 第五步 编辑页面
 
@@ -143,6 +143,6 @@ $ yarn start
 
 3.保存文件
 
-![image.png](https://cdn.nlark.com/yuque/0/2019/png/123174/1559199555361-b2917638-1554-44ab-a341-28e22875eaf9.png#align=left&display=inline&height=152&name=image.png&originHeight=304&originWidth=1082&size=34039&status=done&width=541)
+![img](../../assets/img/tutorial/quick3.png)
 
 > umi默认开启热更新功能，保存之后，就能直接在页面中看到变化。
