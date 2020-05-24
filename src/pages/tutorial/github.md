@@ -30,6 +30,6 @@ publicPath: '/alita-course/',
 
 如这里我希望通过[http://alitajs.github.io/alita-course/](http://alitajs.github.io/alita-course/)访问（github page网络不是很好，最好由科学上网）
 
-![](https://cdn.nlark.com/yuque/0/2019/png/123174/1546484270851-65322839-1815-4d06-b5b5-233faa9cf8c5.png#align=center&display=inline&height=1556&originHeight=1556&originWidth=2694&status=done&width=747)
+![](../../assets/img/tutorial/github1.png)
 
 因为本地部署调试，不需要修改任何的代码和配置，所以一般可以先保证使用serve或now部署可访问之后，再尝试其他部署方式。

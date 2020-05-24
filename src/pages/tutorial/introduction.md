@@ -31,4 +31,4 @@ disableHtmlPreviews: true
 
 完成本教程的所有步骤之后，最终的应用会是这样的：
 
-![](https://cdn.nlark.com/yuque/0/2019/gif/123174/1546477968559-44633885-6394-4514-aeec-d9e1faf47185.gif#align=center&display=inline&height=570&originHeight=1562&originWidth=2048&status=done&width=747)
+![img](../../assets/img/tutorial/intro1.gif)

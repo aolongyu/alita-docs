@@ -10,7 +10,7 @@ disableHtmlPreviews: true
 
 让代码放在更适合它的位置，使得项目更容易实现代码复用，也更加容易维护。
 
-我们现在的代码 `./src/models/hero.js`
+我们现在的代码 `./src/models/hero.ts`
 
 ```javascript
 *fetch({ type, payload }, { put, call, select }) {
@@ -51,7 +51,7 @@ disableHtmlPreviews: true
 - step2 所有的post请求的body，都要进行JSON.stringify
 - step3 静态数据，已经放在mock中了，这里不再需要
 
-## 接口相关的都放到./src/services/api.js
+## 接口相关的都放到./src/services/api.ts
 
 ```javascript
 import { request } from 'alita';
@@ -68,7 +68,7 @@ export async function getHeroDetails(params: any): Promise<any> {
 }
 ```
 
-## ./src/models/hero.js
+## ./src/models/hero.ts
 
 ```javascript
 - import { request } from 'alita';
@@ -113,7 +113,7 @@ export default {
 };
 ```
 
-### ./services/api.js
+### ./services/api.ts
 
 ```javascript
 import { request } from 'alita';
@@ -140,3 +140,7 @@ export async function queryMing(): Promise<any> {
 ```
 
 现在感觉是不是比较工整和规范啦，你可以在获得接口文档之后优先编写这两个文件，这样就实现了一个前端数据服务，后续你自己或者其他协作成员，可以直接发起http请求，而不再理会数据模拟。
+
+## 本章节代码
+
+[alita github: feat-recode分支](https://github.com/alitajs/alitaDemo/tree/feat-recode)

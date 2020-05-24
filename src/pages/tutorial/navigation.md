@@ -10,7 +10,7 @@ disableHtmlPreviews: true
 
 ## 添加页面导航
 
-`./src/layouts/BasicLayout.js`
+`./src/layouts/index.tsx`
 
 原始代码增加了路由配置，demo 中暂时不需要，可以先删除布局代码。
 
@@ -43,7 +43,7 @@ import { Link } from 'alita';
 </Menu>
 ```
 
-![](https://cdn.nlark.com/yuque/0/2018/gif/123174/1544098644291-b5755694-1869-4eed-a00b-a7e2321c24ff.gif#align=center&display=inline&height=422&originHeight=422&originWidth=1056&status=done&width=747)
+![img](../../assets/img/tutorial/nav1.gif)
 
 ## 使导航和路由一致
 
@@ -128,3 +128,7 @@ export default BasicLayout;
 ```
 
 这样子修改完，从功能上，并没有任何差别。
+
+## 本章节代码
+
+[alita github: feat-navigation分支](https://github.com/alitajs/alitaDemo/tree/feat-navigation)

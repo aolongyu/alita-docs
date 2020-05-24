@@ -35,15 +35,15 @@ v8.10.1
 
 安装完 VS Code 之后，打开 VS Code，在最左侧功能按钮中选中，扩展。
 
-![](https://cdn.nlark.com/yuque/0/2018/png/123174/1543918091234-c32dd883-994d-4894-8604-a4ab7a62d6d1.png#align=center&display=inline&height=575&originHeight=575&originWidth=675&status=done&width=675)
+![](../../assets/img/tutorial/build1.png)
 
 在搜索中，查找 “Oni”，选择Oni JavaScript Snippet，安装
 
-![](https://cdn.nlark.com/yuque/0/2018/png/123174/1543921718726-c6558944-2d57-403d-81b5-f68e1955b2d4.png#align=center&display=inline&height=401&originHeight=687&originWidth=1279&status=done&width=747)
+![](../../assets/img/tutorial/build2.png)
 
 使用方法：
 
-![](https://cdn.nlark.com/yuque/0/2018/gif/123174/1543921749122-c38c5030-9dab-4701-b27e-379165ef581a.gif#align=center&display=inline&height=203&originHeight=203&originWidth=502&status=done&width=502)
+![](../../assets/img/tutorial/build3.png)
 
 这个插件集成了很多umi的代码段，如果你发现有任何遗漏的，可以在[ISSUES](https://github.com/xiaohuoni/snippet/issues)中讨论。
 
@@ -53,7 +53,7 @@ v8.10.1
 
 打开VS Code，使用快捷键 `Ctrl + ·`，(键盘Esc下面，数字1左边的键)，如果你的电脑上存在热键冲突，无法正确打开。那你可以在你的项目目录区域，点击右键，在命令提示符中打开。
 
-![](https://cdn.nlark.com/yuque/0/2018/png/123174/1543921766562-0695e941-9791-41ef-9d3b-c89cfe29b84c.png#align=center&display=inline&height=181&originHeight=231&originWidth=951&status=done&width=747)
+![](../../assets/img/tutorial/build4.png)
 
 具体的使用我们会在后面的章节中提到。
 

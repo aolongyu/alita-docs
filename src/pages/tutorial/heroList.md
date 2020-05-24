@@ -8,7 +8,7 @@ disableHtmlPreviews: true
 
 # 美化英雄列表
 
-![](https://cdn.nlark.com/yuque/0/2018/png/123174/1545134408040-fc15afe8-9e91-4105-ab08-bd067c47d494.png#align=center&display=inline&height=1422&originHeight=1422&originWidth=2438&status=done&width=747)
+![](../../assets/img/tutorial/hero1.png)
 
 ## 在框架中使用less
 
@@ -31,6 +31,8 @@ const { heros = [] } = hero;
 ### step2 循环取出heros，绑定页面
 
 ```jsx
+import { Row, Col } from 'antd';
+
 <Row>
   {heros.map(item => (
     <Col key={item.ename} span={3} >
@@ -70,7 +72,7 @@ const { heros = [] } = hero;
 
 ### step4 保存，运行程序
 
-![](https://cdn.nlark.com/yuque/0/2018/png/123174/1545135099385-c62a0725-d18a-40e0-80fc-ac3ddd3bd147.png#align=center&display=inline&height=1170&originHeight=1170&originWidth=2430&status=done&width=747)
+![](../../assets/img/tutorial/hero2.png)
 
 我们发现，页面是我们想要的样式，但是数据反了，所以我们先将数组逆序处理。
 
@@ -90,7 +92,7 @@ const { heros = [] } = hero;
 
 最终效果为
 
-![](https://cdn.nlark.com/yuque/0/2018/png/123174/1545135271491-62d1d2ba-9c1e-4df4-b939-cd382edcae99.png#align=center&display=inline&height=1422&originHeight=1422&originWidth=2438&status=done&width=747)
+![](../../assets/img/tutorial/hero3.png)
 
 ## 作业
 
@@ -101,3 +103,7 @@ const { heros = [] } = hero;
 ```jsx
 <img src={`https://game.gtimg.cn/images/yxzj/img201606/itemimg/${data.item_id}.jpg`} />
 ```
+
+## 本章节代码
+
+[alita github: feat-heroList分支](https://github.com/alitajs/alitaDemo/tree/feat-heroList)
