@@ -265,6 +265,7 @@
   "menu-plugins-main-path": "路由主入口",
   "menu-plugins-native": "原生能力对接",
   "menu-plugins-routes": "过滤路由页面",
+  "menu-access-layout": "权限布局组件",
 
   "menu-tutorial-ready-environment": "开发环境搭建",
   "menu-tutorial-ready": "快速上手",

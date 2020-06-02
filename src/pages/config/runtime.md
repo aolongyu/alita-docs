@@ -44,3 +44,16 @@ export const mobileLayout = {
 ```
 
 所有配置项请查阅[alita-layout](https://github.com/alitajs/alita-layout)
+
+### accessLayout
+
+配置 mobile 项目的整体布局，只有配置配置项 `appType:pc` 时且 routes 配置时有效。
+
+```ts
+export const accessLayout = {
+  title: 'Runtime Demo',
+  // Pro-Layout 支持的所有配置
+};
+```
+
+所有配置项请查阅[alita-layout](https://github.com/umijs/plugins/plugin-access-layout)

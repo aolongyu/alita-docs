@@ -7,7 +7,8 @@ const items = {
     'menu-plugins-keepalive': '/plugins/keepalive',
     'menu-plugins-main-path': '/plugins/main-path',
     'menu-plugins-native': '/plugins/native',
-    'menu-plugins-routes': '/plugins/routes'
+    'menu-plugins-routes': '/plugins/routes',
+    'menu-access-layout': '/plugins/access-layout',
   },
 };
 

@@ -25,6 +25,7 @@ Alita 的设计初衷就是面向场景化的方案，所以我们的配置方�
 | proxy | 配置请求代理  | object | 否，遇到跨域问题可尝试配置 |
 | theme | 配置全局的 less 变量 ｜ object | 否|
 | retainLog | 配置编译之后保留日志打印 ｜ boolean | 否 |
+| accessLayout | 权限布局配置，当 appType 为 pc 时有效 ｜ object | 否 |
 
 ### 配置方式
 
@@ -235,4 +236,121 @@ export default {
 export default {
   retainLog: true,
 }
+```
+
+### accessLayout
+
+
+```ts
+accessLayout: {
+  iconNames: ['smile'], // 约定式用法，需要将所有用到的 icon 名称写全，为了按需加载
+  useModel: true, // 声明是否搭配了 plugin-model 使用
+}
+```
+
+#### 运行时配置
+
+```ts
+export const accessLayout = {
+  title: 'Runtime Demo',
+  // Pro-Layout 支持的所有配置
+};
+```
+
+#### 页面级配置
+
+```ts
+useEffect(() => {
+  setLayoutConfig({
+    title: 'PageSetDemo',
+    // Pro-Layout 支持的所有配置
+  });
+}, []);
+```
+
+#### 页面级别权限控制
+
+```ts
+import { useModel } from 'umi';
+const { access } = useModel('@@accessLayout');
+if (access.canAdmin) {
+  // canAdmin 在src/access 中定义
+  // 或者使用 setAccess 设置
+  console.log('access.canAdmin');
+}
+```
+
+#### 页面级修改权限
+
+```tsx
+import { useModel } from 'umi';
+
+const IndexPage: FC<PageProps> = ({ index, dispatch }) => {
+  const { setAccess } = useModel('@@accessLayout');
+  return (
+    <div
+      className={styles.center}
+      onClick={() => setAccess({ canAdmin: false })}
+    >
+      点击操作权限
+    </div>
+  );
+};
+```
+
+#### 扩展菜单配置
+
+可以指定部分页面不使用 layout
+
+```ts
+const menuData = [
+  {
+    path: '/login',
+    hideLayout: true,
+  },
+];
+```
+
+#### 支持约定式路由用法
+
+```ts
+// src/layouts/index
+import { AccessLayout } from 'umi';
+
+const BasicLayout = props => {
+  // 这个数据可以是任意来源的，你可以在登录之后再去获取菜单数据
+  const serveMenuData = [
+    {
+      path: '/',
+      name: 'index',
+      icon: 'smile',
+    },
+    {
+      path: '/ListTableList',
+      name: 'list',
+      icon: 'heart',
+      access: 'canAdmin',
+    },
+    {
+      path: '/login',
+      hideLayout: true,
+    },
+  ];
+  // 这个数据会传递给 src/access.ts
+  // 搭配 plugin-initial-state 使用的话，这个可以不传
+  const initState = {
+    currentUser: {
+      access: 'admin',
+    },
+  };
+  return (
+    <AccessLayout
+      initState={initState}
+      menuData={serveMenuData}
+      {...props}
+    ></AccessLayout>
+  );
+};
+
+export default BasicLayout;
 ```
