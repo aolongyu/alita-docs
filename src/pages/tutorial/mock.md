@@ -132,6 +132,7 @@ const data = yield request('/api/herodetails.json', {
     ename: 110,
   }),
 });
+
 ```
 
 ![img](../../assets/img/tutorial/mock2.png)
