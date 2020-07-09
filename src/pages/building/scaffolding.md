@@ -38,9 +38,9 @@ CLI 构建项目之后，下一步是开始构建功能和组件。 大部分应
 
 ### mock
 
-约定 src/mock 文件夹下所有文件为 mock 文件。
+约定 mock 文件夹下所有文件为 mock 文件。
 
-如果 `src/mock/app.ts` 的内容如下，
+如果 `mock/app.ts` 的内容如下，
 
 ```js
 export default {
